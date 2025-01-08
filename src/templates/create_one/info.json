@@ -1,0 +1,15 @@
+{
+    "name": "create_one",
+    "version": "1.0.0",
+    "icon": "<svg width=\"72\" height=\"72\" viewBox=\"0 0 72 72\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"72\" height=\"72\" rx=\"4\" fill=\"white\"/><rect x=\"6\" y=\"6\" width=\"60\" height=\"11\" rx=\"2\" fill=\"#A3A3A3\"/><rect x=\"6.58824\" y=\"22.5882\" width=\"58.8235\" height=\"12.8235\" rx=\"1.76471\" stroke=\"#7168EC\" stroke-width=\"1.17647\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M12.7678 24V33.6486H12V24H12.7678Z\" fill=\"#7168EC\"/><g filter=\"url(#filter0_dd_2627_3274)\"><path d=\"M48.1689 27.2561L52.1133 37.7386C52.3143 38.2726 53.0619 38.2936 53.2926 37.7718L55.1119 33.6556C55.1717 33.5204 55.2767 33.4101 55.4088 33.3437L59.6313 31.2236C60.136 30.9702 60.086 30.2341 59.5518 30.0512L48.9717 26.4287C48.462 26.2542 47.9791 26.7518 48.1689 27.2561Z\" fill=\"#FF715B\"/></g><rect x=\"6\" y=\"39\" width=\"60\" height=\"11\" rx=\"2\" fill=\"#A3A3A3\"/><g clip-path=\"url(#clip0_2627_3274)\"><rect x=\"6\" y=\"55\" width=\"60\" height=\"11\" rx=\"2.35294\" fill=\"#7168EC\"/><path d=\"M36.5876 57.3269V64.1896M33.1562 60.7583H40.019\" stroke=\"white\" stroke-width=\"0.980392\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><defs><filter id=\"filter0_dd_2627_3274\" x=\"44.3034\" y=\"25.1187\" width=\"19.5025\" height=\"19.4052\" filterUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\"><feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\"/><feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/><feMorphology radius=\"1.27451\" operator=\"erode\" in=\"SourceAlpha\" result=\"effect1_dropShadow_2627_3274\"/><feOffset dy=\"1.27451\"/><feGaussianBlur stdDeviation=\"1.27451\"/><feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.06 0\"/><feBlend mode=\"normal\" in2=\"BackgroundImageFix\" result=\"effect1_dropShadow_2627_3274\"/><feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/><feMorphology radius=\"1.27451\" operator=\"erode\" in=\"SourceAlpha\" result=\"effect2_dropShadow_2627_3274\"/><feOffset dy=\"2.54902\"/><feGaussianBlur stdDeviation=\"2.54902\"/><feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.1 0\"/><feBlend mode=\"normal\" in2=\"effect1_dropShadow_2627_3274\" result=\"effect2_dropShadow_2627_3274\"/><feBlend mode=\"normal\" in=\"SourceGraphic\" in2=\"effect2_dropShadow_2627_3274\" result=\"shape\"/></filter><clipPath id=\"clip0_2627_3274\"><rect x=\"6\" y=\"55\" width=\"60\" height=\"11\" rx=\"2.35294\" fill=\"white\"/></clipPath></defs></svg>",
+    "description": "Form",
+    "scope": [],
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.2.2",
+        "@types/react": "^18.0.0"
+    }
+}

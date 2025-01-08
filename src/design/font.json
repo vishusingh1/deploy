@@ -1,0 +1,70 @@
+{
+    "applied": [
+        {
+            "id": "google_fonts_link_Inter",
+            "name": "Inter",
+            "weights": [
+                "400",
+                "500",
+                "600"
+            ],
+            "src": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        },
+        {
+            "id": "google_fonts_link_ADLaM_Display",
+            "name": "ADLaM Display",
+            "weights": [
+                "400",
+                "500",
+                "600"
+            ],
+            "src": "https://fonts.googleapis.com/css2?family=ADLaM+Display:wght@400;500;600;700&display=swap",
+            "url": "https://fonts.googleapis.com/css2?family=ADLaM+Display:wght@400;500;600;700&display=swap"
+        },
+        {
+            "id": "google_fonts_link_ABeeZee",
+            "name": "ABeeZee",
+            "weights": [
+                "400",
+                "500",
+                "600"
+            ],
+            "src": "https://fonts.googleapis.com/css2?family=ABeeZee:wght@400;500;600;700&display=swap",
+            "url": "https://fonts.googleapis.com/css2?family=ABeeZee:wght@400;500;600;700&display=swap"
+        },
+        {
+            "id": "google_fonts_link_Abril_Fatface",
+            "name": "Abril Fatface",
+            "weights": [
+                "400",
+                "500",
+                "600"
+            ],
+            "src": "https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400;500;600;700&display=swap",
+            "url": "https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400;500;600;700&display=swap"
+        }
+    ],
+    "body_font": {
+        "id": "google_fonts_link_Abril_Fatface",
+        "name": "Abril Fatface",
+        "weights": [
+            "400",
+            "500",
+            "600"
+        ],
+        "src": "https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400;500;600;700&display=swap",
+        "url": "https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400;500;600;700&display=swap"
+    },
+    "display_font": {
+        "id": "google_fonts_link_Inter",
+        "name": "Inter",
+        "weights": [
+            "400",
+            "500",
+            "600"
+        ],
+        "src": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    }
+}

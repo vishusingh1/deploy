@@ -1,0 +1,53 @@
+<gen>
+    <!-- OP:CREATE_ONE -->
+
+    <!-- color !is-many-->
+    <prop ref-id="color--co" name="bro:prop-name" class="w-full">
+        <div name="cont" class="flex flex-row items-center justify-center w-full gap-4">
+            <input name="bro:prop-name" type="color"  placeholder="bro:prop-name" action="oninput-update-m" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+        </div>
+    </prop>
+
+    <!-- color is-many-->
+    <prop ref-id="color--cm" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <div name="cont" class="flex items-center justify-between w-full pr-10  ">
+            <input name="bro:prop-name" b-idx="{idx}" type="color"  placeholder="bro:prop-name" action="oninput-update-m-idx" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+        </div>
+    </prop>
+
+    <!-- OP:GET_ONE -->
+
+    <!-- color !is-many -->
+    <prop ref-id="color--go" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+        <span class="h-6 w-6 bg-[\${M.bro:prop-name}]"></span>
+        <span>{M.bro:prop-name}</span>
+    </prop>
+
+    <!-- color is-many -->
+    <prop ref-id="color--gm" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <span class="h-6 w-6 bg-[\${V}]"></span>
+        <span>{V?.v}</span>
+    </prop>
+
+
+    <!-- OP:UPDATE_ONE -->
+
+    <!-- color !is-many -->
+    <prop ref-id="color--uo" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <input name="bro:prop-name" type="color" value="{M.bro:prop-name || '#000000'}" placeholder="bro:prop-name" action="oninput-update-m" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+    </prop>
+
+    <!-- color is-many -->
+    <prop ref-id="color--um" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <div name="cont" class="flex items-center justify-between w-full pr-10">
+            <input name="bro:prop-name" b-idx="{idx}" type="color" value="{V?.v || '#000000'}" placeholder="bro:prop-name" action="oninput-update-m-idx" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+        </div>
+    </prop>
+
+</gen>

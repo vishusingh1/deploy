@@ -1,0 +1,96 @@
+<gen>
+    <!-- OP:CREATE_ONE -->
+
+    <!-- boolean !is-many  checkbox-->
+    <prop ref-id="boolean--co--checkbox" name="bro:prop-name" class="w-full">
+        <label class="inline-flex cursor-pointer items-center label">
+            <input name="bro:prop-name" type="checkbox" action="oninput-update-m"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500" />
+            <span class="text-sm font-medium text-gray-800 ms-3">bro:prop-name</span>
+        </label> 
+    </prop>
+
+    <!-- boolean !is-many toggle-->
+    <prop ref-id="boolean--co--toggle" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <label class="inline-flex cursor-pointer items-center label">
+            <input name="bro:prop-name" type="checkbox" action="oninput-update-m"  class="peer sr-only" />
+            <div class="relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all peer-checked:bg-violet-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-violet-300 rtl:peer-checked:after:-translate-x-full"></div>
+            <span class="text-sm font-medium text-gray-800 ms-3">bro:prop-name</span>
+        </label>
+    </prop>
+
+    <!-- boolean is-many checkbox-->
+    <prop ref-id="boolean--cm--checkbox" name="bro:prop-name" class="w-full flex justify-between items-center pr-10">
+        <label class="inline-flex cursor-pointer items-center label">
+            <input name="bro:prop-name" type="checkbox" b-idx="{idx}" action="oninput-update-m-idx"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500" />
+            <span class="text-sm font-medium text-gray-800 ms-3">bro:prop-name</span>
+        </label> 
+        <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+    </prop>
+
+    <!-- boolean is-many toggle-->
+    <prop ref-id="boolean--cm--toggle" name="bro:prop-name" class="w-full flex justify-between items-center pr-10">
+        <label class="inline-flex cursor-pointer items-center label">
+            <input name="bro:prop-name" type="checkbox" b-idx="{idx}" action="oninput-update-m-idx"  class="peer sr-only" />
+            <div class="relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all peer-checked:bg-violet-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-violet-300 rtl:peer-checked:after:-translate-x-full"></div>
+            <span class="text-sm font-medium text-gray-800 ms-3">bro:prop-name</span>
+        </label> 
+        <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+    </prop>
+
+    <!-- OP:GET_ONE -->
+
+     <!-- boolean !is-many -->
+    <prop  ref-id="boolean--go" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+        <span>{`${M.bro:prop-name || 'false'}`}</span>
+    </prop>
+
+    <!-- boolean is-many -->
+    <prop ref-id="boolean--gm" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <span>{`${V?.v || 'false'}`}</span>
+    </prop>
+    
+
+    <!-- OP:UPDATE_ONE -->
+
+     <!-- boolean !is-many checkbox-->
+     <prop ref-id="boolean--uo--checkbox" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <label class="inline-flex cursor-pointer items-center label">
+            <input name="bro:prop-name" type="checkbox" action="oninput-update-m" checked="{M.bro:prop-name || false}" class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500" />
+            <span class="text-sm font-medium text-gray-800 ms-3">bro:prop-name</span>
+          </label> 
+    </prop>
+
+    <!-- boolean !is-many toggle-->
+    <prop ref-id="boolean--uo--toggle" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <label class="inline-flex cursor-pointer items-center label">
+            <input name="bro:prop-name" type="checkbox" action="oninput-update-m" checked="{M.bro:prop-name || false}"  class="peer sr-only" />
+            <div class="relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all peer-checked:bg-violet-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-violet-300 rtl:peer-checked:after:-translate-x-full"></div>
+            <span class="text-sm font-medium text-gray-800 ms-3">bro:prop-name</span>
+        </label>
+    </prop>
+
+    <!-- boolean is-many checkbox-->
+    <prop ref-id="boolean--uo--checkbox" name="bro:prop-name" class="w-full flex justify-between items-center pr-10">
+        <label class="inline-flex cursor-pointer items-center label">
+            <input name="bro:prop-name" type="checkbox" action="oninput-update-m-idx" checked="{V?.v || false}" class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500" />
+            <span class="text-sm font-medium text-gray-800 ms-3">bro:prop-name</span>
+        </label> 
+        <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+    </prop>
+
+    <!-- boolean is-many toggle-->
+    <prop ref-id="boolean--uo--toggle" name="bro:prop-name" class="w-full flex justify-between items-center pr-10">
+        <label class="inline-flex cursor-pointer items-center label">
+            <input name="bro:prop-name" type="checkbox" action="oninput-update-m-idx" checked="{V?.v || false}"  class="peer sr-only" />
+            <div class="relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all peer-checked:bg-violet-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-violet-300 rtl:peer-checked:after:-translate-x-full"></div>
+            <span class="text-sm font-medium text-gray-800 ms-3">bro:prop-name</span>
+        </label>
+    </prop>
+
+</gen>

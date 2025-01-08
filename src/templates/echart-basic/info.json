@@ -1,0 +1,9 @@
+{
+    "name": "echart-basic",
+    "version": "1.0.0",
+    "icon": "<svg>...</svg>",
+    "description": "ECharts Graph",
+    "scope": [],
+    "dependencies": {},
+    "devDependencies": {}
+}

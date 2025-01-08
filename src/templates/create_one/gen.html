@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CREATE ONE GENERATOR</title>
+</head>
+
+<body>
+    <info>
+        <notice>
+                This is the generator template for CREATE_ONE. This is used once everytime a new component is created. After that the component is independent of this template. Because the user can edit and modify the component as they wish. This is just a starting point.
+                So, it will not be copied to each component like the TSX template is copied.
+
+                If this (gen.html) is not found for any component we will use the default one available. Which will be at src/templates/default/gen.html
+        </notice>
+    </info>
+
+    <gen>
+
+        <div id="error"     class="bg-red-400 p-4"></div>
+        <div id="warning"   class="bg-yellow-400 p-4"></div>
+
+        <!-- var works with name:value but sometime we would have no value but another attr e.g: class. This is only so that we can use tailwind css in vscode editor. Which will autosuggest and show colors-->
+        <var name="a" value="abc"></var>
+        <var name="input-class" class=" w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600"></var>
+        <var name="delete-btn-file" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 absolute top-1.5 md:my-auto md:top-auto right-1.5"></var>
+        <var name="delete-btn" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150" ></var>
+        <var name="create-btn-class" class="bg-[var(--primary-500)] hover:bg-[var(--primary-600)] text-white font-medium py-2 px-6 rounded-xl focus:outline-none w-fit text-sm" ></var>
+        <var name="label-class" class="text-sm font-medium text-gray-800"></var>
+        <var name="cont-class-v1" class="flex flex-col gap-1.5"></var>
+        <var name="cont-class-v2" class="flex flex-row items-center gap-4"></var>
+        <var name="checkbox-class" class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500"></var>
+        <var name="toggle-class" class="relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all peer-checked:bg-violet-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-violet-300 rtl:peer-checked:after:-translate-x-full"></var>
+        <!-- make sure that variable value is set with the attr, If not the first attr other than name will be taken. e.g: class above -->
+
+
+        <delete-btn-svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </delete-btn-svg>
+
+        <add-btn-svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+        </add-btn-svg>
+
+        <link-svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M10.0002 13.7031C10.4297 14.2772 10.9776 14.7523 11.6067 15.096C12.2359 15.4398 12.9317 15.6442 13.6468 15.6954C14.362 15.7466 15.0798 15.6435 15.7515 15.3929C16.4233 15.1423 17.0333 14.7502 17.5402 14.2431L20.5402 11.2431C21.451 10.3001 21.955 9.03707 21.9436 7.72608C21.9322 6.4151 21.4063 5.16104 20.4793 4.234C19.5523 3.30696 18.2982 2.78111 16.9872 2.76972C15.6762 2.75833 14.4132 3.2623 13.4702 4.17309L11.7502 5.88309M14.0002 11.7031C13.5707 11.129 13.0228 10.6539 12.3936 10.3102C11.7645 9.96639 11.0687 9.76197 10.3535 9.71076C9.63841 9.65954 8.92061 9.76272 8.24885 10.0133C7.5771 10.2639 6.96709 10.656 6.4602 11.1631L3.4602 14.1631C2.54941 15.1061 2.04544 16.3691 2.05683 17.6801C2.06822 18.9911 2.59407 20.2451 3.52111 21.1722C4.44815 22.0992 5.70221 22.6251 7.01319 22.6365C8.32418 22.6479 9.58719 22.1439 10.5302 21.2331L12.2402 19.5231" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </link-svg>
+
+
+
+        <delete-prop>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class=" bro:var:delete-btn-file ">
+                <extend with="delete-btn-svg" ></extend>
+            </button>
+        </delete-prop>
+
+
+        <create-one-btn>
+            <div class="flex-row flex justify-end items-end pt-5 gap-4">
+                <button  op="create_one" class="bro:var:create-btn-class" condition="CS.status !== 'validate-failed'">
+                    CREATE
+                </button>
+            </div>
+        </create-one-btn>
+
+
+        <React bro:type="react" id="react" Name="COMPONENT"></React>
+
+        <select-option>
+            <div>
+                <option value="bro:prop-option"  selected="{M.bro:prop-name === 'bro:prop-option'}" >bro:prop-option</option>
+            </div>
+        </select-option>
+
+        <any-one-of-options>
+            <label class="inline-flex cursor-pointer items-center label">
+                <input name="{'bro:prop-name' + idx}" type="radio"  value="bro:prop-option"  class="bro:var:checkbox-class" />
+                <span class="bro:var:label-class ms-3">bro:prop-option</span>
+            </label>
+        </any-one-of-options>
+
+        <many-of-options>
+            <label class="inline-flex cursor-pointer items-center label">
+                <input name="{'bro:prop-option' + idx}" type="checkbox"  value="bro:prop-option"  class="bro:var:checkbox-class" />
+                <span class="bro:var:label-class ms-3">bro:prop-option</span>
+            </label>
+        </many-of-options>
+
+        <select-prop>
+            <!-- when more than one children is present we will use a best case scenario to find which node to apply -->
+            <!-- we will take bro: attr in the node and match with the prop/model to see which one has more number of matches -->
+            <!-- E.g: bro:type="boolean" bro:is-many="true" => for boolean.is_many two attr is matching so we will use that instead of the one where is-many isn't present -->
+
+            <!-- boolean !is-many  checkbox-->
+           <prop bro:type="boolean" bro:is-many="false" ref="boolean--co--checkbox"></prop>
+
+
+            <!-- boolean is-many checkbox-->
+            <prop bro:type="boolean" bro:is-many="true" ref="boolean--cm--checkbox"></prop>
+
+           <!-- serial !is-many -->
+            <prop bro:type="serial" bro:is-many="false" ref="serial--co"></prop>
+
+            <!-- serial is-many -->
+            <prop bro:type="serial" bro:is-many="true" ref="serial--cm"></prop>
+
+            <!-- text !is-many -->
+            <prop bro:type="text" bro:is-many="false" ref="text--co"></prop>
+
+            <!-- text is-many -->
+            <prop bro:type="text" bro:is-many="true" ref="text--cm"></prop>
+
+            <!-- rich_text !is-many -->
+            <prop bro:type="rich_text" bro:is-many="false" ref="rich_text--co"></prop>
+            
+            <!-- rich_text is-many -->
+            <prop bro:type="rich_text" bro:is-many="true" ref="rich_text--cm"></prop>
+            
+
+
+            <!-- number !is-many -->
+            <prop bro:type="number" bro:is-many="false" ref="number--co"></prop>
+
+            <!-- number is-many --> 
+             <prop bro:type="number" bro:is-many="true" ref="number--cm"></prop>
+
+
+            <!-- number !is-many -->
+            <prop bro:type="number" bro:is-many="false" ref="number--co"></prop>
+            
+            <!-- number is-many -->
+            <prop bro:type="number" bro:is-many="true" ref="number--cm"></prop>
+
+        
+
+            <!-- date !is-many -->
+            <prop bro:type="date" bro:is-many="false" ref="date--co"></prop>
+
+            <!-- date is-many -->
+            <prop bro:type="date" bro:is-many="true" ref="date--cm"></prop>
+
+            <!-- datetime !is-many -->
+            <prop bro:type="datetime" bro:is-many="false" ref="datetime--co"></prop>
+
+            <!-- datetime is-many -->
+            <prop bro:type="datetime" bro:is-many="true" ref="datetime--cm"></prop>
+
+            <!-- time !is-many -->
+            <prop bro:type="time" bro:is-many="false" ref="time--co"></prop>
+
+            <!-- time is-many -->
+            <prop bro:type="time" bro:is-many="true" ref="time--cm"></prop>
+
+            <!-- password !is-many -->
+            <prop bro:type="password" bro:is-many="false" ref="password--co"></prop>
+
+            <!-- password is-many-->
+            <prop bro:type="password" bro:is-many="true" ref="password--cm"></prop>
+
+            <!-- color !is-many-->
+            <prop bro:type="color" bro:is-many="false" ref="color--co"></prop>
+
+            <!-- color is-many-->
+            <prop bro:type="color" bro:is-many="true" ref="color--cm"></prop>
+
+            <!-- url !is-many-->
+            <prop bro:type="url" bro:is-many="false" ref="url--co"></prop>
+
+            <!-- url is-many-->
+            <prop bro:type="url" bro:is-many="true" ref="url--cm"></prop>
+
+            <!-- email !is-many -->
+            <prop bro:type="email" bro:is-many="false" ref="email--co"></prop>
+
+            <!-- email is-many-->
+            <prop bro:type="email" bro:is-many="true" ref="email--cm"></prop>
+
+            <!-- description !is-many -->
+            <prop bro:type="description" bro:is-many="false" ref="description--co"></prop>
+
+            <!-- description is-many-->
+             <prop bro:type="description" bro:is-many="true" ref="description--cm"></prop>
+            
+            <!-- file !is-many drag n drop-->
+            <prop bro:type="file" bro:is-many="false" ref="file--co--dnd" ></prop>
+
+            <!-- file !is-many html -->
+            <prop bro:type="file" bro:is-many="false" ref="file--co--html" ></prop>
+
+
+            <!-- file is-many drag n drop-->
+            <prop bro:type="file" bro:is-many="true" ref="file--cm--dnd" ></prop>
+
+            <!-- file is-many html -->
+            <prop bro:type="file" bro:is-many="true" ref="file--cm--html" ></prop>
+
+            <!-- image !is-many drg n drop-->
+            <prop bro:type="image" bro:is-many="false" ref="image--co--dnd" ></prop>
+
+            <!-- image !is-many html -->
+            <prop bro:type="image" bro:is-many="false" ref="image--co--html" ></prop>
+
+            <!-- image is-many drag n drop -->
+            <prop bro:type="image" bro:is-many="true" ref="image--cm--dnd" ></prop>
+
+            <!-- image is-many html -->
+            <prop bro:type="image" bro:is-many="true" ref="image--cm--html" ></prop>
+
+            <!-- any_one_of !is-many datalist-->
+            <prop bro:type="any_one_of" bro:is-many="false" ref="any_one_of--co--datalist" ></prop>
+
+            <!-- any-one-of !is-many dropdown -->
+            <prop bro:type="any_one_of" bro:is-many="false" ref="any_one_of--co--dropdown" ></prop>
+
+            <!-- any_one_of !is-many radio-->
+            <prop bro:type="any_one_of" bro:is-many="false" ref="any_one_of--co--radio" ></prop>
+
+           
+
+            <!-- any_one_of is-many datalist-->
+            <prop bro:type="any_one_of" bro:is-many="true" ref="any_one_of--cm--datalist" ></prop>
+
+             <!-- any-one-of is-many dropdown -->
+            <prop bro:type="any_one_of" bro:is-many="true" ref="any_one_of--cm--dropdown" ></prop>
+            
+            <!-- any_one_of is-many radio-->
+            <prop bro:type="any_one_of" bro:is-many="true" ref="any_one_of--cm--radio" ></prop>
+            
+
+            <!--many-of !is-many checklist-->
+            <prop bro:type="many_of" bro:is-many="false" ref="many_of--co--checklist"></prop>
+
+            <!-- many-of !is-many search -->
+            <prop bro:type="many_of" bro:is-many="false" ref="many_of--co--chips" ></prop>
+
+            
+
+            <!-- many-of is-many checklist-->
+            <prop bro:type="many_of" bro:is-many="true" ref="many_of--cm--checklist" ></prop>
+
+            <!-- many-of is-many search -->
+            <prop bro:type="many_of" bro:is-many="true" ref="many_of--cm--chips" ></prop>
+
+            
+            <!-- relations !is-many -->
+            <prop bro:prop-is-rel="true" bro:is-many="false" name="bro:prop-name">
+                <div>
+                    <!-- <div class="w-full text-primary rounded px-2">{M && (M.bro:prop-name?.id || M.id)}</div>	 -->
+                    <div class="w-full text-primary rounded px-2">{GFN.GET(M, ["bro:prop-name", "name"]) || GFN.GET(M, ["bro:prop-name", "id"])}</div>
+                </div> 
+
+                <!-- show-relation-selector => which one? there could be multiple relations -->
+                <div class="p-2 px-4 border bg-zinc-100 rounded" onclick="{(e) => {set_show_relation_selector(s => !s)}}">Select bro:prop-name</div>
+
+                <!-- @todo: create logic for showing popup/drawer/inline -->
+                <!-- @todo: we can also use extend and show variations here -->
+                <div condition="show_relation_selector">
+                    <div class="flex flex-col p-2">
+                        <p>SELECT ONE or CREATE</p>
+
+                        <!-- this will take the model related to the prop here -->
+                        <!-- This will now has to use get_many/gen.html file  -->
+                        <!-- This will automatically take care of recursion so that we don't have infinite loop -->
+                        <model comp-temp="get_many" op="get_many"></model>
+                        <model comp-temp="create_one" op="create_one"></model>
+
+                    </div>
+                </div>
+            </prop>
+
+
+
+            <!-- relations is-many -->
+            <prop bro:prop-is-rel="true" bro:is-many="true" name="bro:prop-name">
+                <div name="cont" class="flex flex-row items-center justify-center w-full gap-4">
+                    <div class="flex flex-col gap-1">
+                        <selected>
+                            <div class="w-full text-primary rounded px-2">{M && (M.name || M.id)}</div>	
+                        </selected> 
+
+        
+                        <!-- show-relation-selector => which one? there could be multiple relations -->
+                        <div class="p-2 px-4 border bg-zinc-100 rounded" onclick="{(e) => {set_show_relation_selector(s => !s)}}" >Select bro:prop-name</div>
+        
+                        <!-- @todo: create logic for showing popup/drawer/inline -->
+                        <!-- @todo: we can also use extend and show variations here -->
+                        <selector condition="show_relation_selector">
+                            <div class="flex flex-col p-2">
+                                <p>SELECT ONE or CREATE</p>
+        
+                                <!-- this will take the model related to the prop here -->
+                                <!-- This will now has to use get_many/gen.html file  -->
+                                <!-- This will automatically take care of recursion so that we don't have infinite loop -->
+                                <model comp-temp="get_many" op="get_many"></model>
+                                <model comp-temp="create_one" op="create_one"></model>
+        
+                            </div>
+                        </selector>
+                    </div>
+                    <extend with="delete-prop" ></extend>
+                </div>
+            </prop>
+
+        </select-prop>
+
+
+        
+        
+        <select-cont>
+
+
+             <!-- !is-many label, input col -->
+             <cont bro:is-many="false" name="CONT-bro:prop-name" class="bro:var:cont-class-v1">
+                <label class="bro:var:label-class" for="bro:prop-name">bro:prop-name</label>
+                <extend with="select-prop" ></extend>
+            </cont>
+
+            <!-- !is-many label, input row -->
+            <cont bro:is-many="false" name="CONT-bro:prop-name" class="bro:var:cont-class-v2">
+                <label class="bro:var:label-class" for="bro:prop-name">bro:prop-name</label>
+                <extend with="select-prop" ></extend>
+            </cont>
+
+
+            <!-- is-many -->
+            <cont bro:is-many="true"  name="CONT-bro:prop-name" class="w-full flex flex-col gap-2">
+                <div class="block text-gray-700 text-sm font-medium mb-2 capitalize">bro:prop-name</div>
+                <extend with="select-prop"></extend>
+                
+                <button type="bro:prop-type" action="add-prop-item" name="bro:prop-name" is-rel="bro:is-rel" class="w-10 h-10 flex justify-center items-center mx-auto border border-gray-100 bg-gray-200 hover:border-gray-200 text-gray-700 text-3xl rounded-lg ">
+                    <extend with="add-btn-svg" ></extend>
+                </button>
+            </cont>
+
+
+        </select-cont>
+
+
+
+
+        <main>
+            <model mid="bro:m-id" name="bro:m-name" op="create_one" class="w-full flex flex-col bg-white p-2 rounded shadow ">
+                <div name="title" class="text-2xl font-medium text-gray-600 text-left">
+                    CREATE ONE OF bro:m-name
+                </div>
+                <!-- while generating we will POSTPROCESS this html. First bro:m-name get's prplace by model.name -->
+                <!-- Then fn:nametotitle will convert the m-name => model.name to a title format. E.g: user_profile_configuration => User Profile Configuration -->
+                <!-- we have a series of functions that can be put together E.g: fn:a.fn:b.fn:c => will apply fn a, b, c in that order -->
+
+
+                <!-- data -->
+                <div name="bro:m-name-data" class="flex flex-col gap-4 p-4">
+
+
+                    
+                    <!-- <each-prop prop-names="name, image" | include-names="" | exclude-names="" /> -->
+                    <!-- <each-prop prop-types="image, file" | include-types="" | exclude-types="" /> -->
+                    <each-prop exclude-names="id, created_at, created_by, updated_at, updated_by">
+                        <extend with="select-cont" ></extend>
+                    </each-prop>
+
+                </div>
+
+                <extend with="create-one-btn"></extend>
+            </model>
+        </main>
+    </gen>
+</body>
+
+</html>

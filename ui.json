@@ -1,0 +1,3901 @@
+{
+    "root": {
+        "TYPE": "root",
+        "PARENT": "",
+        "bid": "root",
+        "FINDEX": "a0",
+        "figmaid": "564:567"
+    },
+    "b760fw": {
+        "TYPE": "span",
+        "PARENT": "b6rnd7",
+        "bid": "b760fw",
+        "FINDEX": "a0",
+        "text": "Login to {AS.APP.name}",
+        "class": "bg-gradient-to-r text-transparent from-blue-500 to-purple-500 bg-clip-text",
+        "figmaid": "564:568"
+    },
+    "b6rnd7": {
+        "TYPE": "div",
+        "PARENT": "b0ej8z",
+        "bid": "b6rnd7",
+        "FINDEX": "a0",
+        "class": "text-3xl font-bold text-center text-white",
+        "figmaid": "564:569"
+    },
+    "b4ghv2": {
+        "TYPE": "label",
+        "PARENT": "b2e1u2",
+        "bid": "b4ghv2",
+        "FINDEX": "a0",
+        "text": "Email",
+        "htmlfor": "email",
+        "class": "block text-gray-700 text-sm font-bold mb-2",
+        "figmaid": "564:570"
+    },
+    "bbz9iy": {
+        "TYPE": "input",
+        "PARENT": "b2e1u2",
+        "bid": "bbz9iy",
+        "FINDEX": "a1",
+        "type": "email",
+        "name": "email",
+        "oninput": "{on_email_input}",
+        "placeholder": "Email Address",
+        "class": "shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-md",
+        "figmaid": "564:571"
+    },
+    "b2e1u2": {
+        "TYPE": "div",
+        "PARENT": "b0ej8z",
+        "bid": "b2e1u2",
+        "FINDEX": "a2",
+        "figmaid": "564:572"
+    },
+    "bw4y7e": {
+        "TYPE": "EmailSending",
+        "PARENT": "b5wqu9",
+        "bid": "bw4y7e",
+        "FINDEX": "a0",
+        "figmaid": "564:573"
+    },
+    "b5wqu9": {
+        "TYPE": "button",
+        "PARENT": "b2o7o9",
+        "bid": "b5wqu9",
+        "FINDEX": "a0",
+        "class": "flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 w-full justify-center",
+        "figmaid": "564:574"
+    },
+    "b2o7o9": {
+        "TYPE": "div",
+        "PARENT": "b0ej8z",
+        "bid": "b2o7o9",
+        "FINDEX": "a3",
+        "class": "flex flex-col items-center justify-center w-80 mx-auto",
+        "onclick": "{on_email_send}",
+        "figmaid": "564:575"
+    },
+    "b1e3el": {
+        "TYPE": "svg",
+        "PARENT": "by1b51",
+        "bid": "b1e3el",
+        "FINDEX": "a0",
+        "class": "h-6 w-6 mr-2",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "800",
+        "height": "800",
+        "viewBox": "-0.5 0 48 48",
+        "html": "<svg class=\"h-6 w-6 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"800\" viewBox=\"-0.5 0 48 48\" bid=\"b1e3el\"><g fill=\"none\" fill-rule=\"evenodd\"><path d=\"M9.827 24c0-1.524.253-2.986.705-4.356l-7.909-6.04A23.456 23.456 0 0 0 .213 24c0 3.737.868 7.26 2.407 10.388l7.905-6.05A13.885 13.885 0 0 1 9.827 24\" fill=\"#FBBC05\"></path><path d=\"M23.714 10.133c3.311 0 6.302 1.174 8.652 3.094L39.202 6.4C35.036 2.773 29.695.533 23.714.533a23.43 23.43 0 0 0-21.09 13.071l7.908 6.04a13.849 13.849 0 0 1 13.182-9.51\" fill=\"#EB4335\"></path><path d=\"M23.714 37.867a13.849 13.849 0 0 1-13.182-9.51l-7.909 6.038a23.43 23.43 0 0 0 21.09 13.072c5.732 0 11.205-2.036 15.312-5.849l-7.507-5.804c-2.118 1.335-4.786 2.053-7.804 2.053\" fill=\"#34A853\"></path><path d=\"M46.145 24c0-1.387-.213-2.88-.534-4.267H23.714V28.8h12.604c-.63 3.091-2.346 5.468-4.8 7.014l7.507 5.804c4.314-4.004 7.12-9.969 7.12-17.618\" fill=\"#4285F4\"></path></g></svg>",
+        "figmaid": "564:576"
+    },
+    "bx8hg9": {
+        "TYPE": "span",
+        "PARENT": "by1b51",
+        "bid": "bx8hg9",
+        "FINDEX": "a1",
+        "text": "Continue with Google",
+        "figmaid": "564:577"
+    },
+    "by1b51": {
+        "TYPE": "button",
+        "PARENT": "bzz9my",
+        "bid": "by1b51",
+        "FINDEX": "a0",
+        "class": "flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 w-full justify-center",
+        "figmaid": "564:578"
+    },
+    "bzz9my": {
+        "TYPE": "div",
+        "PARENT": "b0ej8z",
+        "bid": "bzz9my",
+        "FINDEX": "a5",
+        "class": "flex items-center justify-center w-80 mx-auto",
+        "onclick": "{on_google_login}",
+        "figmaid": "564:579"
+    },
+    "bl5xlw": {
+        "TYPE": "svg",
+        "PARENT": "behhjb",
+        "bid": "bl5xlw",
+        "FINDEX": "a0",
+        "class": "h-6 w-6 mr-2",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 23 23",
+        "html": "<svg class=\"h-6 w-6 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 23 23\" bid=\"bl5xlw\"><path fill=\"#f3f3f3\" d=\"M0 0h23v23H0z\"></path><path fill=\"#f35325\" d=\"M1 1h10v10H1z\"></path><path fill=\"#81bc06\" d=\"M12 1h10v10H12z\"></path><path fill=\"#05a6f0\" d=\"M1 12h10v10H1z\"></path><path fill=\"#ffba08\" d=\"M12 12h10v10H12z\"></path></svg>",
+        "figmaid": "564:580"
+    },
+    "bpwjsy": {
+        "TYPE": "span",
+        "PARENT": "behhjb",
+        "bid": "bpwjsy",
+        "FINDEX": "a1",
+        "text": "Continue with Microsoft",
+        "figmaid": "564:581"
+    },
+    "behhjb": {
+        "TYPE": "button",
+        "PARENT": "brrzqk",
+        "bid": "behhjb",
+        "FINDEX": "a0",
+        "class": "flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 w-full justify-center",
+        "figmaid": "564:582"
+    },
+    "brrzqk": {
+        "TYPE": "div",
+        "PARENT": "b0ej8z",
+        "bid": "brrzqk",
+        "FINDEX": "a6",
+        "class": "flex items-center justify-center w-80 mx-auto",
+        "onclick": "{on_microsoft_login}",
+        "figmaid": "564:583"
+    },
+    "bw68ix": {
+        "TYPE": "svg",
+        "PARENT": "b3ckmz",
+        "bid": "bw68ix",
+        "FINDEX": "a0",
+        "class": "h-6 w-6 mr-2",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 0 23 23",
+        "html": "<svg class=\"h-6 w-6 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 23 23\" bid=\"bw68ix\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.705 0C5.232 0 0 5.271 0 11.791c0 5.212 3.352 9.624 8.003 11.186.581.117.794-.254.794-.566 0-.273-.019-1.21-.019-2.187-3.256.703-3.934-1.406-3.934-1.406-.523-1.367-1.299-1.718-1.299-1.718-1.066-.722.078-.722.078-.722 1.182.078 1.802 1.21 1.802 1.21 1.046 1.796 2.732 1.288 3.41.976.097-.761.407-1.288.736-1.581-2.597-.273-5.329-1.288-5.329-5.818 0-1.288.465-2.343 1.201-3.162-.116-.293-.523-1.503.116-3.124 0 0 .988-.312 3.217 1.21a11.253 11.253 0 0 1 2.926-.391c.988 0 1.996.137 2.926.391 2.229-1.523 3.217-1.21 3.217-1.21.64 1.62.232 2.831.116 3.124.756.82 1.202 1.874 1.202 3.162 0 4.529-2.732 5.525-5.348 5.818.426.371.794 1.074.794 2.186 0 1.581-.019 2.85-.019 3.241 0 .312.213.684.794.566a11.782 11.782 0 0 0 8.003-11.186C23.409 5.271 18.157 0 11.705 0z\" fill=\"#24292f\"></path></svg>",
+        "figmaid": "564:584"
+    },
+    "bfdtfm": {
+        "TYPE": "span",
+        "PARENT": "b3ckmz",
+        "bid": "bfdtfm",
+        "FINDEX": "a1",
+        "text": "Continue with Github",
+        "figmaid": "564:585"
+    },
+    "b3ckmz": {
+        "TYPE": "button",
+        "PARENT": "bs6s19",
+        "bid": "b3ckmz",
+        "FINDEX": "a0",
+        "class": "flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 w-full justify-center",
+        "figmaid": "564:586"
+    },
+    "bs6s19": {
+        "TYPE": "div",
+        "PARENT": "b0ej8z",
+        "bid": "bs6s19",
+        "FINDEX": "a7",
+        "class": "flex items-center justify-center w-80 mx-auto",
+        "onclick": "{on_github_login}",
+        "figmaid": "564:587"
+    },
+    "bt31eq": {
+        "TYPE": "svg",
+        "PARENT": "bg8jr2",
+        "bid": "bt31eq",
+        "FINDEX": "a0",
+        "class": "h-6 w-6 mr-2",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 -2 44 44",
+        "html": "<svg class=\"h-6 w-6 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -2 44 44\" bid=\"bt31eq\"><path d=\"M44 40h-9.725V25.938c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V40h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526C39.211 12.566 44 16.474 44 24.891V40ZM5.18 9.428h-.063C2.013 9.428 0 7.351 0 4.718 0 2.034 2.072 0 5.239 0c3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718Zm-4.07 3.399h8.576V40H1.11V12.827Z\" fill=\"#007EBB\" fill-rule=\"evenodd\"></path></svg>",
+        "figmaid": "564:588"
+    },
+    "bvo4xy": {
+        "TYPE": "span",
+        "PARENT": "bg8jr2",
+        "bid": "bvo4xy",
+        "FINDEX": "a1",
+        "text": "Continue with LinkedIn",
+        "figmaid": "564:589"
+    },
+    "bg8jr2": {
+        "TYPE": "button",
+        "PARENT": "bw4w2d",
+        "bid": "bg8jr2",
+        "FINDEX": "a0",
+        "class": "flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 w-full justify-center",
+        "figmaid": "564:590"
+    },
+    "bw4w2d": {
+        "TYPE": "div",
+        "PARENT": "b0ej8z",
+        "bid": "bw4w2d",
+        "FINDEX": "a8",
+        "class": "flex items-center justify-center w-80 mx-auto",
+        "onclick": "{on_linkedin_login}",
+        "figmaid": "564:591"
+    },
+    "bu5bys": {
+        "TYPE": "svg",
+        "PARENT": "bkqslh",
+        "bid": "bu5bys",
+        "FINDEX": "a0",
+        "class": "h-6 w-6 mr-2",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "viewBox": "0 -4 48 48",
+        "html": "<svg class=\"h-6 w-6 mr-2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -4 48 48\" bid=\"bu5bys\"><path d=\"M48 4.735a19.235 19.235 0 0 1-5.655 1.59A10.076 10.076 0 0 0 46.675.74a19.395 19.395 0 0 1-6.257 2.447C38.627 1.225 36.066 0 33.231 0c-5.435 0-9.844 4.521-9.844 10.098 0 .791.085 1.56.254 2.3-8.185-.423-15.44-4.438-20.3-10.555a10.281 10.281 0 0 0-1.332 5.082c0 3.502 1.738 6.593 4.38 8.405a9.668 9.668 0 0 1-4.462-1.26v.124c0 4.894 3.395 8.977 7.903 9.901a9.39 9.39 0 0 1-2.595.356 9.523 9.523 0 0 1-1.854-.18c1.254 4.01 4.888 6.932 9.199 7.01-3.37 2.71-7.618 4.325-12.23 4.325-.795 0-1.58-.047-2.35-.139C4.359 38.327 9.537 40 15.096 40c18.115 0 28.019-15.385 28.019-28.73 0-.439-.009-.878-.026-1.308A20.211 20.211 0 0 0 48 4.735\" fill=\"#00AAEC\" fill-rule=\"evenodd\"></path></svg>",
+        "figmaid": "564:592"
+    },
+    "b8igad": {
+        "TYPE": "span",
+        "PARENT": "bkqslh",
+        "bid": "b8igad",
+        "FINDEX": "a1",
+        "text": "Continue with Twitter",
+        "figmaid": "564:593"
+    },
+    "bkqslh": {
+        "TYPE": "button",
+        "PARENT": "bibmq1",
+        "bid": "bkqslh",
+        "FINDEX": "a0",
+        "class": "flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 w-full justify-center",
+        "figmaid": "564:594"
+    },
+    "bibmq1": {
+        "TYPE": "div",
+        "PARENT": "b0ej8z",
+        "bid": "bibmq1",
+        "FINDEX": "a9",
+        "class": "flex items-center justify-center w-80 mx-auto",
+        "onclick": "{on_twitter_login}",
+        "figmaid": "564:595"
+    },
+    "b0ej8z": {
+        "TYPE": "div",
+        "PARENT": "bp2hs3",
+        "bid": "b0ej8z",
+        "FINDEX": "a0",
+        "class": "bg-white rounded px-8 pt-6 pb-8 w-full max-w-md space-y-6",
+        "figmaid": "564:596"
+    },
+    "bp2hs3": {
+        "TYPE": "div",
+        "PARENT": "login",
+        "bid": "bp2hs3",
+        "FINDEX": "a0",
+        "class": "flex flex-col justify-center items-center bg-white py-5",
+        "figmaid": "564:597"
+    },
+    "login": {
+        "TYPE": "login",
+        "PARENT": "ui",
+        "bid": "login",
+        "FINDEX": "a0",
+        "figmaid": "564:598",
+        "class": ""
+    },
+    "menu": {
+        "TYPE": "div",
+        "PARENT": "main",
+        "bid": "menu",
+        "FINDEX": "a0",
+        "text": "",
+        "name": "menu",
+        "class": "min-h-[64px] w-full h-fit overflow-visible flex gap-4 items-center justify-center bg-[#FFFFFF]",
+        "condition": "",
+        "figmaid": "564:599"
+    },
+    "pages": {
+        "TYPE": "pages",
+        "PARENT": "main",
+        "bid": "pages",
+        "FINDEX": "a2",
+        "class": "w-full flex flex-col items-center justify-center z-40",
+        "figmaid": "564:600",
+        "name": "",
+        "first-page": "start"
+    },
+    "main": {
+        "TYPE": "main",
+        "PARENT": "ui",
+        "bid": "main",
+        "FINDEX": "a1",
+        "class": "bg-white body-font",
+        "b-login": "true",
+        "figmaid": "564:601"
+    },
+    "bkftjo": {
+        "TYPE": "patterns",
+        "PARENT": "ui",
+        "bid": "bkftjo",
+        "FINDEX": "a4",
+        "text": "",
+        "figmaid": "564:602"
+    },
+    "ui": {
+        "TYPE": "ui",
+        "PARENT": "root",
+        "bid": "ui",
+        "FINDEX": "a0",
+        "id": "ui-1",
+        "name": "APPUI",
+        "figmaid": "564:603"
+    },
+    "components": {
+        "TYPE": "components",
+        "PARENT": "ui",
+        "bid": "components",
+        "FINDEX": "a2",
+        "figmaid": "564:604",
+        "class": ""
+    },
+    "start": {
+        "TYPE": "page",
+        "PARENT": "pages",
+        "bid": "start",
+        "FINDEX": "a0",
+        "name": "START",
+        "class": "",
+        "figmaid": "564:618",
+        "condition": "",
+        "findex": "a0"
+    },
+    "elements": {
+        "TYPE": "elements",
+        "PARENT": "ui",
+        "bid": "elements",
+        "FINDEX": "a3",
+        "figmaid": "564:621",
+        "class": ""
+    },
+    "bjfqd6": {
+        "TYPE": "header",
+        "PARENT": "menu",
+        "bid": "bjfqd6",
+        "FINDEX": "a3",
+        "class": "text-[--neutral-800] body-font w-full cursor-default"
+    },
+    "bwi9mc": {
+        "TYPE": "div",
+        "PARENT": "bjfqd6",
+        "bid": "bwi9mc",
+        "FINDEX": "a0",
+        "class": "container mx-auto p-4 md:flex-row items-center flex"
+    },
+    "b7ytey": {
+        "TYPE": "a",
+        "PARENT": "bwi9mc",
+        "bid": "b7ytey",
+        "FINDEX": "a0",
+        "class": "flex flex-row text-[length:--h3] items-center text-[--neutral-800] hover:text-[--neutral-900] mb-4 md:mb-0 w-fit cursor-pointer",
+        "href": "/"
+    },
+    "b7vwxz": {
+        "TYPE": "img",
+        "PARENT": "b7ytey",
+        "bid": "b7vwxz",
+        "FINDEX": "a0",
+        "src": "{AS.APP.logo_url}",
+        "alt": "logo",
+        "class": "w-8 h-8 mr-4"
+    },
+    "bq7q7e": {
+        "TYPE": "span",
+        "PARENT": "b7ytey",
+        "bid": "bq7q7e",
+        "FINDEX": "a1",
+        "class": "whitespace-nowrap",
+        "text": "{AS.APP.name}"
+    },
+    "bjg4fg": {
+        "TYPE": "div",
+        "PARENT": "bwi9mc",
+        "bid": "bjg4fg",
+        "FINDEX": "a1",
+        "class": "ml-auto text-[length:--text-body] justify-center"
+    },
+    "bzsqis": {
+        "TYPE": "div",
+        "PARENT": "bjg4fg",
+        "bid": "bzsqis",
+        "FINDEX": "a0",
+        "class": "flex flex-row items-center gap-4"
+    },
+    "buufum": {
+        "TYPE": "nav",
+        "PARENT": "bzsqis",
+        "bid": "buufum",
+        "FINDEX": "a0",
+        "class": "flex flex-wrap items-center cursor-pointer",
+        "map": "AS.PAGES"
+    },
+    "bkqupy": {
+        "TYPE": "div",
+        "PARENT": "buufum",
+        "bid": "bkqupy",
+        "FINDEX": "a0",
+        "class": "{UTILS.cn('px-2 rounded cursor-pointer hover:underline', {'text-[--primary-500] underline': AS.PAGE === V})}",
+        "action": "go-to-page",
+        "page-id": "{V.bid}",
+        "text": "{V.name}"
+    },
+    "biokxc": {
+        "TYPE": "div",
+        "PARENT": "bzsqis",
+        "bid": "biokxc",
+        "FINDEX": "a1",
+        "condition": "AS.USER.IS_LOGGED_IN",
+        "class": "bg-[--neutral-400] w-8 h-8 rounded-full mr-5 flex items-center justify-center border border-[--neutral-500]"
+    },
+    "bfgo2h": {
+        "TYPE": "span",
+        "PARENT": "biokxc",
+        "bid": "bfgo2h",
+        "FINDEX": "a0",
+        "class": "capitalize",
+        "text": "{AS.USER.profile?.name?.charAt(0) || AS.USER.ddbuser?.name?.charAt(0) || \"A\"}"
+    },
+    "bh8j4s": {
+        "TYPE": "div",
+        "PARENT": "bzsqis",
+        "bid": "bh8j4s",
+        "FINDEX": "a2",
+        "condition": "AS.USER.IS_LOGGED_IN",
+        "class": "text-[--error-500] hover:text-[--error-700] cursor-pointer",
+        "action": "logout",
+        "text": "Logout"
+    },
+    "bxnr89": {
+        "TYPE": "div",
+        "PARENT": "bjg4fg",
+        "bid": "bxnr89",
+        "FINDEX": "a1",
+        "condition": "!AS.USER.IS_LOGGED_IN",
+        "class": "hover:text-[--neutral-900]",
+        "action": "login",
+        "text": "Login"
+    },
+    "page_69s1n": {
+        "TYPE": "page",
+        "PARENT": "pages",
+        "bid": "page_69s1n",
+        "FINDEX": "a1",
+        "name": "second",
+        "findex": "a1",
+        "class": ""
+    },
+    "bvz39j": {
+        "TYPE": "div",
+        "PARENT": "page_69s1n",
+        "bid": "bvz39j",
+        "FINDEX": "a0",
+        "class": "new-div w-full flex items-center justify-center"
+    },
+    "benfok": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "benfok",
+        "FINDEX": "a1",
+        "class": "new-div w-full flex items-center justify-center"
+    },
+    "bgxtih": {
+        "TYPE": "div",
+        "PARENT": "benfok",
+        "bid": "bgxtih",
+        "FINDEX": "a0",
+        "id": "gallery-app"
+    },
+    "bt19s4": {
+        "TYPE": "div",
+        "PARENT": "bgxtih",
+        "bid": "bt19s4",
+        "FINDEX": "a0",
+        "class": "container mx-auto"
+    },
+    "bbin21": {
+        "TYPE": "h1",
+        "PARENT": "bt19s4",
+        "bid": "bbin21",
+        "FINDEX": "a0",
+        "class": "text-4xl font-bold text-blue-700 mb-4",
+        "text": "Gallery"
+    },
+    "bhtwm0": {
+        "TYPE": "div",
+        "PARENT": "bt19s4",
+        "bid": "bhtwm0",
+        "FINDEX": "a1",
+        "class": "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4",
+        "id": "gallery-content"
+    },
+    "bh8j5x": {
+        "TYPE": "div",
+        "PARENT": "bhtwm0",
+        "bid": "bh8j5x",
+        "FINDEX": "a0",
+        "class": "relative group bg-white shadow-md rounded-md overflow-hidden",
+        "data-image-src": "https://www.zicaindore.com/Uploads/PhotoGallery/90fa8866-5454-4205-a28f-6c2825424ecc/_large.jpg"
+    },
+    "b2aslx": {
+        "TYPE": "img",
+        "PARENT": "bh8j5x",
+        "bid": "b2aslx",
+        "FINDEX": "a0",
+        "src": "https://www.zicaindore.com/Uploads/PhotoGallery/90fa8866-5454-4205-a28f-6c2825424ecc/_default.jpg",
+        "alt": "Gallery Item",
+        "class": "w-full h-40 object-cover"
+    },
+    "bs67g4": {
+        "TYPE": "div",
+        "PARENT": "bh8j5x",
+        "bid": "bs67g4",
+        "FINDEX": "a1",
+        "class": "absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity"
+    },
+    "bm8733": {
+        "TYPE": "button",
+        "PARENT": "bs67g4",
+        "bid": "bm8733",
+        "FINDEX": "a0",
+        "onclick": "openImage(event, 'https://www.zicaindore.com/Uploads/PhotoGallery/90fa8866-5454-4205-a28f-6c2825424ecc/_large.jpg')",
+        "class": "text-white text-2xl",
+        "text": "⤢"
+    },
+    "bm7uv0": {
+        "TYPE": "div",
+        "PARENT": "bhtwm0",
+        "bid": "bm7uv0",
+        "FINDEX": "a1",
+        "class": "relative group bg-white shadow-md rounded-md overflow-hidden",
+        "data-image-src": "https://www.zicaindore.com/Uploads/PhotoGallery/5bdf5b04-064a-42f9-b8d2-ef6a8f5deae5/_large.jpg"
+    },
+    "b00ewx": {
+        "TYPE": "img",
+        "PARENT": "bm7uv0",
+        "bid": "b00ewx",
+        "FINDEX": "a0",
+        "src": "https://www.zicaindore.com/Uploads/PhotoGallery/5bdf5b04-064a-42f9-b8d2-ef6a8f5deae5/_default.jpg",
+        "alt": "Gallery Item",
+        "class": "w-full h-40 object-cover"
+    },
+    "bmgiiz": {
+        "TYPE": "div",
+        "PARENT": "bm7uv0",
+        "bid": "bmgiiz",
+        "FINDEX": "a1",
+        "class": "absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity"
+    },
+    "b21koi": {
+        "TYPE": "button",
+        "PARENT": "bmgiiz",
+        "bid": "b21koi",
+        "FINDEX": "a0",
+        "onclick": "openImage(event, 'https://www.zicaindore.com/Uploads/PhotoGallery/6edd3a83-8cc8-4481-9d3c-1882c3010cc2/_large.jpg')",
+        "class": "text-white text-2xl",
+        "text": "⤢"
+    },
+    "bqp3bo": {
+        "TYPE": "div",
+        "PARENT": "bhtwm0",
+        "bid": "bqp3bo",
+        "FINDEX": "a2",
+        "class": "relative group bg-white shadow-md rounded-md overflow-hidden",
+        "data-image-src": "https://www.zicaindore.com/Uploads/PhotoGallery/cc8389b3-567b-4832-ad21-f985b8aa7ced/_large.jpg"
+    },
+    "bykn7s": {
+        "TYPE": "img",
+        "PARENT": "bqp3bo",
+        "bid": "bykn7s",
+        "FINDEX": "a0",
+        "src": "https://www.zicaindore.com/Uploads/PhotoGallery/cc8389b3-567b-4832-ad21-f985b8aa7ced/_default.jpg",
+        "alt": "Gallery Item",
+        "class": "w-full h-40 object-cover"
+    },
+    "bciuct": {
+        "TYPE": "div",
+        "PARENT": "bqp3bo",
+        "bid": "bciuct",
+        "FINDEX": "a1",
+        "class": "absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity"
+    },
+    "bxj13u": {
+        "TYPE": "button",
+        "PARENT": "bciuct",
+        "bid": "bxj13u",
+        "FINDEX": "a0",
+        "onclick": "openImage(event, 'https://www.zicaindore.com/Uploads/PhotoGallery/52d71127-8c81-4c8d-86ee-3cb09c78ac82/_large.jpg')",
+        "class": "text-white text-2xl",
+        "text": "⤢"
+    },
+    "bvsspx": {
+        "TYPE": "div",
+        "PARENT": "bhtwm0",
+        "bid": "bvsspx",
+        "FINDEX": "a3",
+        "class": "relative group bg-white shadow-md rounded-md overflow-hidden",
+        "data-image-src": "https://www.zicaindore.com/Uploads/PhotoGallery/33b10941-fecc-4b61-92ac-545d9c319634/_large.jpg"
+    },
+    "bx29bd": {
+        "TYPE": "img",
+        "PARENT": "bvsspx",
+        "bid": "bx29bd",
+        "FINDEX": "a0",
+        "src": "https://www.zicaindore.com/Uploads/PhotoGallery/33b10941-fecc-4b61-92ac-545d9c319634/_default.jpg",
+        "alt": "Gallery Item",
+        "class": "w-full h-40 object-cover"
+    },
+    "b98b7m": {
+        "TYPE": "div",
+        "PARENT": "bvsspx",
+        "bid": "b98b7m",
+        "FINDEX": "a1",
+        "class": "absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity"
+    },
+    "b7ndul": {
+        "TYPE": "button",
+        "PARENT": "b98b7m",
+        "bid": "b7ndul",
+        "FINDEX": "a0",
+        "onclick": "openImage(event, 'https://www.zicaindore.com/Uploads/PhotoGallery/52d71127-8c81-4c8d-86ee-3cb09c78ac82/_large.jpg')",
+        "class": "text-white text-2xl",
+        "text": "⤢"
+    },
+    "b09jce": {
+        "TYPE": "div",
+        "PARENT": "bhtwm0",
+        "bid": "b09jce",
+        "FINDEX": "a4",
+        "class": "relative group bg-white shadow-md rounded-md overflow-hidden",
+        "data-image-src": "https://www.zicaindore.com/Uploads/PhotoGallery/528a65e9-9ded-4d04-870f-e06e1f793503/_large.jpg"
+    },
+    "bi7app": {
+        "TYPE": "img",
+        "PARENT": "b09jce",
+        "bid": "bi7app",
+        "FINDEX": "a0",
+        "src": "https://www.zicaindore.com/Uploads/PhotoGallery/528a65e9-9ded-4d04-870f-e06e1f793503/_default.jpg",
+        "alt": "Gallery Item",
+        "class": "w-full h-40 object-cover"
+    },
+    "bjrxh1": {
+        "TYPE": "div",
+        "PARENT": "b09jce",
+        "bid": "bjrxh1",
+        "FINDEX": "a1",
+        "class": "absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity"
+    },
+    "b1jgwy": {
+        "TYPE": "button",
+        "PARENT": "bjrxh1",
+        "bid": "b1jgwy",
+        "FINDEX": "a0",
+        "onclick": "openImage(event, 'https://www.zicaindore.com/Uploads/PhotoGallery/52d71127-8c81-4c8d-86ee-3cb09c78ac82/_large.jpg')",
+        "class": "text-white text-2xl",
+        "text": "⤢"
+    },
+    "bvbttj": {
+        "TYPE": "div",
+        "PARENT": "bgxtih",
+        "bid": "bvbttj",
+        "FINDEX": "a1",
+        "id": "imageModal",
+        "class": "hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center"
+    },
+    "bnihuu": {
+        "TYPE": "div",
+        "PARENT": "bvbttj",
+        "bid": "bnihuu",
+        "FINDEX": "a0",
+        "class": "relative"
+    },
+    "b1gy67": {
+        "TYPE": "button",
+        "PARENT": "bnihuu",
+        "bid": "b1gy67",
+        "FINDEX": "a0",
+        "id": "closeModal",
+        "class": "absolute top-2 right-2 bg-white text-black rounded-full px-2 py-1 text-lg",
+        "text": "✕"
+    },
+    "bs0qr7": {
+        "TYPE": "img",
+        "PARENT": "bnihuu",
+        "bid": "bs0qr7",
+        "FINDEX": "a1",
+        "id": "modalImage",
+        "src": "",
+        "alt": "Expanded Image",
+        "class": "max-w-full max-h-screen"
+    },
+    "bjethc": {
+        "TYPE": "script",
+        "PARENT": "bgxtih",
+        "bid": "bjethc",
+        "FINDEX": "a2",
+        "type": "text/tsx",
+        "effect-id": "gallery",
+        "text": "const GalleryApp = () => {\n        const [modalImage, setModalImage] = useState<string | null>(null);\n  \n        const openImage = (imageSrc: string) => {\n          setModalImage(imageSrc);\n          document.getElementById(\"imageModal\")?.classList.remove(\"hidden\");\n        };\n  \n        const closeImage = () => {\n          setModalImage(null);\n          document.getElementById(\"imageModal\")?.classList.add(\"hidden\");\n        };\n  \n        document.querySelectorAll(\"[data-image-src]\").forEach((element) => {\n          element.querySelector(\"button\")?.addEventListener(\"click\", () => {\n            const src = element.getAttribute(\"data-image-src\");\n            if (src) openImage(src);\n          });\n        });\n  \n        document.getElementById(\"closeModal\")?.addEventListener(\"click\", closeImage);\n  \n        if (modalImage) {\n          const modalImg = document.getElementById(\"modalImage\");\n          if (modalImg) modalImg.setAttribute(\"src\", modalImage);\n        }\n      };\n  \n      GalleryApp();"
+    },
+    "b685zn": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "b685zn",
+        "FINDEX": "a2",
+        "class": "new-div w-full flex items-center justify-center"
+    },
+    "b6fodx": {
+        "TYPE": "model",
+        "PARENT": "b685zn",
+        "bid": "b6fodx",
+        "FINDEX": "a0",
+        "mid": "vjnou",
+        "name": "user",
+        "op": "create_one",
+        "class": "w-full flex flex-col bg-white p-2 rounded shadow ",
+        "comp-temp": "create_one"
+    },
+    "b6jwr4": {
+        "TYPE": "div",
+        "PARENT": "b6fodx",
+        "bid": "b6jwr4",
+        "FINDEX": "a0",
+        "name": "title",
+        "class": "text-2xl font-medium text-gray-600 text-left",
+        "text": "CREATE ONE OF user"
+    },
+    "b4tasp": {
+        "TYPE": "div",
+        "PARENT": "b6fodx",
+        "bid": "b4tasp",
+        "FINDEX": "a1",
+        "name": "user-data",
+        "class": "flex flex-col gap-4 p-4"
+    },
+    "byh3xm": {
+        "TYPE": "cont",
+        "PARENT": "b4tasp",
+        "bid": "byh3xm",
+        "FINDEX": "a0",
+        "bro:is-many": "false",
+        "name": "CONT-email",
+        "class": "flex flex-col gap-1.5"
+    },
+    "bmk3du": {
+        "TYPE": "label",
+        "PARENT": "byh3xm",
+        "bid": "bmk3du",
+        "FINDEX": "a0",
+        "class": "text-sm font-medium text-gray-800",
+        "for": "email",
+        "text": "email"
+    },
+    "byywmw": {
+        "TYPE": "prop",
+        "PARENT": "byh3xm",
+        "bid": "byywmw",
+        "FINDEX": "a1",
+        "ref-id": "email--co",
+        "name": "email",
+        "class": "w-full"
+    },
+    "b0echb": {
+        "TYPE": "input",
+        "PARENT": "byywmw",
+        "bid": "b0echb",
+        "FINDEX": "a0",
+        "name": "email",
+        "type": "email",
+        "id": "email",
+        "placeholder": "email",
+        "action": "oninput-update-m",
+        "class": "w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600"
+    },
+    "b3s401": {
+        "TYPE": "cont",
+        "PARENT": "b4tasp",
+        "bid": "b3s401",
+        "FINDEX": "a1",
+        "bro:is-many": "false",
+        "name": "CONT-name",
+        "class": "flex flex-col gap-1.5"
+    },
+    "b9k02p": {
+        "TYPE": "label",
+        "PARENT": "b3s401",
+        "bid": "b9k02p",
+        "FINDEX": "a0",
+        "class": "text-sm font-medium text-gray-800",
+        "for": "name",
+        "text": "name"
+    },
+    "b468gf": {
+        "TYPE": "prop",
+        "PARENT": "b3s401",
+        "bid": "b468gf",
+        "FINDEX": "a1",
+        "ref-id": "text--co",
+        "name": "name",
+        "class": "w-full"
+    },
+    "b5im57": {
+        "TYPE": "input",
+        "PARENT": "b468gf",
+        "bid": "b5im57",
+        "FINDEX": "a0",
+        "name": "name",
+        "id": "name",
+        "type": "text",
+        "placeholder": "name",
+        "action": "oninput-update-m",
+        "class": "w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600"
+    },
+    "bad8ds": {
+        "TYPE": "cont",
+        "PARENT": "b4tasp",
+        "bid": "bad8ds",
+        "FINDEX": "a2",
+        "bro:is-many": "true",
+        "name": "CONT-images",
+        "class": "w-full flex flex-col gap-2"
+    },
+    "bpbcqa": {
+        "TYPE": "div",
+        "PARENT": "bad8ds",
+        "bid": "bpbcqa",
+        "FINDEX": "a0",
+        "class": "block text-gray-700 text-sm font-medium mb-2 capitalize",
+        "text": "images"
+    },
+    "bez5ea": {
+        "TYPE": "prop",
+        "PARENT": "bad8ds",
+        "bid": "bez5ea",
+        "FINDEX": "a1",
+        "ref-id": "image--cm--dnd",
+        "name": "images",
+        "class": "flex w-full items-center justify-between pr-10"
+    },
+    "b8xaph": {
+        "TYPE": "div",
+        "PARENT": "bez5ea",
+        "bid": "b8xaph",
+        "FINDEX": "a0",
+        "name": "cont",
+        "class": " w-full flex flex-col md:flex-row  items-center justify-center gap-4"
+    },
+    "b1ibiu": {
+        "TYPE": "div",
+        "PARENT": "b8xaph",
+        "bid": "b1ibiu",
+        "FINDEX": "a0",
+        "class": "flex flex-col gap-1.5 "
+    },
+    "bqy97y": {
+        "TYPE": "p",
+        "PARENT": "b1ibiu",
+        "bid": "bqy97y",
+        "FINDEX": "a0",
+        "class": "label",
+        "text": "Select an image"
+    },
+    "b3bfvn": {
+        "TYPE": "label",
+        "PARENT": "b1ibiu",
+        "bid": "b3bfvn",
+        "FINDEX": "a1",
+        "for": "{'vjnou-images-dropzone-image-create' + idx}",
+        "class": "flex w-full min-h-32  cursor-pointer flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200",
+        "condition": "M.__meta?.props?.images && Array.isArray(M.__meta?.props?.images) && !M.__meta?.props?.images[idx]?.progress"
+    },
+    "bi2ex3": {
+        "TYPE": "div",
+        "PARENT": "b3bfvn",
+        "bid": "bi2ex3",
+        "FINDEX": "a0",
+        "class": "flex flex-col items-center justify-center px-6 py-5"
+    },
+    "bbm90e": {
+        "TYPE": "svg",
+        "PARENT": "bi2ex3",
+        "bid": "bbm90e",
+        "FINDEX": "a0",
+        "class": "mb-4 h-8 w-8 text-gray-500",
+        "aria-hidden": "true",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "fill": "none",
+        "viewBox": "0 0 20 16",
+        "innerSVG": "<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2\"></path>"
+    },
+    "bffy8k": {
+        "TYPE": "p",
+        "PARENT": "bi2ex3",
+        "bid": "bffy8k",
+        "FINDEX": "a1",
+        "class": "pb-1"
+    },
+    "b4bjea": {
+        "TYPE": "span",
+        "PARENT": "bffy8k",
+        "bid": "b4bjea",
+        "FINDEX": "a0",
+        "class": "font-semibold",
+        "text": "Click to upload"
+    },
+    "bxjh1f": {
+        "TYPE": "p",
+        "PARENT": "bi2ex3",
+        "bid": "bxjh1f",
+        "FINDEX": "a2",
+        "class": "helper-text",
+        "text": "SVG, PNG, JPG or GIF (MAX. 800x400px)"
+    },
+    "b8c09b": {
+        "TYPE": "input",
+        "PARENT": "b3bfvn",
+        "bid": "b8c09b",
+        "FINDEX": "a1",
+        "id": "{'vjnou-images-dropzone-image-create' + idx}",
+        "name": "images",
+        "b-idx": "{idx}",
+        "type": "file",
+        "action": "oninput-update-m-file-idx",
+        "class": "hidden"
+    },
+    "b2ltca": {
+        "TYPE": "div",
+        "PARENT": "b1ibiu",
+        "bid": "b2ltca",
+        "FINDEX": "a2",
+        "class": "flex  w-full min-h-32  cursor-pointer flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200",
+        "condition": "M.__meta?.props?.images && Array.isArray(M.__meta?.props?.images) && M.__meta?.props?.images[idx]?.progress === 'uploading'"
+    },
+    "bssdjo": {
+        "TYPE": "div",
+        "PARENT": "b2ltca",
+        "bid": "bssdjo",
+        "FINDEX": "a0",
+        "class": "flex flex-col items-center justify-center px-6 py-5 gap-[10px]"
+    },
+    "bw1tzo": {
+        "TYPE": "iconify-icon",
+        "PARENT": "bssdjo",
+        "bid": "bw1tzo",
+        "FINDEX": "a0",
+        "icon": "line-md:loading-twotone-loop",
+        "width": "24",
+        "height": "24"
+    },
+    "b3b9lq": {
+        "TYPE": "p",
+        "PARENT": "bssdjo",
+        "bid": "b3b9lq",
+        "FINDEX": "a1",
+        "class": "pb-1",
+        "text": "Uploading"
+    },
+    "bi5abk": {
+        "TYPE": "div",
+        "PARENT": "b1ibiu",
+        "bid": "bi5abk",
+        "FINDEX": "a3",
+        "class": "flex cursor-pointer w-full min-h-32  flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200",
+        "condition": "M.__meta?.props?.images && Array.isArray(M.__meta?.props?.images) && M.__meta?.props?.images[idx]?.progress === 'done'"
+    },
+    "bsbubv": {
+        "TYPE": "div",
+        "PARENT": "bi5abk",
+        "bid": "bsbubv",
+        "FINDEX": "a0",
+        "class": "flex items-center justify-center px-6 py-5 gap-[10px]"
+    },
+    "bdku5s": {
+        "TYPE": "div",
+        "PARENT": "bsbubv",
+        "bid": "bdku5s",
+        "FINDEX": "a0",
+        "name": "image",
+        "style": "background-image: url(${V?.v?.url})",
+        "condition": "V?.v?.url",
+        "class": "w-32 h-32 flex flex-shrink-0 bg-no-repeat bg-gray-200 bg-center bg-cover rounded-md"
+    },
+    "batbh8": {
+        "TYPE": "div",
+        "PARENT": "bsbubv",
+        "bid": "batbh8",
+        "FINDEX": "a1",
+        "class": "text-[#363636] truncate",
+        "text": "{V?.v?.name}"
+    },
+    "bt4txd": {
+        "TYPE": "label",
+        "PARENT": "bsbubv",
+        "bid": "bt4txd",
+        "FINDEX": "a2",
+        "for": "{'vjnou-images-dropzone-image-create' + idx}"
+    },
+    "bcwkpj": {
+        "TYPE": "div",
+        "PARENT": "bt4txd",
+        "bid": "bcwkpj",
+        "FINDEX": "a0",
+        "class": "rounded p-2 bg-[#FFCAC9]",
+        "text": "Change File"
+    },
+    "bmwdwh": {
+        "TYPE": "input",
+        "PARENT": "bt4txd",
+        "bid": "bmwdwh",
+        "FINDEX": "a1",
+        "id": "{'vjnou-images-dropzone-image-create' + idx}",
+        "name": "images",
+        "b-idx": "{idx}",
+        "type": "file",
+        "action": "oninput-update-m-file-idx",
+        "class": "hidden"
+    },
+    "bfwtvy": {
+        "TYPE": "div",
+        "PARENT": "b8xaph",
+        "bid": "bfwtvy",
+        "FINDEX": "a1",
+        "class": "font-bold text-lg",
+        "text": "Or"
+    },
+    "bj9cuh": {
+        "TYPE": "div",
+        "PARENT": "b8xaph",
+        "bid": "bj9cuh",
+        "FINDEX": "a2",
+        "class": "flex flex-col gap-1.5"
+    },
+    "b5bv1d": {
+        "TYPE": "p",
+        "PARENT": "bj9cuh",
+        "bid": "b5bv1d",
+        "FINDEX": "a0",
+        "class": "label",
+        "text": "Paste an image URL"
+    },
+    "bf5nfs": {
+        "TYPE": "div",
+        "PARENT": "bj9cuh",
+        "bid": "bf5nfs",
+        "FINDEX": "a1",
+        "name": "image",
+        "style": "background-image: url(${V?.v?.url})",
+        "condition": "V?.v?.url",
+        "class": "w-32 h-32 flex flex-shrink-0 bg-no-repeat bg-gray-200 bg-center bg-cover rounded-md"
+    },
+    "b4yp8z": {
+        "TYPE": "input",
+        "PARENT": "bj9cuh",
+        "bid": "b4yp8z",
+        "FINDEX": "a2",
+        "name": "images",
+        "value": "{V?.v?.url}",
+        "type": "text",
+        "b-idx": "{idx}",
+        "action": "oninput-update-m-file-idx",
+        "class": "w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600"
+    },
+    "bz6scr": {
+        "TYPE": "button",
+        "PARENT": "bez5ea",
+        "bid": "bz6scr",
+        "FINDEX": "a1",
+        "name": "images",
+        "b-idx": "{idx}",
+        "action": "delete-prop-item",
+        "class": "bg-none text-rose-300 p-2 w-fit h-fit rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 "
+    },
+    "bvcvpi": {
+        "TYPE": "svg",
+        "PARENT": "bz6scr",
+        "bid": "bvcvpi",
+        "FINDEX": "a0",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "stroke": "currentColor",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "innerSVG": "<path d=\"M18 6 6 18\"></path><path d=\"m6 6 12 12\"></path>"
+    },
+    "b2qrji": {
+        "TYPE": "button",
+        "PARENT": "bad8ds",
+        "bid": "b2qrji",
+        "FINDEX": "a2",
+        "type": "image",
+        "action": "add-prop-item",
+        "name": "images",
+        "is-rel": "false",
+        "class": "w-10 h-10 flex justify-center items-center mx-auto border border-gray-100 bg-gray-200 hover:border-gray-200 text-gray-700 text-3xl rounded-lg "
+    },
+    "b9lpt2": {
+        "TYPE": "svg",
+        "PARENT": "b2qrji",
+        "bid": "b9lpt2",
+        "FINDEX": "a0",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "stroke": "currentColor",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "innerSVG": "<path d=\"M5 12h14\"></path><path d=\"M12 5v14\"></path>"
+    },
+    "bnhfor": {
+        "TYPE": "div",
+        "PARENT": "b6fodx",
+        "bid": "bnhfor",
+        "FINDEX": "a2",
+        "class": "flex-row flex justify-end items-end pt-5 gap-4"
+    },
+    "b9fwnk": {
+        "TYPE": "button",
+        "PARENT": "bnhfor",
+        "bid": "b9fwnk",
+        "FINDEX": "a0",
+        "op": "create_one",
+        "class": "bg-[var(--primary-500)] hover:bg-[var(--primary-600)] text-white font-medium py-2 px-6 rounded-xl focus:outline-none w-fit text-sm",
+        "condition": "CS.status !== 'validate-failed'",
+        "text": "CREATE"
+    },
+    "b8m30p": {
+        "TYPE": "model",
+        "PARENT": "b685zn",
+        "bid": "b8m30p",
+        "FINDEX": "a1",
+        "mid": "vjnou",
+        "name": "user",
+        "op": "get_many",
+        "class": "w-full flex flex-col bg-white p-2 shadow rounded",
+        "comp-temp": "get_many"
+    },
+    "bemm2v": {
+        "TYPE": "div",
+        "PARENT": "b8m30p",
+        "bid": "bemm2v",
+        "FINDEX": "a0",
+        "name": "title",
+        "class": "text-2xl font-medium text-gray-600 text-left ",
+        "text": "LIST OF user"
+    },
+    "bx5ft5": {
+        "TYPE": "div",
+        "PARENT": "b8m30p",
+        "bid": "bx5ft5",
+        "FINDEX": "a1",
+        "name": "user-data",
+        "class": "flex flex-col gap-2"
+    },
+    "bo2b4f": {
+        "TYPE": "model",
+        "PARENT": "bx5ft5",
+        "bid": "bo2b4f",
+        "FINDEX": "a0",
+        "mid": "vjnou",
+        "name": "user",
+        "op": "get_one",
+        "eid": "{M.id}",
+        "class": "w-full flex flex-col p-4 border rounded border-zinc-200 relative ",
+        "comp-temp": "get_one"
+    },
+    "brsxar": {
+        "TYPE": "div",
+        "PARENT": "bo2b4f",
+        "bid": "brsxar",
+        "FINDEX": "a0",
+        "name": "title",
+        "class": "text-2xl font-medium text-gray-600 text-left pb-6",
+        "text": "GET ONE OF user"
+    },
+    "bulljk": {
+        "TYPE": "div",
+        "PARENT": "bo2b4f",
+        "bid": "bulljk",
+        "FINDEX": "a1",
+        "name": "user-data",
+        "class": "flex flex-col gap-4",
+        "action": "select-one"
+    },
+    "bt2nx8": {
+        "TYPE": "cont",
+        "PARENT": "bulljk",
+        "bid": "bt2nx8",
+        "FINDEX": "a0",
+        "bro:is-many": "false",
+        "name": "CONT-email",
+        "class": "w-full"
+    },
+    "bky7g7": {
+        "TYPE": "div",
+        "PARENT": "bt2nx8",
+        "bid": "bky7g7",
+        "FINDEX": "a0",
+        "class": "block text-gray-700 text-sm font-medium mb-2 capitalize",
+        "text": "email"
+    },
+    "bdd7rv": {
+        "TYPE": "prop",
+        "PARENT": "bt2nx8",
+        "bid": "bdd7rv",
+        "FINDEX": "a1",
+        "bro:type": "email",
+        "bro:is-many": "false",
+        "name": "email",
+        "class": "flex flex-col  w-full gap-6 "
+    },
+    "bpm5hg": {
+        "TYPE": "span",
+        "PARENT": "bdd7rv",
+        "bid": "bpm5hg",
+        "FINDEX": "a0",
+        "text": "{M.email}"
+    },
+    "bgjtla": {
+        "TYPE": "cont",
+        "PARENT": "bulljk",
+        "bid": "bgjtla",
+        "FINDEX": "a1",
+        "bro:is-many": "false",
+        "name": "CONT-name",
+        "class": "w-full"
+    },
+    "bacg8l": {
+        "TYPE": "div",
+        "PARENT": "bgjtla",
+        "bid": "bacg8l",
+        "FINDEX": "a0",
+        "class": "block text-gray-700 text-sm font-medium mb-2 capitalize",
+        "text": "name"
+    },
+    "bcknmf": {
+        "TYPE": "prop",
+        "PARENT": "bgjtla",
+        "bid": "bcknmf",
+        "FINDEX": "a1",
+        "bro:type": "text",
+        "bro:is-many": "false",
+        "name": "name",
+        "class": "flex flex-col  w-full gap-6 "
+    },
+    "bdfxk7": {
+        "TYPE": "span",
+        "PARENT": "bcknmf",
+        "bid": "bdfxk7",
+        "FINDEX": "a0",
+        "text": "{M.name || ''}"
+    },
+    "b3158f": {
+        "TYPE": "cont",
+        "PARENT": "bulljk",
+        "bid": "b3158f",
+        "FINDEX": "a2",
+        "bro:is-many": "true",
+        "name": "CONT-images",
+        "class": "w-full flex flex-col gap-2"
+    },
+    "br06ws": {
+        "TYPE": "div",
+        "PARENT": "b3158f",
+        "bid": "br06ws",
+        "FINDEX": "a0",
+        "variant": "with-label",
+        "class": "block text-gray-700 text-sm font-medium mb-2 capitalize",
+        "text": "images"
+    },
+    "b9hlpb": {
+        "TYPE": "prop",
+        "PARENT": "b3158f",
+        "bid": "b9hlpb",
+        "FINDEX": "a1",
+        "bro:type": "image",
+        "bro:is-many": "true",
+        "name": "images",
+        "class": "flex flex-col  w-full gap-6 "
+    },
+    "bmts9e": {
+        "TYPE": "div",
+        "PARENT": "b9hlpb",
+        "bid": "bmts9e",
+        "FINDEX": "a0",
+        "name": "image",
+        "style": "background-image: url(${V?.v?.url})",
+        "class": "w-32 h-32  flex flex-shrink-0 bg-no-repeat bg-gray-200 bg-center bg-cover rounded-md"
+    },
+    "bqrczr": {
+        "TYPE": "div",
+        "PARENT": "bo2b4f",
+        "bid": "bqrczr",
+        "FINDEX": "a2",
+        "class": "absolute right-2 top-2 "
+    },
+    "byv64x": {
+        "TYPE": "button",
+        "PARENT": "bqrczr",
+        "bid": "byv64x",
+        "FINDEX": "a0",
+        "op": "delete_one",
+        "class": "bg-[var(--error-400)] hover:bg-[var(--error-600)] rounded-md text-white hover:scale-110 w-5 h-5 flex justify-center items-center cursor-pointer transition-all ease-in-out  "
+    },
+    "b4ypvl": {
+        "TYPE": "svg",
+        "PARENT": "byv64x",
+        "bid": "b4ypvl",
+        "FINDEX": "a0",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "stroke": "currentColor",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "innerSVG": "<path d=\"M18 6 6 18\"></path><path d=\"m6 6 12 12\"></path>"
+    },
+    "bhedg2": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "bhedg2",
+        "FINDEX": "a3",
+        "class": "new-div w-full flex items-center justify-center"
+    },
+    "bx4pnu": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "bx4pnu",
+        "FINDEX": "a4",
+        "class": "new-div w-full flex items-center justify-center"
+    },
+    "bqckp0": {
+        "TYPE": "div",
+        "PARENT": "bx4pnu",
+        "bid": "bqckp0",
+        "FINDEX": "a0",
+        "class": "w-full max-w-4xl mx-auto p-4"
+    },
+    "bbk3sb": {
+        "TYPE": "div",
+        "PARENT": "bqckp0",
+        "bid": "bbk3sb",
+        "FINDEX": "a0",
+        "class": "flex border-b border-gray-200 mb-4"
+    },
+    "bzzebq": {
+        "TYPE": "button",
+        "PARENT": "bbk3sb",
+        "bid": "bzzebq",
+        "FINDEX": "a0",
+        "data-tab": "tab1",
+        "class": "tab-button px-4 py-2 text-gray-500 hover:text-gray-900 border-b-2 border-transparent focus:outline-none",
+        "text": "Tab 1"
+    },
+    "bq5afv": {
+        "TYPE": "button",
+        "PARENT": "bbk3sb",
+        "bid": "bq5afv",
+        "FINDEX": "a1",
+        "data-tab": "tab2",
+        "class": "tab-button px-4 py-2 text-gray-500 hover:text-gray-900 border-b-2 border-transparent focus:outline-none",
+        "text": "Tab 2"
+    },
+    "blgpww": {
+        "TYPE": "button",
+        "PARENT": "bbk3sb",
+        "bid": "blgpww",
+        "FINDEX": "a2",
+        "data-tab": "tab3",
+        "class": "tab-button px-4 py-2 text-gray-500 hover:text-gray-900 border-b-2 border-transparent focus:outline-none",
+        "text": "Tab 3"
+    },
+    "bac2zf": {
+        "TYPE": "div",
+        "PARENT": "bqckp0",
+        "bid": "bac2zf",
+        "FINDEX": "a1",
+        "class": "tab-content hidden",
+        "id": "tab1",
+        "text": "This is the content of Tab 1."
+    },
+    "b781l0": {
+        "TYPE": "div",
+        "PARENT": "bqckp0",
+        "bid": "b781l0",
+        "FINDEX": "a2",
+        "class": "tab-content hidden",
+        "id": "tab2",
+        "text": "This is the content of Tab 2."
+    },
+    "bwdrib": {
+        "TYPE": "div",
+        "PARENT": "bqckp0",
+        "bid": "bwdrib",
+        "FINDEX": "a3",
+        "class": "tab-content hidden",
+        "id": "tab3",
+        "text": "This is the content of Tab 3."
+    },
+    "bo4b9p": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "bo4b9p",
+        "FINDEX": "a5",
+        "class": "new-div w-full flex items-center justify-center"
+    },
+    "bdz0dd": {
+        "TYPE": "model",
+        "PARENT": "bo4b9p",
+        "bid": "bdz0dd",
+        "FINDEX": "a0",
+        "mid": "vjnou",
+        "name": "user",
+        "op": "get_many",
+        "class": "hidden",
+        "comp-temp": "echart-basic"
+    },
+    "b8eblb": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "b8eblb",
+        "FINDEX": "a6",
+        "class": "new-div w-full flex items-center justify-center"
+    },
+    "bce9q4": {
+        "TYPE": "model",
+        "PARENT": "b8eblb",
+        "bid": "bce9q4",
+        "FINDEX": "a0",
+        "mid": "vjnou",
+        "name": "user",
+        "op": "get_many",
+        "class": "relative w-full flex flex-col bg-white p-2 shadow rounded",
+        "onclick": "{(e) => set_show_relation_table(false)}",
+        "comp-temp": "get_many_table"
+    },
+    "bdgxbd": {
+        "TYPE": "div",
+        "PARENT": "bce9q4",
+        "bid": "bdgxbd",
+        "FINDEX": "a0",
+        "name": "title",
+        "class": "text-2xl font-medium text-gray-600 text-left",
+        "text": "LIST OF user"
+    },
+    "bt1me5": {
+        "TYPE": "table",
+        "PARENT": "bce9q4",
+        "bid": "bt1me5",
+        "FINDEX": "a1",
+        "class": "border-collapse border "
+    },
+    "bm7fun": {
+        "TYPE": "thead",
+        "PARENT": "bt1me5",
+        "bid": "bm7fun",
+        "FINDEX": "a0"
+    },
+    "bcaece": {
+        "TYPE": "tr",
+        "PARENT": "bm7fun",
+        "bid": "bcaece",
+        "FINDEX": "a0",
+        "class": "border border-collapse"
+    },
+    "bfreg7": {
+        "TYPE": "span",
+        "PARENT": "bcaece",
+        "bid": "bfreg7",
+        "FINDEX": "a0",
+        "react-tag": "th",
+        "class": "border border-collapse",
+        "text": "email"
+    },
+    "b7zfp7": {
+        "TYPE": "span",
+        "PARENT": "bcaece",
+        "bid": "b7zfp7",
+        "FINDEX": "a1",
+        "react-tag": "th",
+        "class": "border border-collapse",
+        "text": "name"
+    },
+    "bxpzqh": {
+        "TYPE": "span",
+        "PARENT": "bcaece",
+        "bid": "bxpzqh",
+        "FINDEX": "a2",
+        "react-tag": "th",
+        "class": "border border-collapse",
+        "text": "images"
+    },
+    "b5kw3e": {
+        "TYPE": "span",
+        "PARENT": "bcaece",
+        "bid": "b5kw3e",
+        "FINDEX": "a3",
+        "react-tag": "th",
+        "class": "border border-collapse",
+        "text": "id"
+    },
+    "beupln": {
+        "TYPE": "tbody",
+        "PARENT": "bt1me5",
+        "bid": "beupln",
+        "FINDEX": "a1"
+    },
+    "bf71w0": {
+        "TYPE": "tr",
+        "PARENT": "beupln",
+        "bid": "bf71w0",
+        "FINDEX": "a0",
+        "map": "{data: 'M', V: 'M'}",
+        "class": "border border-collapse"
+    },
+    "bsqp0b": {
+        "TYPE": "span",
+        "PARENT": "bf71w0",
+        "bid": "bsqp0b",
+        "FINDEX": "a0",
+        "react-tag": "td",
+        "class": "border border-collapse"
+    },
+    "b7w0qz": {
+        "TYPE": "prop",
+        "PARENT": "bsqp0b",
+        "bid": "b7w0qz",
+        "FINDEX": "a0",
+        "bro:type": "email",
+        "bro:is-many": "false",
+        "name": "email",
+        "class": "flex flex-col  w-full gap-6 "
+    },
+    "bxocng": {
+        "TYPE": "span",
+        "PARENT": "b7w0qz",
+        "bid": "bxocng",
+        "FINDEX": "a0",
+        "text": "{M.email}"
+    },
+    "b60lvx": {
+        "TYPE": "span",
+        "PARENT": "bf71w0",
+        "bid": "b60lvx",
+        "FINDEX": "a1",
+        "react-tag": "td",
+        "class": "border border-collapse"
+    },
+    "blcxn9": {
+        "TYPE": "prop",
+        "PARENT": "b60lvx",
+        "bid": "blcxn9",
+        "FINDEX": "a0",
+        "bro:type": "text",
+        "bro:is-many": "false",
+        "name": "name",
+        "class": "flex flex-col  w-full gap-6 "
+    },
+    "br9ot7": {
+        "TYPE": "span",
+        "PARENT": "blcxn9",
+        "bid": "br9ot7",
+        "FINDEX": "a0",
+        "text": "{M.name || ''}"
+    },
+    "bfuf1p": {
+        "TYPE": "span",
+        "PARENT": "bf71w0",
+        "bid": "bfuf1p",
+        "FINDEX": "a2",
+        "react-tag": "td",
+        "class": "border border-collapse"
+    },
+    "b6ag7b": {
+        "TYPE": "prop",
+        "PARENT": "bfuf1p",
+        "bid": "b6ag7b",
+        "FINDEX": "a0",
+        "bro:type": "image",
+        "bro:is-many": "true",
+        "name": "images",
+        "class": "flex flex-col  w-full gap-6 "
+    },
+    "bkk9m8": {
+        "TYPE": "div",
+        "PARENT": "b6ag7b",
+        "bid": "bkk9m8",
+        "FINDEX": "a0",
+        "name": "image",
+        "style": "background-image: url(${V?.v?.url})",
+        "class": "w-32 h-32  flex flex-shrink-0 bg-no-repeat bg-gray-200 bg-center bg-cover rounded-md"
+    },
+    "b4v9lj": {
+        "TYPE": "span",
+        "PARENT": "bf71w0",
+        "bid": "b4v9lj",
+        "FINDEX": "a3",
+        "react-tag": "td",
+        "class": "border border-collapse"
+    },
+    "b8rizx": {
+        "TYPE": "prop",
+        "PARENT": "b4v9lj",
+        "bid": "b8rizx",
+        "FINDEX": "a0",
+        "bro:type": "serial",
+        "bro:is-many": "false",
+        "name": "id",
+        "class": "flex flex-col  w-full gap-6 "
+    },
+    "b8sz2u": {
+        "TYPE": "span",
+        "PARENT": "b8rizx",
+        "bid": "b8sz2u",
+        "FINDEX": "a0",
+        "text": "{M.id || ''}"
+    },
+    "bvuf4c": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "bvuf4c",
+        "FINDEX": "a7",
+        "class": "new-div w-full flex items-center justify-center"
+    },
+    "bg5gzu": {
+        "TYPE": "div",
+        "PARENT": "bvuf4c",
+        "bid": "bg5gzu",
+        "FINDEX": "a0",
+        "class": "max-w-4xl mx-auto p-4"
+    },
+    "bfy1ur": {
+        "TYPE": "div",
+        "PARENT": "bg5gzu",
+        "bid": "bfy1ur",
+        "FINDEX": "a0",
+        "class": "accordion-item border-b border-gray-200"
+    },
+    "bx56am": {
+        "TYPE": "button",
+        "PARENT": "bfy1ur",
+        "bid": "bx56am",
+        "FINDEX": "a0",
+        "class": "accordion-header w-full flex justify-between px-4 py-2 text-gray-700 hover:text-gray-900 focus:outline-none"
+    },
+    "bkc9mv": {
+        "TYPE": "span",
+        "PARENT": "bx56am",
+        "bid": "bkc9mv",
+        "FINDEX": "a0",
+        "class": "accordion-icon",
+        "text": "+"
+    },
+    "btfzqp": {
+        "TYPE": "div",
+        "PARENT": "bfy1ur",
+        "bid": "btfzqp",
+        "FINDEX": "a1",
+        "class": "accordion-content hidden px-4 py-2 text-gray-600",
+        "text": "Content for Section 1."
+    },
+    "biwv3w": {
+        "TYPE": "div",
+        "PARENT": "bg5gzu",
+        "bid": "biwv3w",
+        "FINDEX": "a1",
+        "class": "accordion-item border-b border-gray-200"
+    },
+    "b2383s": {
+        "TYPE": "button",
+        "PARENT": "biwv3w",
+        "bid": "b2383s",
+        "FINDEX": "a0",
+        "class": "accordion-header w-full flex justify-between px-4 py-2 text-gray-700 hover:text-gray-900 focus:outline-none"
+    },
+    "bv7qwf": {
+        "TYPE": "span",
+        "PARENT": "b2383s",
+        "bid": "bv7qwf",
+        "FINDEX": "a0",
+        "class": "accordion-icon",
+        "text": "+"
+    },
+    "bog59m": {
+        "TYPE": "div",
+        "PARENT": "biwv3w",
+        "bid": "bog59m",
+        "FINDEX": "a1",
+        "class": "accordion-content hidden px-4 py-2 text-gray-600",
+        "text": "Content for Section 2."
+    },
+    "bnpmp5": {
+        "TYPE": "div",
+        "PARENT": "bg5gzu",
+        "bid": "bnpmp5",
+        "FINDEX": "a2",
+        "class": "accordion-item border-b border-gray-200"
+    },
+    "bvixyu": {
+        "TYPE": "button",
+        "PARENT": "bnpmp5",
+        "bid": "bvixyu",
+        "FINDEX": "a0",
+        "class": "accordion-header w-full flex justify-between px-4 py-2 text-gray-700 hover:text-gray-900 focus:outline-none"
+    },
+    "bok1lb": {
+        "TYPE": "span",
+        "PARENT": "bvixyu",
+        "bid": "bok1lb",
+        "FINDEX": "a0",
+        "class": "accordion-icon",
+        "text": "+"
+    },
+    "bgqfvk": {
+        "TYPE": "div",
+        "PARENT": "bnpmp5",
+        "bid": "bgqfvk",
+        "FINDEX": "a1",
+        "class": "accordion-content hidden px-4 py-2 text-gray-600",
+        "text": "Content for Section 3."
+    },
+    "b1ztzv": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "b1ztzv",
+        "FINDEX": "a8",
+        "class": "w-full max-w-lg mx-auto p-4"
+    },
+    "bcws27": {
+        "TYPE": "div",
+        "PARENT": "b1ztzv",
+        "bid": "bcws27",
+        "FINDEX": "a0",
+        "id": "step1",
+        "class": "step-content"
+    },
+    "b2f50s": {
+        "TYPE": "h2",
+        "PARENT": "bcws27",
+        "bid": "b2f50s",
+        "FINDEX": "a0",
+        "class": "text-xl font-semibold mb-2",
+        "text": "Step 1"
+    },
+    "brbv16": {
+        "TYPE": "input",
+        "PARENT": "bcws27",
+        "bid": "brbv16",
+        "FINDEX": "a1",
+        "type": "text",
+        "placeholder": "Enter your name",
+        "class": "w-full p-2 border border-gray-300 rounded mb-4"
+    },
+    "b6al1m": {
+        "TYPE": "button",
+        "PARENT": "bcws27",
+        "bid": "b6al1m",
+        "FINDEX": "a2",
+        "id": "nextToStep2",
+        "class": "bg-blue-500 text-white px-4 py-2 rounded",
+        "text": "Next"
+    },
+    "bqldxl": {
+        "TYPE": "div",
+        "PARENT": "b1ztzv",
+        "bid": "bqldxl",
+        "FINDEX": "a1",
+        "id": "step2",
+        "class": "step-content hidden"
+    },
+    "bwrrs9": {
+        "TYPE": "h2",
+        "PARENT": "bqldxl",
+        "bid": "bwrrs9",
+        "FINDEX": "a0",
+        "class": "text-xl font-semibold mb-2",
+        "text": "Step 2"
+    },
+    "bxmh4h": {
+        "TYPE": "input",
+        "PARENT": "bqldxl",
+        "bid": "bxmh4h",
+        "FINDEX": "a1",
+        "type": "email",
+        "placeholder": "Enter your email",
+        "class": "w-full p-2 border border-gray-300 rounded mb-4"
+    },
+    "bxcy8u": {
+        "TYPE": "button",
+        "PARENT": "bqldxl",
+        "bid": "bxcy8u",
+        "FINDEX": "a2",
+        "id": "prevToStep1",
+        "class": "bg-gray-500 text-white px-4 py-2 rounded mr-2",
+        "text": "Previous"
+    },
+    "bxtndg": {
+        "TYPE": "button",
+        "PARENT": "bqldxl",
+        "bid": "bxtndg",
+        "FINDEX": "a3",
+        "id": "nextToStep3",
+        "class": "bg-blue-500 text-white px-4 py-2 rounded",
+        "text": "Next"
+    },
+    "bug6zt": {
+        "TYPE": "div",
+        "PARENT": "b1ztzv",
+        "bid": "bug6zt",
+        "FINDEX": "a2",
+        "id": "step3",
+        "class": "step-content hidden"
+    },
+    "bx79l5": {
+        "TYPE": "h2",
+        "PARENT": "bug6zt",
+        "bid": "bx79l5",
+        "FINDEX": "a0",
+        "class": "text-xl font-semibold mb-2",
+        "text": "Step 3"
+    },
+    "bjsgci": {
+        "TYPE": "input",
+        "PARENT": "bug6zt",
+        "bid": "bjsgci",
+        "FINDEX": "a1",
+        "type": "password",
+        "placeholder": "Enter your password",
+        "class": "w-full p-2 border border-gray-300 rounded mb-4"
+    },
+    "bwpga5": {
+        "TYPE": "button",
+        "PARENT": "bug6zt",
+        "bid": "bwpga5",
+        "FINDEX": "a2",
+        "id": "prevToStep2",
+        "class": "bg-gray-500 text-white px-4 py-2 rounded mr-2",
+        "text": "Previous"
+    },
+    "bigpsq": {
+        "TYPE": "button",
+        "PARENT": "bug6zt",
+        "bid": "bigpsq",
+        "FINDEX": "a3",
+        "class": "bg-green-500 text-white px-4 py-2 rounded",
+        "text": "Submit"
+    },
+    "b0wd3j": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "b0wd3j",
+        "FINDEX": "a9",
+        "class": "flex flex-wrap justify-center gap-6 p-6"
+    },
+    "b2rdvg": {
+        "TYPE": "div",
+        "PARENT": "b0wd3j",
+        "bid": "b2rdvg",
+        "FINDEX": "a0",
+        "class": "max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+    },
+    "brb1ow": {
+        "TYPE": "div",
+        "PARENT": "b2rdvg",
+        "bid": "brb1ow",
+        "FINDEX": "a0",
+        "class": "p-6"
+    },
+    "bh5t1l": {
+        "TYPE": "h3",
+        "PARENT": "brb1ow",
+        "bid": "bh5t1l",
+        "FINDEX": "a0",
+        "class": "text-xl font-semibold text-gray-800",
+        "text": "Basic Plan"
+    },
+    "bhnefr": {
+        "TYPE": "p",
+        "PARENT": "brb1ow",
+        "bid": "bhnefr",
+        "FINDEX": "a1",
+        "class": "mt-2 text-gray-600",
+        "text": "$9.99/month"
+    },
+    "bcr1y0": {
+        "TYPE": "ul",
+        "PARENT": "brb1ow",
+        "bid": "bcr1y0",
+        "FINDEX": "a2",
+        "class": "mt-4 space-y-2"
+    },
+    "btmb7u": {
+        "TYPE": "li",
+        "PARENT": "bcr1y0",
+        "bid": "btmb7u",
+        "FINDEX": "a0",
+        "class": "flex items-center"
+    },
+    "bzgj8v": {
+        "TYPE": "span",
+        "PARENT": "btmb7u",
+        "bid": "bzgj8v",
+        "FINDEX": "a0",
+        "class": "text-green-500 mr-2",
+        "text": "✔"
+    },
+    "bz9a87": {
+        "TYPE": "li",
+        "PARENT": "bcr1y0",
+        "bid": "bz9a87",
+        "FINDEX": "a1",
+        "class": "flex items-center"
+    },
+    "bhox3w": {
+        "TYPE": "span",
+        "PARENT": "bz9a87",
+        "bid": "bhox3w",
+        "FINDEX": "a0",
+        "class": "text-green-500 mr-2",
+        "text": "✔"
+    },
+    "bgeo97": {
+        "TYPE": "li",
+        "PARENT": "bcr1y0",
+        "bid": "bgeo97",
+        "FINDEX": "a2",
+        "class": "flex items-center"
+    },
+    "bqu2tw": {
+        "TYPE": "span",
+        "PARENT": "bgeo97",
+        "bid": "bqu2tw",
+        "FINDEX": "a0",
+        "class": "text-red-500 mr-2",
+        "text": "✘"
+    },
+    "bqtwfd": {
+        "TYPE": "button",
+        "PARENT": "brb1ow",
+        "bid": "bqtwfd",
+        "FINDEX": "a3",
+        "class": "mt-6 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors",
+        "text": "Get Started"
+    },
+    "b1w5rm": {
+        "TYPE": "div",
+        "PARENT": "b0wd3j",
+        "bid": "b1w5rm",
+        "FINDEX": "a1",
+        "class": "max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+    },
+    "btx6dt": {
+        "TYPE": "div",
+        "PARENT": "b1w5rm",
+        "bid": "btx6dt",
+        "FINDEX": "a0",
+        "class": "p-6"
+    },
+    "bpan8o": {
+        "TYPE": "h3",
+        "PARENT": "btx6dt",
+        "bid": "bpan8o",
+        "FINDEX": "a0",
+        "class": "text-xl font-semibold text-gray-800",
+        "text": "Pro Plan"
+    },
+    "b4z1or": {
+        "TYPE": "p",
+        "PARENT": "btx6dt",
+        "bid": "b4z1or",
+        "FINDEX": "a1",
+        "class": "mt-2 text-gray-600",
+        "text": "$19.99/month"
+    },
+    "bbxjvl": {
+        "TYPE": "ul",
+        "PARENT": "btx6dt",
+        "bid": "bbxjvl",
+        "FINDEX": "a2",
+        "class": "mt-4 space-y-2"
+    },
+    "b4m1al": {
+        "TYPE": "li",
+        "PARENT": "bbxjvl",
+        "bid": "b4m1al",
+        "FINDEX": "a0",
+        "class": "flex items-center"
+    },
+    "bbdsik": {
+        "TYPE": "span",
+        "PARENT": "b4m1al",
+        "bid": "bbdsik",
+        "FINDEX": "a0",
+        "class": "text-green-500 mr-2",
+        "text": "✔"
+    },
+    "bdm317": {
+        "TYPE": "li",
+        "PARENT": "bbxjvl",
+        "bid": "bdm317",
+        "FINDEX": "a1",
+        "class": "flex items-center"
+    },
+    "bdy849": {
+        "TYPE": "span",
+        "PARENT": "bdm317",
+        "bid": "bdy849",
+        "FINDEX": "a0",
+        "class": "text-green-500 mr-2",
+        "text": "✔"
+    },
+    "bswy4k": {
+        "TYPE": "li",
+        "PARENT": "bbxjvl",
+        "bid": "bswy4k",
+        "FINDEX": "a2",
+        "class": "flex items-center"
+    },
+    "bq0l4e": {
+        "TYPE": "span",
+        "PARENT": "bswy4k",
+        "bid": "bq0l4e",
+        "FINDEX": "a0",
+        "class": "text-green-500 mr-2",
+        "text": "✔"
+    },
+    "bxd3bf": {
+        "TYPE": "button",
+        "PARENT": "btx6dt",
+        "bid": "bxd3bf",
+        "FINDEX": "a3",
+        "class": "mt-6 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors",
+        "text": "Get Started"
+    },
+    "by4vuc": {
+        "TYPE": "div",
+        "PARENT": "b0wd3j",
+        "bid": "by4vuc",
+        "FINDEX": "a2",
+        "class": "max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+    },
+    "bmbwk3": {
+        "TYPE": "div",
+        "PARENT": "by4vuc",
+        "bid": "bmbwk3",
+        "FINDEX": "a0",
+        "class": "p-6"
+    },
+    "bk1ol6": {
+        "TYPE": "h3",
+        "PARENT": "bmbwk3",
+        "bid": "bk1ol6",
+        "FINDEX": "a0",
+        "class": "text-xl font-semibold text-gray-800",
+        "text": "Enterprise Plan"
+    },
+    "bfl8a0": {
+        "TYPE": "p",
+        "PARENT": "bmbwk3",
+        "bid": "bfl8a0",
+        "FINDEX": "a1",
+        "class": "mt-2 text-gray-600",
+        "text": "$49.99/month"
+    },
+    "b1mty7": {
+        "TYPE": "ul",
+        "PARENT": "bmbwk3",
+        "bid": "b1mty7",
+        "FINDEX": "a2",
+        "class": "mt-4 space-y-2"
+    },
+    "b3mncy": {
+        "TYPE": "li",
+        "PARENT": "b1mty7",
+        "bid": "b3mncy",
+        "FINDEX": "a0",
+        "class": "flex items-center"
+    },
+    "bk03d9": {
+        "TYPE": "span",
+        "PARENT": "b3mncy",
+        "bid": "bk03d9",
+        "FINDEX": "a0",
+        "class": "text-green-500 mr-2",
+        "text": "✔"
+    },
+    "bwplav": {
+        "TYPE": "li",
+        "PARENT": "b1mty7",
+        "bid": "bwplav",
+        "FINDEX": "a1",
+        "class": "flex items-center"
+    },
+    "b6ybgf": {
+        "TYPE": "span",
+        "PARENT": "bwplav",
+        "bid": "b6ybgf",
+        "FINDEX": "a0",
+        "class": "text-green-500 mr-2",
+        "text": "✔"
+    },
+    "brnvkq": {
+        "TYPE": "li",
+        "PARENT": "b1mty7",
+        "bid": "brnvkq",
+        "FINDEX": "a2",
+        "class": "flex items-center"
+    },
+    "b7lakk": {
+        "TYPE": "span",
+        "PARENT": "brnvkq",
+        "bid": "b7lakk",
+        "FINDEX": "a0",
+        "class": "text-green-500 mr-2",
+        "text": "✔"
+    },
+    "bxaq07": {
+        "TYPE": "button",
+        "PARENT": "bmbwk3",
+        "bid": "bxaq07",
+        "FINDEX": "a3",
+        "class": "mt-6 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors",
+        "text": "Get Started"
+    },
+    "b5q6du": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "b5q6du",
+        "FINDEX": "aA",
+        "class": "grid grid-cols-3 gap-4 p-6"
+    },
+    "b2bm4f": {
+        "TYPE": "div",
+        "PARENT": "b5q6du",
+        "bid": "b2bm4f",
+        "FINDEX": "a0",
+        "class": "relative group"
+    },
+    "bvvu9n": {
+        "TYPE": "img",
+        "PARENT": "b2bm4f",
+        "bid": "bvvu9n",
+        "FINDEX": "a0",
+        "src": "https://via.placeholder.com/300",
+        "alt": "Gallery Image 1",
+        "class": "w-full h-full object-cover rounded-lg"
+    },
+    "bepgxc": {
+        "TYPE": "div",
+        "PARENT": "b2bm4f",
+        "bid": "bepgxc",
+        "FINDEX": "a1",
+        "class": "absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+    },
+    "bedd9c": {
+        "TYPE": "p",
+        "PARENT": "bepgxc",
+        "bid": "bedd9c",
+        "FINDEX": "a0",
+        "class": "text-white font-semibold text-lg",
+        "text": "Gallery Image 1"
+    },
+    "b36xyu": {
+        "TYPE": "div",
+        "PARENT": "b5q6du",
+        "bid": "b36xyu",
+        "FINDEX": "a1",
+        "class": "relative group"
+    },
+    "b7fezv": {
+        "TYPE": "img",
+        "PARENT": "b36xyu",
+        "bid": "b7fezv",
+        "FINDEX": "a0",
+        "src": "https://via.placeholder.com/300",
+        "alt": "Gallery Image 2",
+        "class": "w-full h-full object-cover rounded-lg"
+    },
+    "b7s7xv": {
+        "TYPE": "div",
+        "PARENT": "b36xyu",
+        "bid": "b7s7xv",
+        "FINDEX": "a1",
+        "class": "absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+    },
+    "bvqeoy": {
+        "TYPE": "p",
+        "PARENT": "b7s7xv",
+        "bid": "bvqeoy",
+        "FINDEX": "a0",
+        "class": "text-white font-semibold text-lg",
+        "text": "Gallery Image 2"
+    },
+    "bi6j2l": {
+        "TYPE": "div",
+        "PARENT": "b5q6du",
+        "bid": "bi6j2l",
+        "FINDEX": "a2",
+        "class": "relative group"
+    },
+    "bb17gk": {
+        "TYPE": "img",
+        "PARENT": "bi6j2l",
+        "bid": "bb17gk",
+        "FINDEX": "a0",
+        "src": "https://via.placeholder.com/300",
+        "alt": "Gallery Image 3",
+        "class": "w-full h-full object-cover rounded-lg"
+    },
+    "bysj6g": {
+        "TYPE": "div",
+        "PARENT": "bi6j2l",
+        "bid": "bysj6g",
+        "FINDEX": "a1",
+        "class": "absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+    },
+    "b447tb": {
+        "TYPE": "p",
+        "PARENT": "bysj6g",
+        "bid": "b447tb",
+        "FINDEX": "a0",
+        "class": "text-white font-semibold text-lg",
+        "text": "Gallery Image 3"
+    },
+    "bfqg2m": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "bfqg2m",
+        "FINDEX": "aB",
+        "class": "flex h-screen bg-gray-100"
+    },
+    "bom75r": {
+        "TYPE": "aside",
+        "PARENT": "bfqg2m",
+        "bid": "bom75r",
+        "FINDEX": "a0",
+        "class": "w-64 bg-gray-800 text-gray-200"
+    },
+    "biizj9": {
+        "TYPE": "div",
+        "PARENT": "bom75r",
+        "bid": "biizj9",
+        "FINDEX": "a0",
+        "class": "p-6"
+    },
+    "bjhc9t": {
+        "TYPE": "h2",
+        "PARENT": "biizj9",
+        "bid": "bjhc9t",
+        "FINDEX": "a0",
+        "class": "text-lg font-bold",
+        "text": "Dashboard"
+    },
+    "bhknth": {
+        "TYPE": "nav",
+        "PARENT": "bom75r",
+        "bid": "bhknth",
+        "FINDEX": "a1"
+    },
+    "be4yks": {
+        "TYPE": "ul",
+        "PARENT": "bhknth",
+        "bid": "be4yks",
+        "FINDEX": "a0"
+    },
+    "bw1w2p": {
+        "TYPE": "li",
+        "PARENT": "be4yks",
+        "bid": "bw1w2p",
+        "FINDEX": "a0",
+        "class": "hover:bg-gray-700 p-4"
+    },
+    "b24zjy": {
+        "TYPE": "a",
+        "PARENT": "bw1w2p",
+        "bid": "b24zjy",
+        "FINDEX": "a0",
+        "href": "#",
+        "class": "block",
+        "text": "Home"
+    },
+    "bssw4p": {
+        "TYPE": "li",
+        "PARENT": "be4yks",
+        "bid": "bssw4p",
+        "FINDEX": "a1",
+        "class": "hover:bg-gray-700 p-4"
+    },
+    "beh4xk": {
+        "TYPE": "a",
+        "PARENT": "bssw4p",
+        "bid": "beh4xk",
+        "FINDEX": "a0",
+        "href": "#",
+        "class": "block",
+        "text": "Analytics"
+    },
+    "bueb7n": {
+        "TYPE": "li",
+        "PARENT": "be4yks",
+        "bid": "bueb7n",
+        "FINDEX": "a2",
+        "class": "hover:bg-gray-700 p-4"
+    },
+    "b24q14": {
+        "TYPE": "a",
+        "PARENT": "bueb7n",
+        "bid": "b24q14",
+        "FINDEX": "a0",
+        "href": "#",
+        "class": "block",
+        "text": "Settings"
+    },
+    "b30h3m": {
+        "TYPE": "li",
+        "PARENT": "be4yks",
+        "bid": "b30h3m",
+        "FINDEX": "a3",
+        "class": "hover:bg-gray-700 p-4"
+    },
+    "bgcxze": {
+        "TYPE": "a",
+        "PARENT": "b30h3m",
+        "bid": "bgcxze",
+        "FINDEX": "a0",
+        "href": "#",
+        "class": "block",
+        "text": "Logout"
+    },
+    "b1y2wf": {
+        "TYPE": "main",
+        "PARENT": "bfqg2m",
+        "bid": "b1y2wf",
+        "FINDEX": "a1",
+        "class": "flex-1 p-6"
+    },
+    "b6nzgq": {
+        "TYPE": "div",
+        "PARENT": "b1y2wf",
+        "bid": "b6nzgq",
+        "FINDEX": "a0",
+        "class": "grid grid-cols-3 gap-6 mb-6"
+    },
+    "b9a1hl": {
+        "TYPE": "div",
+        "PARENT": "b6nzgq",
+        "bid": "b9a1hl",
+        "FINDEX": "a0",
+        "class": "p-4 bg-white rounded-lg shadow"
+    },
+    "be1vsw": {
+        "TYPE": "h3",
+        "PARENT": "b9a1hl",
+        "bid": "be1vsw",
+        "FINDEX": "a0",
+        "class": "text-sm text-gray-500",
+        "text": "Total Users"
+    },
+    "bpbpm6": {
+        "TYPE": "p",
+        "PARENT": "b9a1hl",
+        "bid": "bpbpm6",
+        "FINDEX": "a1",
+        "class": "text-2xl font-semibold",
+        "text": "1,230"
+    },
+    "bijf56": {
+        "TYPE": "div",
+        "PARENT": "b6nzgq",
+        "bid": "bijf56",
+        "FINDEX": "a1",
+        "class": "p-4 bg-white rounded-lg shadow"
+    },
+    "b3bl33": {
+        "TYPE": "h3",
+        "PARENT": "bijf56",
+        "bid": "b3bl33",
+        "FINDEX": "a0",
+        "class": "text-sm text-gray-500",
+        "text": "Revenue"
+    },
+    "bll57u": {
+        "TYPE": "p",
+        "PARENT": "bijf56",
+        "bid": "bll57u",
+        "FINDEX": "a1",
+        "class": "text-2xl font-semibold",
+        "text": "$9,876"
+    },
+    "b2wx5u": {
+        "TYPE": "div",
+        "PARENT": "b6nzgq",
+        "bid": "b2wx5u",
+        "FINDEX": "a2",
+        "class": "p-4 bg-white rounded-lg shadow"
+    },
+    "bgw9fs": {
+        "TYPE": "h3",
+        "PARENT": "b2wx5u",
+        "bid": "bgw9fs",
+        "FINDEX": "a0",
+        "class": "text-sm text-gray-500",
+        "text": "Active Sessions"
+    },
+    "bv4x9o": {
+        "TYPE": "p",
+        "PARENT": "b2wx5u",
+        "bid": "bv4x9o",
+        "FINDEX": "a1",
+        "class": "text-2xl font-semibold",
+        "text": "56"
+    },
+    "b29yv6": {
+        "TYPE": "div",
+        "PARENT": "b1y2wf",
+        "bid": "b29yv6",
+        "FINDEX": "a1",
+        "class": "grid grid-cols-3 gap-6"
+    },
+    "bznksw": {
+        "TYPE": "div",
+        "PARENT": "b29yv6",
+        "bid": "bznksw",
+        "FINDEX": "a0",
+        "class": "bg-white rounded-lg shadow p-6"
+    },
+    "bpv3l2": {
+        "TYPE": "h3",
+        "PARENT": "bznksw",
+        "bid": "bpv3l2",
+        "FINDEX": "a0",
+        "class": "text-lg font-bold mb-2",
+        "text": "Recent Activities"
+    },
+    "b0hc13": {
+        "TYPE": "ul",
+        "PARENT": "bznksw",
+        "bid": "b0hc13",
+        "FINDEX": "a1",
+        "class": "space-y-2"
+    },
+    "bfb0aw": {
+        "TYPE": "li",
+        "PARENT": "b0hc13",
+        "bid": "bfb0aw",
+        "FINDEX": "a0",
+        "class": "flex justify-between text-sm"
+    },
+    "b3bkir": {
+        "TYPE": "span",
+        "PARENT": "bfb0aw",
+        "bid": "b3bkir",
+        "FINDEX": "a0",
+        "text": "User Login"
+    },
+    "bdr4ty": {
+        "TYPE": "span",
+        "PARENT": "bfb0aw",
+        "bid": "bdr4ty",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "2 min ago"
+    },
+    "bw4e8s": {
+        "TYPE": "li",
+        "PARENT": "b0hc13",
+        "bid": "bw4e8s",
+        "FINDEX": "a1",
+        "class": "flex justify-between text-sm"
+    },
+    "bgglwn": {
+        "TYPE": "span",
+        "PARENT": "bw4e8s",
+        "bid": "bgglwn",
+        "FINDEX": "a0",
+        "text": "New Order"
+    },
+    "b3jemc": {
+        "TYPE": "span",
+        "PARENT": "bw4e8s",
+        "bid": "b3jemc",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "10 min ago"
+    },
+    "bq98f7": {
+        "TYPE": "li",
+        "PARENT": "b0hc13",
+        "bid": "bq98f7",
+        "FINDEX": "a2",
+        "class": "flex justify-between text-sm"
+    },
+    "bjhi3y": {
+        "TYPE": "span",
+        "PARENT": "bq98f7",
+        "bid": "bjhi3y",
+        "FINDEX": "a0",
+        "text": "System Update"
+    },
+    "bc7pk7": {
+        "TYPE": "span",
+        "PARENT": "bq98f7",
+        "bid": "bc7pk7",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "1 hour ago"
+    },
+    "bnxxed": {
+        "TYPE": "div",
+        "PARENT": "b29yv6",
+        "bid": "bnxxed",
+        "FINDEX": "a1",
+        "class": "bg-white rounded-lg shadow p-6"
+    },
+    "bcsu4f": {
+        "TYPE": "h3",
+        "PARENT": "bnxxed",
+        "bid": "bcsu4f",
+        "FINDEX": "a0",
+        "class": "text-lg font-bold mb-2",
+        "text": "Notifications"
+    },
+    "bdaiyc": {
+        "TYPE": "ul",
+        "PARENT": "bnxxed",
+        "bid": "bdaiyc",
+        "FINDEX": "a1",
+        "class": "space-y-2"
+    },
+    "bcha4t": {
+        "TYPE": "li",
+        "PARENT": "bdaiyc",
+        "bid": "bcha4t",
+        "FINDEX": "a0",
+        "class": "flex items-center"
+    },
+    "b0toxu": {
+        "TYPE": "div",
+        "PARENT": "bcha4t",
+        "bid": "b0toxu",
+        "FINDEX": "a0",
+        "class": "bg-blue-500 w-2 h-2 rounded-full mr-2"
+    },
+    "bsvwvr": {
+        "TYPE": "span",
+        "PARENT": "bcha4t",
+        "bid": "bsvwvr",
+        "FINDEX": "a1",
+        "class": "text-sm",
+        "text": "Server maintenance scheduled"
+    },
+    "bbuwwi": {
+        "TYPE": "li",
+        "PARENT": "bdaiyc",
+        "bid": "bbuwwi",
+        "FINDEX": "a1",
+        "class": "flex items-center"
+    },
+    "bez72n": {
+        "TYPE": "div",
+        "PARENT": "bbuwwi",
+        "bid": "bez72n",
+        "FINDEX": "a0",
+        "class": "bg-green-500 w-2 h-2 rounded-full mr-2"
+    },
+    "b485yx": {
+        "TYPE": "span",
+        "PARENT": "bbuwwi",
+        "bid": "b485yx",
+        "FINDEX": "a1",
+        "class": "text-sm",
+        "text": "New user registered"
+    },
+    "bsmwnl": {
+        "TYPE": "li",
+        "PARENT": "bdaiyc",
+        "bid": "bsmwnl",
+        "FINDEX": "a2",
+        "class": "flex items-center"
+    },
+    "bx0lbx": {
+        "TYPE": "div",
+        "PARENT": "bsmwnl",
+        "bid": "bx0lbx",
+        "FINDEX": "a0",
+        "class": "bg-red-500 w-2 h-2 rounded-full mr-2"
+    },
+    "bhgy64": {
+        "TYPE": "span",
+        "PARENT": "bsmwnl",
+        "bid": "bhgy64",
+        "FINDEX": "a1",
+        "class": "text-sm",
+        "text": "Critical error detected"
+    },
+    "bz2axr": {
+        "TYPE": "div",
+        "PARENT": "b29yv6",
+        "bid": "bz2axr",
+        "FINDEX": "a2",
+        "class": "bg-white rounded-lg p-6"
+    },
+    "btu4c0": {
+        "TYPE": "h3",
+        "PARENT": "bz2axr",
+        "bid": "btu4c0",
+        "FINDEX": "a0",
+        "class": "text-lg font-bold mb-2",
+        "text": "Messages"
+    },
+    "bvcvg9": {
+        "TYPE": "ul",
+        "PARENT": "bz2axr",
+        "bid": "bvcvg9",
+        "FINDEX": "a1",
+        "class": "space-y-2"
+    },
+    "btm8m9": {
+        "TYPE": "li",
+        "PARENT": "bvcvg9",
+        "bid": "btm8m9",
+        "FINDEX": "a0",
+        "class": "flex justify-between text-sm"
+    },
+    "b3p58f": {
+        "TYPE": "span",
+        "PARENT": "btm8m9",
+        "bid": "b3p58f",
+        "FINDEX": "a0",
+        "text": "John Doe"
+    },
+    "bad007": {
+        "TYPE": "span",
+        "PARENT": "btm8m9",
+        "bid": "bad007",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "Hey, how's it going?"
+    },
+    "bw7opm": {
+        "TYPE": "li",
+        "PARENT": "bvcvg9",
+        "bid": "bw7opm",
+        "FINDEX": "a1",
+        "class": "flex justify-between text-sm"
+    },
+    "bqnhf4": {
+        "TYPE": "span",
+        "PARENT": "bw7opm",
+        "bid": "bqnhf4",
+        "FINDEX": "a0",
+        "text": "Jane Smith"
+    },
+    "bkilov": {
+        "TYPE": "span",
+        "PARENT": "bw7opm",
+        "bid": "bkilov",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "Meeting at 3 PM"
+    },
+    "b9ez7n": {
+        "TYPE": "li",
+        "PARENT": "bvcvg9",
+        "bid": "b9ez7n",
+        "FINDEX": "a2",
+        "class": "flex justify-between text-sm"
+    },
+    "b1xwpn": {
+        "TYPE": "span",
+        "PARENT": "b9ez7n",
+        "bid": "b1xwpn",
+        "FINDEX": "a0",
+        "text": "Support"
+    },
+    "b0r60m": {
+        "TYPE": "span",
+        "PARENT": "b9ez7n",
+        "bid": "b0r60m",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "Your ticket has been resolved"
+    },
+    "b3t8dp": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "b3t8dp",
+        "FINDEX": "aC",
+        "class": "p-6"
+    },
+    "bxo1zt": {
+        "TYPE": "h2",
+        "PARENT": "b3t8dp",
+        "bid": "bxo1zt",
+        "FINDEX": "a0",
+        "class": "text-2xl font-bold mb-4",
+        "text": "Featured Products"
+    },
+    "byrydy": {
+        "TYPE": "div",
+        "PARENT": "b3t8dp",
+        "bid": "byrydy",
+        "FINDEX": "a1",
+        "class": "grid grid-cols-4 gap-6"
+    },
+    "bbqqrx": {
+        "TYPE": "div",
+        "PARENT": "byrydy",
+        "bid": "bbqqrx",
+        "FINDEX": "a0",
+        "class": "bg-white border border-gray-200 rounded-lg shadow-lg"
+    },
+    "bfo17c": {
+        "TYPE": "img",
+        "PARENT": "bbqqrx",
+        "bid": "bfo17c",
+        "FINDEX": "a0",
+        "src": "https://via.placeholder.com/300",
+        "alt": "Product 1",
+        "class": "rounded-t-lg"
+    },
+    "bdm5ik": {
+        "TYPE": "div",
+        "PARENT": "bbqqrx",
+        "bid": "bdm5ik",
+        "FINDEX": "a1",
+        "class": "p-4"
+    },
+    "bo89ph": {
+        "TYPE": "h3",
+        "PARENT": "bdm5ik",
+        "bid": "bo89ph",
+        "FINDEX": "a0",
+        "class": "text-lg font-bold",
+        "text": "Product 1"
+    },
+    "b3u0ev": {
+        "TYPE": "p",
+        "PARENT": "bdm5ik",
+        "bid": "b3u0ev",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "$49.99"
+    },
+    "b75h7f": {
+        "TYPE": "button",
+        "PARENT": "bdm5ik",
+        "bid": "b75h7f",
+        "FINDEX": "a2",
+        "class": "mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors",
+        "text": "Add to Cart"
+    },
+    "br4zm8": {
+        "TYPE": "div",
+        "PARENT": "byrydy",
+        "bid": "br4zm8",
+        "FINDEX": "a1",
+        "class": "bg-white border border-gray-200 rounded-lg shadow-lg"
+    },
+    "bfsb6w": {
+        "TYPE": "img",
+        "PARENT": "br4zm8",
+        "bid": "bfsb6w",
+        "FINDEX": "a0",
+        "src": "https://via.placeholder.com/300",
+        "alt": "Product 2",
+        "class": "rounded-t-lg"
+    },
+    "btth4g": {
+        "TYPE": "div",
+        "PARENT": "br4zm8",
+        "bid": "btth4g",
+        "FINDEX": "a1",
+        "class": "p-4"
+    },
+    "b5mo5e": {
+        "TYPE": "h3",
+        "PARENT": "btth4g",
+        "bid": "b5mo5e",
+        "FINDEX": "a0",
+        "class": "text-lg font-bold",
+        "text": "Product 2"
+    },
+    "byx8mi": {
+        "TYPE": "p",
+        "PARENT": "btth4g",
+        "bid": "byx8mi",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "$59.99"
+    },
+    "bihcnk": {
+        "TYPE": "button",
+        "PARENT": "btth4g",
+        "bid": "bihcnk",
+        "FINDEX": "a2",
+        "class": "mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors",
+        "text": "Add to Cart"
+    },
+    "btyqag": {
+        "TYPE": "div",
+        "PARENT": "byrydy",
+        "bid": "btyqag",
+        "FINDEX": "a2",
+        "class": "bg-white border border-gray-200 rounded-lg shadow-lg"
+    },
+    "brx7fk": {
+        "TYPE": "img",
+        "PARENT": "btyqag",
+        "bid": "brx7fk",
+        "FINDEX": "a0",
+        "src": "https://via.placeholder.com/300",
+        "alt": "Product 3",
+        "class": "rounded-t-lg"
+    },
+    "b0hhu3": {
+        "TYPE": "div",
+        "PARENT": "btyqag",
+        "bid": "b0hhu3",
+        "FINDEX": "a1",
+        "class": "p-4"
+    },
+    "bpk1mw": {
+        "TYPE": "h3",
+        "PARENT": "b0hhu3",
+        "bid": "bpk1mw",
+        "FINDEX": "a0",
+        "class": "text-lg font-bold",
+        "text": "Product 3"
+    },
+    "b4k7de": {
+        "TYPE": "p",
+        "PARENT": "b0hhu3",
+        "bid": "b4k7de",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "$39.99"
+    },
+    "bsh2qb": {
+        "TYPE": "button",
+        "PARENT": "b0hhu3",
+        "bid": "bsh2qb",
+        "FINDEX": "a2",
+        "class": "mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors",
+        "text": "Add to Cart"
+    },
+    "bxu76n": {
+        "TYPE": "div",
+        "PARENT": "byrydy",
+        "bid": "bxu76n",
+        "FINDEX": "a3",
+        "class": "bg-white border border-gray-200 rounded-lg shadow-lg"
+    },
+    "bqh5e7": {
+        "TYPE": "img",
+        "PARENT": "bxu76n",
+        "bid": "bqh5e7",
+        "FINDEX": "a0",
+        "src": "https://via.placeholder.com/300",
+        "alt": "Product 4",
+        "class": "rounded-t-lg"
+    },
+    "ba3b5d": {
+        "TYPE": "div",
+        "PARENT": "bxu76n",
+        "bid": "ba3b5d",
+        "FINDEX": "a1",
+        "class": "p-4"
+    },
+    "b1uf85": {
+        "TYPE": "h3",
+        "PARENT": "ba3b5d",
+        "bid": "b1uf85",
+        "FINDEX": "a0",
+        "class": "text-lg font-bold",
+        "text": "Product 4"
+    },
+    "b62l8n": {
+        "TYPE": "p",
+        "PARENT": "ba3b5d",
+        "bid": "b62l8n",
+        "FINDEX": "a1",
+        "class": "text-gray-500",
+        "text": "$29.99"
+    },
+    "b22wne": {
+        "TYPE": "button",
+        "PARENT": "ba3b5d",
+        "bid": "b22wne",
+        "FINDEX": "a2",
+        "class": "mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors",
+        "text": "Add to Cart"
+    },
+    "bhz7o8": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "bhz7o8",
+        "FINDEX": "aD",
+        "class": "max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg"
+    },
+    "bhhcmf": {
+        "TYPE": "h2",
+        "PARENT": "bhz7o8",
+        "bid": "bhhcmf",
+        "FINDEX": "a0",
+        "class": "text-xl font-bold mb-4",
+        "text": "Signup Form"
+    },
+    "b12hmm": {
+        "TYPE": "form",
+        "PARENT": "bhz7o8",
+        "bid": "b12hmm",
+        "FINDEX": "a1"
+    },
+    "bjmdh7": {
+        "TYPE": "div",
+        "PARENT": "b12hmm",
+        "bid": "bjmdh7",
+        "FINDEX": "a0",
+        "class": "mb-6"
+    },
+    "b2sci7": {
+        "TYPE": "label",
+        "PARENT": "bjmdh7",
+        "bid": "b2sci7",
+        "FINDEX": "a0",
+        "class": "block text-sm font-medium mb-2",
+        "text": "Full Name"
+    },
+    "busyx5": {
+        "TYPE": "input",
+        "PARENT": "bjmdh7",
+        "bid": "busyx5",
+        "FINDEX": "a1",
+        "type": "text",
+        "class": "w-full border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-200"
+    },
+    "bmyzre": {
+        "TYPE": "div",
+        "PARENT": "b12hmm",
+        "bid": "bmyzre",
+        "FINDEX": "a1",
+        "class": "mb-6"
+    },
+    "b94ohm": {
+        "TYPE": "label",
+        "PARENT": "bmyzre",
+        "bid": "b94ohm",
+        "FINDEX": "a0",
+        "class": "block text-sm font-medium mb-2",
+        "text": "Email Address"
+    },
+    "bvxxxv": {
+        "TYPE": "input",
+        "PARENT": "bmyzre",
+        "bid": "bvxxxv",
+        "FINDEX": "a1",
+        "type": "email",
+        "class": "w-full border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-200"
+    },
+    "b8tjbs": {
+        "TYPE": "div",
+        "PARENT": "b12hmm",
+        "bid": "b8tjbs",
+        "FINDEX": "a2",
+        "class": "mb-6"
+    },
+    "bsfus8": {
+        "TYPE": "label",
+        "PARENT": "b8tjbs",
+        "bid": "bsfus8",
+        "FINDEX": "a0",
+        "class": "block text-sm font-medium mb-2",
+        "text": "Password"
+    },
+    "bxw8wn": {
+        "TYPE": "input",
+        "PARENT": "b8tjbs",
+        "bid": "bxw8wn",
+        "FINDEX": "a1",
+        "type": "password",
+        "class": "w-full border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-200"
+    },
+    "bf1xyw": {
+        "TYPE": "button",
+        "PARENT": "b12hmm",
+        "bid": "bf1xyw",
+        "FINDEX": "a3",
+        "type": "submit",
+        "class": "w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors",
+        "text": "Submit"
+    },
+    "brwkds": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "brwkds",
+        "FINDEX": "aE",
+        "class": "p-6 bg-gray-100"
+    },
+    "boz9iz": {
+        "TYPE": "h1",
+        "PARENT": "brwkds",
+        "bid": "boz9iz",
+        "FINDEX": "a0",
+        "class": "text-2xl font-bold mb-6",
+        "text": "Analytics Dashboard"
+    },
+    "bq1r5y": {
+        "TYPE": "div",
+        "PARENT": "brwkds",
+        "bid": "bq1r5y",
+        "FINDEX": "a1",
+        "class": "grid grid-cols-3 gap-6 mb-6"
+    },
+    "b72xt8": {
+        "TYPE": "div",
+        "PARENT": "bq1r5y",
+        "bid": "b72xt8",
+        "FINDEX": "a0",
+        "class": "bg-white p-4 rounded-lg shadow"
+    },
+    "b8qd78": {
+        "TYPE": "h3",
+        "PARENT": "b72xt8",
+        "bid": "b8qd78",
+        "FINDEX": "a0",
+        "class": "text-sm font-semibold text-gray-500",
+        "text": "Monthly Users"
+    },
+    "bxnr7r": {
+        "TYPE": "p",
+        "PARENT": "b72xt8",
+        "bid": "bxnr7r",
+        "FINDEX": "a1",
+        "class": "text-3xl font-bold mt-2",
+        "text": "45,000"
+    },
+    "bnctdl": {
+        "TYPE": "div",
+        "PARENT": "bq1r5y",
+        "bid": "bnctdl",
+        "FINDEX": "a1",
+        "class": "bg-white p-4 rounded-lg shadow"
+    },
+    "boewql": {
+        "TYPE": "h3",
+        "PARENT": "bnctdl",
+        "bid": "boewql",
+        "FINDEX": "a0",
+        "class": "text-sm font-semibold text-gray-500",
+        "text": "New Subscriptions"
+    },
+    "bciuii": {
+        "TYPE": "p",
+        "PARENT": "bnctdl",
+        "bid": "bciuii",
+        "FINDEX": "a1",
+        "class": "text-3xl font-bold mt-2",
+        "text": "1,200"
+    },
+    "bfz1cr": {
+        "TYPE": "div",
+        "PARENT": "bq1r5y",
+        "bid": "bfz1cr",
+        "FINDEX": "a2",
+        "class": "bg-white p-4 rounded-lg shadow"
+    },
+    "bw0pv8": {
+        "TYPE": "h3",
+        "PARENT": "bfz1cr",
+        "bid": "bw0pv8",
+        "FINDEX": "a0",
+        "class": "text-sm font-semibold text-gray-500",
+        "text": "Revenue"
+    },
+    "b6u1x9": {
+        "TYPE": "p",
+        "PARENT": "bfz1cr",
+        "bid": "b6u1x9",
+        "FINDEX": "a1",
+        "class": "text-3xl font-bold mt-2",
+        "text": "$98,000"
+    },
+    "bzxqfu": {
+        "TYPE": "div",
+        "PARENT": "brwkds",
+        "bid": "bzxqfu",
+        "FINDEX": "a2",
+        "class": "bg-white p-6 rounded-lg shadow mb-6"
+    },
+    "bzwcea": {
+        "TYPE": "h3",
+        "PARENT": "bzxqfu",
+        "bid": "bzwcea",
+        "FINDEX": "a0",
+        "class": "text-lg font-bold mb-4",
+        "text": "User Growth (Last 6 Months)"
+    },
+    "busd9t": {
+        "TYPE": "div",
+        "PARENT": "bzxqfu",
+        "bid": "busd9t",
+        "FINDEX": "a1",
+        "class": "flex space-x-2"
+    },
+    "bqdwb4": {
+        "TYPE": "div",
+        "PARENT": "busd9t",
+        "bid": "bqdwb4",
+        "FINDEX": "a0",
+        "class": "h-16 bg-blue-500 w-6 rounded"
+    },
+    "b1n7f0": {
+        "TYPE": "div",
+        "PARENT": "busd9t",
+        "bid": "b1n7f0",
+        "FINDEX": "a1",
+        "class": "h-24 bg-blue-500 w-6 rounded"
+    },
+    "bh7ibj": {
+        "TYPE": "div",
+        "PARENT": "busd9t",
+        "bid": "bh7ibj",
+        "FINDEX": "a2",
+        "class": "h-32 bg-blue-500 w-6 rounded"
+    },
+    "b5dv4k": {
+        "TYPE": "div",
+        "PARENT": "busd9t",
+        "bid": "b5dv4k",
+        "FINDEX": "a3",
+        "class": "h-40 bg-blue-500 w-6 rounded"
+    },
+    "bmet54": {
+        "TYPE": "div",
+        "PARENT": "busd9t",
+        "bid": "bmet54",
+        "FINDEX": "a4",
+        "class": "h-20 bg-blue-500 w-6 rounded"
+    },
+    "b7weqx": {
+        "TYPE": "div",
+        "PARENT": "busd9t",
+        "bid": "b7weqx",
+        "FINDEX": "a5",
+        "class": "h-36 bg-blue-500 w-6 rounded"
+    },
+    "bhgwd4": {
+        "TYPE": "div",
+        "PARENT": "brwkds",
+        "bid": "bhgwd4",
+        "FINDEX": "a3",
+        "class": "bg-white p-6 rounded-lg shadow flex justify-center"
+    },
+    "b630a1": {
+        "TYPE": "div",
+        "PARENT": "bhgwd4",
+        "bid": "b630a1",
+        "FINDEX": "a0",
+        "class": "relative w-40 h-40"
+    },
+    "b77yzu": {
+        "TYPE": "div",
+        "PARENT": "b630a1",
+        "bid": "b77yzu",
+        "FINDEX": "a0",
+        "class": "absolute inset-0 bg-blue-500 rounded-full",
+        "style": "clip-path: circle(50% at 50% 50%);"
+    },
+    "bkl2wv": {
+        "TYPE": "div",
+        "PARENT": "b630a1",
+        "bid": "bkl2wv",
+        "FINDEX": "a1",
+        "class": "absolute inset-0 bg-green-500 rounded-full",
+        "style": "clip-path: polygon(50% 50%, 0% 50%, 50% 0%);"
+    },
+    "bqok36": {
+        "TYPE": "div",
+        "PARENT": "b630a1",
+        "bid": "bqok36",
+        "FINDEX": "a2",
+        "class": "absolute inset-0 bg-yellow-500 rounded-full",
+        "style": "clip-path: polygon(50% 50%, 50% 0%, 100% 50%);"
+    },
+    "bue98l": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "bue98l",
+        "FINDEX": "a0",
+        "class": "new-div w-screen flex items-center justify-center",
+        "text": ""
+    },
+    "boh48w": {
+        "TYPE": "img",
+        "PARENT": "bue98l",
+        "bid": "boh48w",
+        "FINDEX": "a0",
+        "src": "https://fal.media/files/koala/4hOfdrEH-A7owbNGWj_61.jpeg",
+        "alt": "Gallery Item",
+        "class": "w-full object-cover",
+        "bro-image-gen-data": "[{\"images\":[{\"url\":\"https://fal.media/files/koala/8T25gCMqr4twAUbpuIQCV.jpeg\",\"width\":1024,\"height\":1024,\"content_type\":\"image/jpeg\"}],\"timings\":{\"inference\":0.3795893178321421},\"seed\":343644325371501600,\"has_nsfw_concepts\":[false],\"prompt\":\"same image\"},{\"images\":[{\"url\":\"https://fal.media/files/koala/4hOfdrEH-A7owbNGWj_61.jpeg\",\"width\":1024,\"height\":1024,\"content_type\":\"image/jpeg\"}],\"timings\":{\"inference\":0.3864668891765177},\"seed\":4860504504811059000,\"has_nsfw_concepts\":[false],\"prompt\":\"Technical illustration with blueprint style and thin lines: same image\"},{\"images\":[{\"url\":\"https://fal.media/files/lion/zYPLwcpGyVnLa1eyqa5dT.jpeg\",\"width\":1024,\"height\":1024,\"content_type\":\"image/jpeg\"}],\"timings\":{\"inference\":0.38081985525786877},\"seed\":9454239432241558000,\"has_nsfw_concepts\":[false],\"prompt\":\"3D material design with soft shadows and depth effects: same image\"}]"
+    },
+    "b4xgm3": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "b4xgm3",
+        "FINDEX": "aF",
+        "data": "[{id: 1, name: 'TAB1'}, {id: 2, name: 'TAB2'}, {id: 3, name: 'TAB3'}]",
+        "class": "p-2 border border-gray-300 rounded"
+    },
+    "bdlh2n": {
+        "TYPE": "div",
+        "PARENT": "b4xgm3",
+        "bid": "bdlh2n",
+        "FINDEX": "a0",
+        "class": "flex flex-col gap-2 items-center justify-center"
+    },
+    "bog05v": {
+        "TYPE": "div",
+        "PARENT": "bdlh2n",
+        "bid": "bog05v",
+        "FINDEX": "a0",
+        "class": "flex flex-row relative"
+    },
+    "b9cex0": {
+        "TYPE": "div",
+        "PARENT": "bog05v",
+        "bid": "b9cex0",
+        "FINDEX": "a0",
+        "map": "DATA",
+        "class": "w-[300px] overflow-x-hidden z-[2] p-2 bg-transparent"
+    },
+    "brl5iy": {
+        "TYPE": "div",
+        "PARENT": "b9cex0",
+        "bid": "brl5iy",
+        "FINDEX": "a0",
+        "action": "select",
+        "class": "w-full b-sel:bg-[--secondary-50] cursor-pointer py-2 px-4 rounded shadow-lg rounded-full flex items-center justify-center",
+        "text": "{V.name}"
+    },
+    "bhv0u4": {
+        "TYPE": "motion.div",
+        "PARENT": "bog05v",
+        "bid": "bhv0u4",
+        "FINDEX": "a1",
+        "class": "absolute left-0 top-0 bottom-0 rounded-full bg-[--info-300] w-[300px] z-[1]",
+        "initial": "{false}",
+        "animate": "{{x: DATA.findIndex(tab => B.is_selected({V: tab})) * 300}}",
+        "transition": "{{ type: 'spring', stiffness: 300, damping: 30 }}"
+    },
+    "b2qw55": {
+        "TYPE": "div",
+        "PARENT": "bdlh2n",
+        "bid": "b2qw55",
+        "FINDEX": "a1",
+        "class": "border border-gray-300 rounded-xl p-4"
+    },
+    "bpjsqv": {
+        "TYPE": "div",
+        "PARENT": "b2qw55",
+        "bid": "bpjsqv",
+        "FINDEX": "a0",
+        "map": "DATA"
+    },
+    "bt8xn5": {
+        "TYPE": "div",
+        "PARENT": "bpjsqv",
+        "bid": "bt8xn5",
+        "FINDEX": "a0",
+        "condition": "B.is_selected({V, idx})"
+    },
+    "bf3bc5": {
+        "TYPE": "div",
+        "PARENT": "bt8xn5",
+        "bid": "bf3bc5",
+        "FINDEX": "a0",
+        "name": "TAB-CONT1",
+        "condition": "V.id === 1"
+    },
+    "b7977h": {
+        "TYPE": "div",
+        "PARENT": "bf3bc5",
+        "bid": "b7977h",
+        "FINDEX": "a0",
+        "text": "ONE: {V.name}"
+    },
+    "b9ych8": {
+        "TYPE": "div",
+        "PARENT": "bt8xn5",
+        "bid": "b9ych8",
+        "FINDEX": "a1",
+        "name": "TAB-CONT2",
+        "condition": "V.id === 2"
+    },
+    "bykirw": {
+        "TYPE": "div",
+        "PARENT": "b9ych8",
+        "bid": "bykirw",
+        "FINDEX": "a0",
+        "text": "TWO : {V.name}"
+    },
+    "bgnv42": {
+        "TYPE": "div",
+        "PARENT": "bt8xn5",
+        "bid": "bgnv42",
+        "FINDEX": "a2",
+        "name": "TAB-CONT3",
+        "condition": "V.id === 3"
+    },
+    "by0s7y": {
+        "TYPE": "div",
+        "PARENT": "bgnv42",
+        "bid": "by0s7y",
+        "FINDEX": "a0",
+        "text": "THREE: {V.name}"
+    },
+    "bmcriz": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "bmcriz",
+        "FINDEX": "aG",
+        "name": "dropdown-menu",
+        "class": "p-8 text-[--primary-500]"
+    },
+    "bfm621": {
+        "TYPE": "style",
+        "PARENT": "bmcriz",
+        "bid": "bfm621",
+        "FINDEX": "a0",
+        "text": "details[open] .arrow {\n            transform: rotate(180deg);\n        }"
+    },
+    "bm03fi": {
+        "TYPE": "details",
+        "PARENT": "bmcriz",
+        "bid": "bm03fi",
+        "FINDEX": "a1",
+        "class": "flex items-center gap-2 relative"
+    },
+    "beo9hb": {
+        "TYPE": "summary",
+        "PARENT": "bm03fi",
+        "bid": "beo9hb",
+        "FINDEX": "a0",
+        "class": "flex items-center gap-2 border border-[--primary-500] rounded-lg px-2"
+    },
+    "bmpsu1": {
+        "TYPE": "span",
+        "PARENT": "beo9hb",
+        "bid": "bmpsu1",
+        "FINDEX": "a0",
+        "text": "Sort By"
+    },
+    "baxcx6": {
+        "TYPE": "iconify-icon",
+        "PARENT": "beo9hb",
+        "bid": "baxcx6",
+        "FINDEX": "a1",
+        "class": "arrow",
+        "icon": "lineicons:chevron-down"
+    },
+    "bw17yz": {
+        "TYPE": "div",
+        "PARENT": "bm03fi",
+        "bid": "bw17yz",
+        "FINDEX": "a1",
+        "name": "dropdown-menu-content",
+        "class": "absolute z-[10] right-0 flex flex-col gap-1 border border-[--primary-500] rounded-lg p-2 mt-2 text-nowrap bg-white/95"
+    },
+    "byetsm": {
+        "TYPE": "div",
+        "PARENT": "bw17yz",
+        "bid": "byetsm",
+        "FINDEX": "a0",
+        "class": "text-lg",
+        "text": "New Arrivals"
+    },
+    "b0rost": {
+        "TYPE": "div",
+        "PARENT": "bw17yz",
+        "bid": "b0rost",
+        "FINDEX": "a1",
+        "name": "dropdown-menu-item",
+        "class": "hover:underline cursor-pointer",
+        "text": "Item 1"
+    },
+    "bw088g": {
+        "TYPE": "div",
+        "PARENT": "bw17yz",
+        "bid": "bw088g",
+        "FINDEX": "a2",
+        "name": "dropdown-menu-item",
+        "class": "hover:underline cursor-pointer",
+        "text": "Item 2"
+    },
+    "bkxurf": {
+        "TYPE": "div",
+        "PARENT": "bw17yz",
+        "bid": "bkxurf",
+        "FINDEX": "a3",
+        "name": "dropdown-menu-item",
+        "class": "hover:underline cursor-pointer",
+        "text": "Item 3"
+    },
+    "baaxsl": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "baaxsl",
+        "FINDEX": "aH",
+        "name": "navbar",
+        "class": "w-full flex items-center rounded-[16px] bg-white/90 shadow-2xl justify-between backdrop-blur-sm"
+    },
+    "bixkst": {
+        "TYPE": "div",
+        "PARENT": "baaxsl",
+        "bid": "bixkst",
+        "FINDEX": "a0",
+        "class": "w-full rounded-[16px] px-5 py-4 flex items-center justify-center hover:bg-[--tertiary-100] cursor-pointer gap-1 text-[#616161] flex-col"
+    },
+    "bchey9": {
+        "TYPE": "iconify-icon",
+        "PARENT": "bixkst",
+        "bid": "bchey9",
+        "FINDEX": "a0",
+        "icon": "lucide:house",
+        "width": "64",
+        "height": "64"
+    },
+    "b150kz": {
+        "TYPE": "div",
+        "PARENT": "bixkst",
+        "bid": "b150kz",
+        "FINDEX": "a1",
+        "class": "w-full flex items-center justify-center display-font text-[12px]",
+        "text": "Home"
+    },
+    "b42xrx": {
+        "TYPE": "div",
+        "PARENT": "baaxsl",
+        "bid": "b42xrx",
+        "FINDEX": "a1",
+        "class": "w-full rounded-[16px] px-5 py-4 flex items-center justify-center hover:bg-[--tertiary-100] cursor-pointer gap-1 text-[#616161] flex-col"
+    },
+    "bs5nro": {
+        "TYPE": "iconify-icon",
+        "PARENT": "b42xrx",
+        "bid": "bs5nro",
+        "FINDEX": "a0",
+        "icon": "lucide:heart",
+        "width": "64",
+        "height": "64"
+    },
+    "bg5axh": {
+        "TYPE": "div",
+        "PARENT": "b42xrx",
+        "bid": "bg5axh",
+        "FINDEX": "a1",
+        "class": "w-full flex items-center justify-center display-font text-[12px]",
+        "text": "Favorites"
+    },
+    "bsfmvc": {
+        "TYPE": "div",
+        "PARENT": "baaxsl",
+        "bid": "bsfmvc",
+        "FINDEX": "a2",
+        "class": "w-full rounded-[16px] px-5 py-4 flex items-center justify-center hover:bg-[--tertiary-100] cursor-pointer gap-1 text-[#616161] flex-col"
+    },
+    "bgi8n5": {
+        "TYPE": "iconify-icon",
+        "PARENT": "bsfmvc",
+        "bid": "bgi8n5",
+        "FINDEX": "a0",
+        "icon": "lucide:binoculars",
+        "width": "64",
+        "height": "64"
+    },
+    "b9lsvu": {
+        "TYPE": "div",
+        "PARENT": "bsfmvc",
+        "bid": "b9lsvu",
+        "FINDEX": "a1",
+        "class": "w-full flex items-center justify-center display-font text-[12px]",
+        "text": "Explore"
+    },
+    "b1h424": {
+        "TYPE": "div",
+        "PARENT": "baaxsl",
+        "bid": "b1h424",
+        "FINDEX": "a3",
+        "class": "w-full rounded-[16px] px-5 py-4 flex items-center justify-center hover:bg-[--tertiary-100] cursor-pointer gap-1 text-[#616161] flex-col"
+    },
+    "b4o1zu": {
+        "TYPE": "iconify-icon",
+        "PARENT": "b1h424",
+        "bid": "b4o1zu",
+        "FINDEX": "a0",
+        "icon": "lucide:user",
+        "width": "64",
+        "height": "64"
+    },
+    "b85dmc": {
+        "TYPE": "div",
+        "PARENT": "b1h424",
+        "bid": "b85dmc",
+        "FINDEX": "a1",
+        "class": "w-full flex items-center justify-center display-font text-[12px]",
+        "text": "Profile"
+    },
+    "by3lgm": {
+        "TYPE": "section",
+        "PARENT": "start",
+        "bid": "by3lgm",
+        "FINDEX": "aI",
+        "class": "text-[--neutral-900] text-[length:--text-body]"
+    },
+    "b1hrod": {
+        "TYPE": "div",
+        "PARENT": "by3lgm",
+        "bid": "b1hrod",
+        "FINDEX": "a0",
+        "class": "container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+    },
+    "bqfg0z": {
+        "TYPE": "img",
+        "PARENT": "b1hrod",
+        "bid": "bqfg0z",
+        "FINDEX": "a0",
+        "class": "lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded",
+        "alt": "hero",
+        "src": "https://dummyimage.com/720x600"
+    },
+    "b7ol6d": {
+        "TYPE": "div",
+        "PARENT": "b1hrod",
+        "bid": "b7ol6d",
+        "FINDEX": "a1",
+        "class": "text-center lg:w-2/3 w-full"
+    },
+    "b9kgqt": {
+        "TYPE": "h1",
+        "PARENT": "b7ol6d",
+        "bid": "b9kgqt",
+        "FINDEX": "a0",
+        "class": "text-[length:--h1] sm:text-[length:--h2] mb-4 text-[--neutral-900]",
+        "text": "Microdosing synth tattooed vexillologist"
+    },
+    "bpzmod": {
+        "TYPE": "p",
+        "PARENT": "b7ol6d",
+        "bid": "bpzmod",
+        "FINDEX": "a1",
+        "class": "mb-8 leading-relaxed",
+        "text": "Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork."
+    },
+    "bumjub": {
+        "TYPE": "div",
+        "PARENT": "b7ol6d",
+        "bid": "bumjub",
+        "FINDEX": "a2",
+        "class": "flex justify-center"
+    },
+    "bs57dv": {
+        "TYPE": "button",
+        "PARENT": "bumjub",
+        "bid": "bs57dv",
+        "FINDEX": "a0",
+        "class": "inline-flex text-[--neutral-50] bg-[--primary-500] border-0 py-2 px-6 focus:outline-none hover:bg-[--primary-600] rounded text-[length:--text-button]",
+        "text": "Request a Demo"
+    },
+    "bnsqtu": {
+        "TYPE": "button",
+        "PARENT": "bumjub",
+        "bid": "bnsqtu",
+        "FINDEX": "a1",
+        "class": "ml-4 inline-flex text-[--neutral-900] bg-[--neutral-400] border-0 py-2 px-6 focus:outline-none hover:bg-[--neutral-500] rounded text-[length:--text-button]",
+        "text": "Signup"
+    },
+    "bnl659": {
+        "TYPE": "div",
+        "PARENT": "start",
+        "bid": "bnl659",
+        "FINDEX": "aJ",
+        "name": "hero.video",
+        "class": "flex flex-col-reverse md:flex-row items-center justify-center mx-auto gap-8 p-12 h-full min-h-[700px]"
+    },
+    "b65ac6": {
+        "TYPE": "div",
+        "PARENT": "bnl659",
+        "bid": "b65ac6",
+        "FINDEX": "a0",
+        "class": "flex flex-col items-center justify-center h-full gap-8"
+    },
+    "bbm8ur": {
+        "TYPE": "h1",
+        "PARENT": "b65ac6",
+        "bid": "bbm8ur",
+        "FINDEX": "a0",
+        "class": "text-7xl font-bold tracking-tighter leading-tight",
+        "text": "We set the standard for shoppable videos"
+    },
+    "bict4v": {
+        "TYPE": "p",
+        "PARENT": "b65ac6",
+        "bid": "bict4v",
+        "FINDEX": "a1",
+        "class": "font-medium text-lg",
+        "text": "Tolstoy is the only video commerce platform that boosts sales and enables you to reach new customers."
+    },
+    "b34jtr": {
+        "TYPE": "div",
+        "PARENT": "b65ac6",
+        "bid": "b34jtr",
+        "FINDEX": "a2",
+        "class": "inline-flex w-full gap-4"
+    },
+    "bdp1yk": {
+        "TYPE": "button",
+        "PARENT": "b34jtr",
+        "bid": "bdp1yk",
+        "FINDEX": "a0",
+        "class": "px-10 py-4 bg-[--primary-600] hover:bg-[--primary-800] transition-all rounded-md text-white text-lg font-medium whitespace-nowrap",
+        "text": "Primary btn for free"
+    },
+    "bt2sle": {
+        "TYPE": "button",
+        "PARENT": "b34jtr",
+        "bid": "bt2sle",
+        "FINDEX": "a1",
+        "class": "px-10 py-4 border-2 border-[--primary-600] hover:bg-gray-100 bg-white transition-all rounded-md text-black text-lg font-medium whitespace-nowrap",
+        "text": "Secondary btn Sales"
+    },
+    "brq9hr": {
+        "TYPE": "div",
+        "PARENT": "bnl659",
+        "bid": "brq9hr",
+        "FINDEX": "a1",
+        "class": "w-full h-full"
+    },
+    "b3iry8": {
+        "TYPE": "video",
+        "PARENT": "brq9hr",
+        "bid": "b3iry8",
+        "FINDEX": "a0",
+        "class": "object-cover h-96",
+        "autoplay": "true",
+        "muted": "true",
+        "src": "https://videos.pexels.com/video-files/4365142/4365142-uhd_2560_1440_25fps.mp4"
+    },
+    "b3tfd6": {
+        "TYPE": "section",
+        "PARENT": "start",
+        "bid": "b3tfd6",
+        "FINDEX": "aK",
+        "name": "logos.grid",
+        "class": "py-24 "
+    },
+    "bhsrv1": {
+        "TYPE": "div",
+        "PARENT": "b3tfd6",
+        "bid": "bhsrv1",
+        "FINDEX": "a0",
+        "class": "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
+    },
+    "b2z6tq": {
+        "TYPE": "div",
+        "PARENT": "bhsrv1",
+        "bid": "b2z6tq",
+        "FINDEX": "a0",
+        "class": "mb-20 text-center"
+    },
+    "bx1gaa": {
+        "TYPE": "span",
+        "PARENT": "b2z6tq",
+        "bid": "bx1gaa",
+        "FINDEX": "a0",
+        "class": "text-[--secondary-600] text-center font-medium mb-4 block",
+        "text": "OUR PARTNERS"
+    },
+    "blgbhj": {
+        "TYPE": "h1",
+        "PARENT": "b2z6tq",
+        "bid": "blgbhj",
+        "FINDEX": "a1",
+        "class": "text-4xl text-gray-700 text-center font-bold",
+        "text": "We work with the best partners"
+    },
+    "bs2r61": {
+        "TYPE": "div",
+        "PARENT": "bhsrv1",
+        "bid": "bs2r61",
+        "FINDEX": "a1",
+        "class": "grid grid-cols-1 gap-8 md:grid-cols-2  xl:grid-cols-4"
+    },
+    "bc3asr": {
+        "TYPE": "a",
+        "PARENT": "bs2r61",
+        "bid": "bc3asr",
+        "FINDEX": "a0",
+        "map": "[{id: 1, icon: 'logos:google'}, {id: 2, icon: 'logos:twitter'}, {id: 3, icon: 'logos:facebook'}, {id: 4, icon: 'logos:github'}, {id: 5, icon: 'logos:airbnb'}, {id: 6, icon: 'logos:apple'}, {id: 7, icon: 'logos:microsoft'}, {id: 8, icon: 'logos:openai'}]",
+        "href": "#",
+        "class": "flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl"
+    },
+    "bbiul1": {
+        "TYPE": "iconify-icon",
+        "PARENT": "bc3asr",
+        "bid": "bbiul1",
+        "FINDEX": "a0",
+        "icon": "{V.icon}",
+        "width": "8rem",
+        "height": "4rem"
+    },
+    "bd75xp": {
+        "TYPE": "footer",
+        "PARENT": "start",
+        "bid": "bd75xp",
+        "FINDEX": "aL",
+        "class": "text-[--neutral-600]body-font w-full"
+    },
+    "bovlmv": {
+        "TYPE": "div",
+        "PARENT": "bd75xp",
+        "bid": "bovlmv",
+        "FINDEX": "a0",
+        "class": "container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+    },
+    "bg0je8": {
+        "TYPE": "div",
+        "PARENT": "bovlmv",
+        "bid": "bg0je8",
+        "FINDEX": "a0",
+        "class": "flex flex-row title-font font-medium items-center text-[--neutral-900] mb-4 md:mb-0 w-fit",
+        "action": "go-to-page",
+        "page-id": "{AS.PAGES[0].bid}"
+    },
+    "bv691h": {
+        "TYPE": "img",
+        "PARENT": "bg0je8",
+        "bid": "bv691h",
+        "FINDEX": "a0",
+        "src": "{AS.APP.logo_url}",
+        "alt": "logo",
+        "class": "w-8 h-8 mr-4"
+    },
+    "b8be97": {
+        "TYPE": "span",
+        "PARENT": "bg0je8",
+        "bid": "b8be97",
+        "FINDEX": "a1",
+        "class": "whitespace-nowrap",
+        "text": "{AS.APP.name}"
+    },
+    "b5jc68": {
+        "TYPE": "p",
+        "PARENT": "bovlmv",
+        "bid": "b5jc68",
+        "FINDEX": "a1",
+        "class": "text-sm text-[--neutral-500] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-[--neutral-300] sm:py-2 sm:mt-0 mt-4"
+    },
+    "bnmqfb": {
+        "TYPE": "a",
+        "PARENT": "b5jc68",
+        "bid": "bnmqfb",
+        "FINDEX": "a0",
+        "class": "text-[--neutral-700] ml-1",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "@author"
+    },
+    "bhevot": {
+        "TYPE": "span",
+        "PARENT": "bovlmv",
+        "bid": "bhevot",
+        "FINDEX": "a2",
+        "class": "inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+    },
+    "buse58": {
+        "TYPE": "a",
+        "PARENT": "bhevot",
+        "bid": "buse58",
+        "FINDEX": "a0",
+        "class": "text-[--neutral-500]"
+    },
+    "b8n47h": {
+        "TYPE": "svg",
+        "PARENT": "buse58",
+        "bid": "b8n47h",
+        "FINDEX": "a0",
+        "fill": "currentColor",
+        "strokelinecap": "round",
+        "strokelinejoin": "round",
+        "strokewidth": "2",
+        "class": "w-5 h-5",
+        "viewBox": "0 0 24 24",
+        "innerSVG": "<path d=\"M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z\"></path>"
+    },
+    "bodg3o": {
+        "TYPE": "a",
+        "PARENT": "bhevot",
+        "bid": "bodg3o",
+        "FINDEX": "a1",
+        "class": "ml-3 text-[--neutral-500]"
+    },
+    "bzwf16": {
+        "TYPE": "svg",
+        "PARENT": "bodg3o",
+        "bid": "bzwf16",
+        "FINDEX": "a0",
+        "fill": "currentColor",
+        "strokelinecap": "round",
+        "strokelinejoin": "round",
+        "strokewidth": "2",
+        "class": "w-5 h-5",
+        "viewBox": "0 0 24 24",
+        "innerSVG": "<path d=\"M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z\"></path>"
+    },
+    "b6xw66": {
+        "TYPE": "a",
+        "PARENT": "bhevot",
+        "bid": "b6xw66",
+        "FINDEX": "a2",
+        "class": "ml-3 text-[--neutral-500]"
+    },
+    "bi4amb": {
+        "TYPE": "svg",
+        "PARENT": "b6xw66",
+        "bid": "bi4amb",
+        "FINDEX": "a0",
+        "fill": "none",
+        "stroke": "currentColor",
+        "strokelinecap": "round",
+        "strokelinejoin": "round",
+        "strokewidth": "2",
+        "class": "w-5 h-5",
+        "viewBox": "0 0 24 24",
+        "innerSVG": "<rect width=\"20\" height=\"20\" x=\"2\" y=\"2\" rx=\"5\" ry=\"5\"></rect><path d=\"M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01\"></path>"
+    },
+    "b4eqj5": {
+        "TYPE": "a",
+        "PARENT": "bhevot",
+        "bid": "b4eqj5",
+        "FINDEX": "a3",
+        "class": "ml-3 text-[--neutral-500]"
+    },
+    "bf5u1t": {
+        "TYPE": "svg",
+        "PARENT": "b4eqj5",
+        "bid": "bf5u1t",
+        "FINDEX": "a0",
+        "fill": "currentColor",
+        "stroke": "currentColor",
+        "strokelinecap": "round",
+        "strokelinejoin": "round",
+        "strokewidth": "0",
+        "class": "w-5 h-5",
+        "viewBox": "0 0 24 24",
+        "innerSVG": "<path stroke=\"none\" d=\"M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z\"></path><circle cx=\"4\" cy=\"4\" r=\"2\" stroke=\"none\"></circle>"
+    },
+    "b9oig3": {
+        "TYPE": "img",
+        "PARENT": "bhedg2",
+        "bid": "b9oig3",
+        "FINDEX": "a0",
+        "src": "https://fal.media/files/koala/4hOfdrEH-A7owbNGWj_61.jpeg"
+    }
+}

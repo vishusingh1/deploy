@@ -1,0 +1,49 @@
+<gen>
+
+    <!-- OP:CREATE_ONE -->
+
+      <!-- rich_text !is-many -->
+      <prop ref-id="rich_text--co" name="bro:prop-name" class="w-full">
+        <QuillEditor name="bro:prop-name" info="{INFO}" react-tag="QuillEditor" import="{type: 'import', name: 'QuillEditor', code: 'import QuillEditor from \'@lib/comp/QuillEditor\';'}" />
+    </prop>
+    
+    <!-- rich_text is-many -->
+    <prop ref-id="rich_text--cm" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <div name="cont" class="flex  items-center justify-between w-full  pr-10">
+            <QuillEditor name="bro:prop-name" info="{INFO}" react-tag="QuillEditor" import="{type: 'import', name: 'QuillEditor', code: 'import QuillEditor from \'@lib/comp/QuillEditor\';'}" />
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        </div>
+    </prop>
+
+    <!-- OP:GET_ONE -->
+
+     <!-- rich_text !is-many -->
+     <prop ref-id="rich_text--go" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+        <div html="${M.bro:prop-name}"></div>
+    </prop>
+
+    <!-- rich_text is-many -->
+    <prop ref-id="rich_text--gm" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <div html="${V?.v}"></div>
+    </prop>
+
+    <!-- OP:UPDATE_ONE -->
+
+     <!-- rich_text !is-many -->
+     <prop ref-id="rich_text--uo" name="bro:prop-name" class="w-full">
+        <QuillEditor name="bro:prop-name" info="{INFO}" value="{M.bro:prop-name}" react-tag="QuillEditor" import="{type: 'import', name: 'QuillEditor', code: 'import QuillEditor from \'@lib/comp/QuillEditor\';'}" />
+    </prop>
+    
+    <!-- rich_text is-many -->
+    <prop ref-id="rich_text--um" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <div name="cont" class="flex  items-center justify-between w-full  pr-10">
+            <QuillEditor name="bro:prop-name" info="{INFO}" value="{V?v}" react-tag="QuillEditor" import="{type: 'import', name: 'QuillEditor', code: 'import QuillEditor from \'@lib/comp/QuillEditor\';'}" />
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+        </div>
+    </prop>
+    
+</gen>

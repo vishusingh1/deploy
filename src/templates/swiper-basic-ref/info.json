@@ -1,0 +1,16 @@
+{
+    "name": "swiper-basic-ref",
+    "version": "1.0.0",
+    "icon": "<img class='' src=\"https://swiperjs.com/images/swiper-logo.svg\" />",
+    
+    "description": "Swiper Component",
+    "scope": [{"type":"model"}],
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.2.2",
+        "@types/react": "^18.0.0"
+    }
+}

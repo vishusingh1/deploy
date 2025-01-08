@@ -1,0 +1,122 @@
+@import './font.css';
+@import './colors.css';
+@import './editor.css';
+
+
+:root {
+    
+    
+    
+    --t1: calc(var(--text-base) * pow(var(--text-scale), 8));
+    --t2: calc(var(--text-base) * pow(var(--text-scale), 6));
+
+    --h1: calc(var(--text-base) * pow(var(--text-scale), 5));
+    --h2: calc(var(--text-base) * pow(var(--text-scale), 4));
+    --h3: calc(var(--text-base) * pow(var(--text-scale), 3));
+
+    --sub1: calc(var(--text-base) * pow(var(--text-scale), 2));
+    --sub2: calc(var(--text-base) * var(--text-scale));
+
+    --text-button: calc(var(--text-base) * var(--text-scale));
+
+    --text-body: var(--text-base);
+    --text-label: calc(var(--text-base) / var(--text-scale));
+
+    --text-sm: calc(var(--text-base) / pow(var(--text-scale), 2));
+    --text-xs: calc(var(--text-base) / pow(var(--text-scale), 3));
+}
+
+
+/* DSEIGN SYSTEM FONT SIZE */
+.t1{
+    font-size: var(--t1);
+}
+
+.t2{
+    font-size: var(--t2);
+}
+
+.h1{
+    font-size: var(--h1);
+}
+
+.h2{
+    font-size: var(--h2);
+}
+
+.h3{
+    font-size: var(--h3);
+}
+
+.sub1{
+    font-size: var(--sub1);
+}
+
+.sub2{
+    font-size: var(--sub2);
+}
+
+.text-button{
+    font-size: var(--text-button);
+}
+
+.text-body{
+    font-size: var(--text-body);
+}
+
+.text-label{
+    font-size: var(--text-label);
+}
+
+.text-sm{
+    font-size: var(--text-sm);
+}
+
+.text-xs{
+    font-size: var(--text-xs);
+}
+
+
+
+
+
+/* DESIGN SYSTEM FONT COLOR */
+.primary {
+    color: var(--primary);
+}
+.secondary {
+    color: var(--secondary);
+}
+.tertiary {
+    color: var(--tertiary);
+}
+.success {
+    color: var(--success);
+}
+.info {
+    color: var(--info);
+}
+.warning {
+    color: var(--warning);
+}
+.error {
+    color: var(--error);
+}
+.neutral {
+    color: var(--neutral);
+}
+
+
+
+
+
+
+
+
+
+
+.selected {
+    background-color: var(--primary-100);
+    border: 1px solid var(--primary-500);
+}
+

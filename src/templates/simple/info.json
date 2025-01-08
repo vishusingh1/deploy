@@ -1,0 +1,15 @@
+{
+    "name": "simple",
+    "version": "1.0.0",
+    "icon": "<svg width=\"72\" height=\"72\" viewBox=\"0 0 72 72\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"72\" height=\"72\" rx=\"4\" fill=\"white\"/>\n<path d=\"M41.7891 26.1053H64.9996\" stroke=\"#A3A3A3\" stroke-width=\"4.31965\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M41.7891 36.0527H55.0522\" stroke=\"#A3A3A3\" stroke-width=\"4.31965\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M41.7891 46H53.947\" stroke=\"#7168EC\" stroke-width=\"5.08194\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M33.9139 40.0592L29.2239 35.3693C28.654 34.7995 27.881 34.4794 27.075 34.4794C26.2691 34.4794 25.4961 34.7995 24.9261 35.3693L11.1178 49.1776M9.59807 21.8224H30.8744C32.553 21.8224 33.9139 23.1832 33.9139 24.8619V46.1382C33.9139 47.8168 32.553 49.1776 30.8744 49.1776H9.59807C7.91941 49.1776 6.55859 47.8168 6.55859 46.1382V24.8619C6.55859 23.1832 7.91941 21.8224 9.59807 21.8224ZM18.7165 30.9408C18.7165 32.6195 17.3557 33.9803 15.677 33.9803C13.9984 33.9803 12.6375 32.6195 12.6375 30.9408C12.6375 29.2622 13.9984 27.9013 15.677 27.9013C17.3557 27.9013 18.7165 29.2622 18.7165 30.9408Z\" stroke=\"#A3A3A3\" stroke-width=\"3.31579\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "description": "This is simple component",
+    "scope": [],
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.2.2",
+        "@types/react": "^18.0.0"
+    }
+}

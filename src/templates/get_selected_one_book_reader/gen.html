@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BOOK READER GENERATOR</title>
+</head>
+<body>
+    <info>
+        <notice>
+                This is the generator template for BOOK READER. This is used once everytime a new component is created. After that the component is independent of this template. Because the user can edit and modify the component as they wish. This is just a starting point.
+                So, it will not be copied to each component like the TSX template is copied.
+                If this (gen.html) is not found for any component we will use the default one available. Which will be at src/templates/default/gen.html
+        </notice>
+    </info>
+    <gen>
+
+        <main>
+            <model mid="bro:m-id" name="bro:m-name" op="get_selected_one" eid="{M.id}" class="w-full flex flex-col p-4 border rounded border-zinc-200 relative ">
+               <div class="h-96 w-full">
+                    <div react-tag="ReactReader" 
+                    url="{M?.book?.url}" 
+                    title="{M?.book?.name || 'Book Title'}"
+                    location="{location}"
+                    locationChanged="{onLocationChanged}"
+                    ></div>
+              </div>
+            </model>    
+        </main>
+
+    </gen>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<gen>
+    <!-- OP:CREATE_ONE -->
+
+    <!-- any_one_of !is-many datalist-->
+    <prop ref-id="any_one_of--co--datalist" name="bro:prop-name" class="w-1/4">
+        <div class="flex flex-col ">
+            <!-- <label for="bro:prop-name-create">bro:prop-name</label> -->
+            <input  list="bro:prop-name-create" name="bro:prop-name" type="any_one_of" action="oninput-update-m" class="flex bg-white rounded-md focus:outline-none border border-[#CBD5E1] flex-col gap-2 justify-start items-start ">
+            <datalist id="bro:prop-name-create"  >
+                <option map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')"  value="{V.id}">{V.name || V.id}</option>
+            </datalist>
+        </div>
+    </prop>
+
+    <!-- any-one-of !is-many dropdown -->
+    <prop ref-id="any_one_of--co--dropdown" name="bro:prop-name" class="w-1/4">
+        <select name="bro:prop-name" type="any_one_of" action="oninput-update-m" class="w-full flex flex-col gap-2 justify-start items-start rounded-md border border-[#CBD5E1] py-2 px-3 " >
+            <option value="">Choose an option</option>
+            <option map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')"  value="{V.id}">{V.name || V.id}</option>
+        </select>
+    </prop>
+
+    <!-- any_one_of !is-many radio-->
+     <prop ref-id="any_one_of--co--radio" name="bro:prop-name" class="w-full">
+        <div name="bro:prop-name" type="any_one_of" action="oninput-update-m" class="flex flex-col gap-2 justify-start items-start " >
+            <div map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')">
+                <label class="inline-flex cursor-pointer items-center label gap-2">
+                    <input name="{'bro:prop-name' + idx}" type="radio"  value="{V.id}"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500" />
+                    <span class="text-sm font-medium text-gray-800 ms-3">{V.name || V.id}</span>
+                </label>
+            </div>
+        </div>
+    </prop>
+
+    <!-- any_one_of is-many datalist-->
+    <prop ref-id="any_one_of--cm--datalist" name="bro:prop-name" class="w-full">
+        <div name="cont" class="flex  items-center justify-between w-full  pr-10" >
+            <div class="flex flex-col">
+                <input list="{'bro:prop-name-create'+ idx}" b-idx="{idx}"  action="oninput-update-m-idx" name="bro:prop-name" type="any_one_of" class="flex bg-white rounded-md focus:outline-none border border-[#CBD5E1] flex-col gap-2 justify-start items-start " >
+                <datalist id="{'bro:prop-name-create'+ idx}"   >
+                    <option map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')" value="{V.id}">{V.name || V.id}</option>
+                </datalist>
+            </div>
+        <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        </div>
+    </prop>
+
+     <!-- any-one-of is-many dropdown -->
+     <prop ref-id="any_one_of--cm--dropdown" name="bro:prop-name" class="w-full">
+        <div name="cont" class="flex  items-center justify-between w-full  pr-10">
+            <select name="bro:prop-name" type="any_one_of" b-idx="{idx}"  action="oninput-update-m-idx" class="w-full flex flex-col gap-2 justify-start items-start " >
+                <option value="">Choose an option</option>
+                <option map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')"  value="{V.id}">{V.name || V.id}</option>
+            </select>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        </div>
+    </prop>
+    
+    <!-- any_one_of is-many radio-->
+    <prop ref-id="any_one_of--cm--radio" name="bro:prop-name" class="w-full">
+       <div name="cont" class="flex  items-center justify-between w-full  pr-10">
+           <div name="bro:prop-name" type="any_one_of" b-idx="{idx}"  action="oninput-update-m-idx" class="flex flex-col gap-2 justify-start items-start " >
+               <div map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')">
+                    <label class="inline-flex cursor-pointer items-center label gap-2">
+                        <input name="{'bro:prop-name' + idx}" type="radio"  value="{V.id}"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500" />
+                        <span class="text-sm font-medium text-gray-800 ms-3">{V.name || V.id}</span>
+                    </label>
+                </div>
+           </div>
+           <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+       </div>
+   </prop>
+
+
+    <!-- OP:GET_ONE -->
+   
+    <!-- any-one-of !is-many -->
+    <prop ref-id="any_one_of--go" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+        <span>{M.bro:prop-name || ''}</span>
+    </prop>
+
+    <!-- any-one-of is-many -->
+    <prop ref-id="any_one_of--gm" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <span>{V?.v || ''}</span>   
+    </prop>
+
+
+    <!-- OP:UPDATE_ONE -->
+
+    <!-- any_one_of !is-many datalist -->
+    <prop ref-id="any_one_of--uo--datalist" name="bro:prop-name" class="w-1/4">
+        <div class="flex flex-col ">
+            <!-- <label for="bro:prop-name-create">bro:prop-name</label> -->
+            <input  list="bro:prop-name-create" name="bro:prop-name" type="any_one_of" action="oninput-update-m" class="flex bg-white rounded-md focus:outline-none border border-[#CBD5E1] flex-col gap-2 justify-start items-start ">
+            <datalist id="bro:prop-name-create" >
+                <option map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')" value="{V.id}" selected="{M.bro:prop-name === V.id}">{V.name || V.id}</option>
+            </datalist>
+        </div>
+    </prop>
+
+    <!-- any-one-of !is-many dropdown -->
+    <prop ref-id="any_one_of--uo--dropdown" name="bro:prop-name" class="w-1/4">
+        <select name="bro:prop-name" type="any_one_of" action="oninput-update-m" class="w-full flex flex-col gap-2 justify-start items-start rounded-md border border-[#CBD5E1] py-2 px-3 " >
+            <option value="">Choose an option</option>
+            <option map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')" value="{V.id}" selected="{M.bro:prop-name === V.id}">{V.name || V.id}</option>
+        </select>
+    </prop>
+
+    <!-- any_one_of !is-many radio -->
+    <prop ref-id="any_one_of--uo--radio" name="bro:prop-name" class="w-full">
+        <div name="bro:prop-name" type="any_one_of" action="oninput-update-m" class="flex flex-col gap-2 justify-start items-start " >
+            <div map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')">
+                <label class="inline-flex cursor-pointer items-center label gap-2">
+                    <input name="bro:prop-name" type="radio"  value="{V.id}" checked="{M.bro:prop-name === V.id}"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500"  />
+                    <span class="text-sm font-medium text-gray-800 ms-3">{V.name || V.id}</span>
+                </label>
+            </div>
+        </div>
+
+    </prop>
+
+    <!-- any_one_of is-many radio-->
+    <prop  ref-id="any_one_of--um--radio" name="bro:prop-name" class="w-full">
+        <div name="cont" class="flex  items-center justify-between w-full  pr-10">
+            <div name="bro:prop-name" type="any_one_of" b-idx="{idx}"  action="oninput-update-m-idx" class="flex flex-col gap-2 justify-start items-start " >
+                <div map="{data:'GFN.MODELFN.options(INFO.mid, \'bro:prop-name\')',V:'O'}">
+                    <label class="inline-flex cursor-pointer items-center label gap-2">
+                        <!-- @TODO: V.v isn't correct it has to berom the parent map. Here we have map inside map -->
+                        <input name="{'bro:prop-name' + idx}" type="radio"  value="{O.id}" checked="{V?.v === O.id}"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500"  />
+                        <span class="text-sm font-medium text-gray-800 ms-3">{O.name || O.id}</span>
+                    </label>
+                </div>
+            </div>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        </div>
+    </prop>
+
+    <!-- any_one_of is-many datalist-->
+    <prop ref-id="any_one_of--um--datalist" name="bro:prop-name" class="w-full">
+        <div name="cont" class="flex  items-center justify-between w-full  pr-10" >
+            <div class="flex flex-col">
+                <!-- <label for="bro:prop-name-create">bro:prop-name</label> -->
+                <input list="{'bro:prop-name-update'+ idx}" b-idx="{idx}"  action="oninput-update-m-idx" name="bro:prop-name" type="any_one_of" class="flex bg-white rounded-md focus:outline-none border border-[#CBD5E1] flex-col gap-2 justify-start items-start " >
+                <datalist id="{'bro:prop-name-update'+ idx}"   >
+                    <!-- @TODO: V.v isn't correct it has to berom the parent map. Here we have map inside map -->
+                    <option map="{data:'GFN.MODELFN.options(INFO.mid, \'bro:prop-name\')',V:'O'}" value="{O.id}" selected="{V?.v === O.id}">{O.name || O.id}</option>
+                </datalist>
+            </div>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        </div>
+    </prop>
+
+     <!-- any-one-of is-many dropdown -->
+     <prop ref-id="any_one_of--um--dropdown" name="bro:prop-name" class="w-full">
+        <div name="cont" class="flex  items-center justify-between w-full  pr-10">
+            <select name="bro:prop-name" type="any_one_of" b-idx="{idx}"  action="oninput-update-m-idx" class="w-full flex flex-col gap-2 justify-start items-start " >
+                <option value="">Choose an option</option>
+                <!-- @TODO: V.v isn't correct it has to berom the parent map. Here we have map inside map -->
+                <option map="{data:'GFN.MODELFN.options(INFO.mid, \'bro:prop-name\')',V:'O'}" value="{O.id}" selected="{V?.v === O.id}">{O.name || O.id}</option>
+            </select>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        </div>
+    </prop>
+</gen>

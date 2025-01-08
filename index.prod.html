@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    />
+
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+    
+    <!-- {BRO-CODE.HTML.HEAD START} -->
+    <!-- {BRO-CODE.HTML.HEAD END} -->
+
+
+    <!-- dark-mode -->
+    <script>
+        (()=>{
+            const setup_darkmode = () => {
+                // @IMPORTANT: There is no body while doing server side rendering
+                const BODY_EL = document.body;
+                const IS_DARK = window.matchMedia('(prefers-color-scheme:dark)').matches; // boolean
+
+                if (!BODY_EL) return console.error("body element not found");
+
+                if(IS_DARK) BODY_EL.classList.add('dark');
+                if(!IS_DARK) BODY_EL.classList.remove('dark');
+
+                window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change', e=>{
+                    if(e.matches) { // user switched to dark theme
+                        BODY_EL.classList.add('dark');
+                    } else { // user switched to light theme
+                        BODY_EL.classList.remove('dark');
+                    }
+                })
+            }
+            setup_darkmode();
+        })();
+    </script>
+
+
+    <!-- BROKEN ANALYTICS -->
+    <script>
+        (function () {
+            window.counterscale = {
+                q: [["set", "siteId", "$BRO-APPID"], ["trackPageview"]],
+            };
+        })();
+    </script>
+    <script
+        id="counterscale-script"
+        src="https://counterscale.brokenatom.io/tracker.js"
+        defer
+    ></script>
+
+
+
+
+    <!-- {TEMPLATE_HEAD_CONTENTS} -->
+</head>
+
+<body class="body-font">
+    <div id="root"></div>
+    
+    <script type="module" src="/src/main.tsx"></script>
+
+
+    <!-- {BRO-CODE.HTML.BODY START} -->
+    <!-- {BRO-CODE.HTML.BODY END} -->
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+This repo contains all the common types which are used in frontend, backend and server.

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UPDATE ONE GENERATOR</title>
+</head>
+<body>
+    <info>
+        <notice>
+                This is the generator template for UPDATE_ONE. This is used once everytime a new component is created. After that the component is independent of this template. Because the user can edit and modify the component as they wish. This is just a starting point.
+                So, it will not be copied to each component like the TSX template is copied.
+                If this (gen.html) is not found for any component we will use the default one available. Which will be at src/templates/default/gen.html
+        </notice>
+    </info>
+    <gen>
+        <div id="error"     class="bg-red-400 p-4"></div>
+        <div id="warning"   class="bg-yellow-400 p-4"></div>
+        <!-- var works with name:value but sometime we would have no value but another attr e.g: class. This is only so that we can use tailwind css in vscode editor. Which will autosuggest and show colors-->
+        <var name="a" value="abc"></var>
+        <var name="input-class" class="border border-[--neutral-100] hover:border-[--neutral-50] bg-[--shades-800] px-4 py-1.5 rounded focus:border-[var(--primary-400)] focus:border-1 focus:bg-white focus:outline-none w-full text-sm placeholder:text-sm placeholder:capitalize placeholder:text-[#222222]/30"></var>
+        <var name="delete-btn-file" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 absolute top-1.5 md:my-auto md:top-auto right-1.5"></var>
+        <var name="delete-btn" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150" ></var>
+        <var name="prop-get-one-class" class="flex w-full gap-6"></var>
+        <var name="label-class" class="text-sm font-medium text-gray-800"></var>
+        <var name="checkbox-class" class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500"></var>
+        <var name="prop-update-one-class" class="flex flex-col w-full gap-6"></var>
+        <var name="file-input-class" class="block w-full text-sm text-[var(--neutral-500)] file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[var(--primary-100)] file:text-[var(--neutral-50)] hover:file:bg-[var(--primary-100)] p-1 rounded-full bg-[var(--neutral-100)]"></var>
+        <!-- make sure that variable value is set with the attr, If not the first attr other than name will be taken. e.g: class above -->
+        
+
+        <delete-prop>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class=" bro:var:delete-btn-file ">
+                <extend with="delete-btn-svg" ></extend>
+            </button>
+        </delete-prop>
+        
+        <delete-btn-svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </delete-btn-svg>
+
+        <add-btn-svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+        </add-btn-svg>
+
+        <link-svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M10.0002 13.7031C10.4297 14.2772 10.9776 14.7523 11.6067 15.096C12.2359 15.4398 12.9317 15.6442 13.6468 15.6954C14.362 15.7466 15.0798 15.6435 15.7515 15.3929C16.4233 15.1423 17.0333 14.7502 17.5402 14.2431L20.5402 11.2431C21.451 10.3001 21.955 9.03707 21.9436 7.72608C21.9322 6.4151 21.4063 5.16104 20.4793 4.234C19.5523 3.30696 18.2982 2.78111 16.9872 2.76972C15.6762 2.75833 14.4132 3.2623 13.4702 4.17309L11.7502 5.88309M14.0002 11.7031C13.5707 11.129 13.0228 10.6539 12.3936 10.3102C11.7645 9.96639 11.0687 9.76197 10.3535 9.71076C9.63841 9.65954 8.92061 9.76272 8.24885 10.0133C7.5771 10.2639 6.96709 10.656 6.4602 11.1631L3.4602 14.1631C2.54941 15.1061 2.04544 16.3691 2.05683 17.6801C2.06822 18.9911 2.59407 20.2451 3.52111 21.1722C4.44815 22.0992 5.70221 22.6251 7.01319 22.6365C8.32418 22.6479 9.58719 22.1439 10.5302 21.2331L12.2402 19.5231" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </link-svg>
+        
+        <update-prop-btn>
+            <div class="flex-row flex justify-end items-end pt-5 gap-4">
+                <button op="update_one" class="bg-[var(--primary-500)] hover:bg--[var(--primary-600)] text-white font-medium py-2 px-6 rounded-xl focus:outline-none w-fit text-sm " >
+                    UPDATE
+                </button>
+            </div>
+        </update-prop-btn>
+
+        <any-one-of-options>
+            <label class="inline-flex cursor-pointer items-center label">
+                <input name="bro:prop-name" type="radio"  value="bro:prop-option" checked="{M.bro:prop-name === 'bro:prop-option'}"  class="bro:var:checkbox-class"  />
+                <span class="bro:var:label-class ms-3">bro:prop-option</span>
+            </label>
+        </any-one-of-options>
+
+        <any-one-of-options-is-many>
+            <label class="inline-flex cursor-pointer items-center label">
+                <input name="{'bro:prop-name' + idx}" type="radio"  value="bro:prop-option" checked="{V?.v === 'bro:prop-option'}"  class="bro:var:checkbox-class"  />
+                <span class="bro:var:label-class ms-3">bro:prop-option</span>
+            </label>
+        </any-one-of-options-is-many>
+
+        <many-of-options>
+            <label class="inline-flex cursor-pointer items-center label">
+                <input name="bro:prop-option" type="checkbox"   value="bro:prop-option" checked="{M.bro:prop-name?.includes('bro:prop-option')}"  class="bro:var:checkbox-class"  />
+                <span class="bro:var:label-class ms-3">bro:prop-option</span>
+            </label>
+        </many-of-options>
+
+        <many-of-options-is-many>
+            <label class="inline-flex cursor-pointer items-center label">
+                <input name="{'bro:prop-option' + idx}" type="checkbox"   value="bro:prop-option" checked="{V?.v?.includes('bro:prop-option')}"  class="bro:var:checkbox-class"  />
+                <span class="bro:var:label-class ms-3">bro:prop-option</span>
+            </label>
+        </many-of-options-is-many>
+       
+        <select-prop>
+
+            <!-- serial !is-many -->
+            <prop bro:type="serial" bro:is-many="false" ref="serial--uo" ></prop>
+
+            <!-- serial is-many -->
+            <prop bro:type="serial" bro:is-many="true" ref="serial--um" ></prop>
+
+            <!-- text !is-many -->
+            <prop bro:type="text" bro:is-many="false" ref="text--uo" ></prop>
+
+            <!-- text is-many -->
+            <prop bro:type="text" bro:is-many="true" ref="text--um" ></prop>
+
+            <!-- number !is-many -->
+            <prop bro:type="number" bro:is-many="false" ref="number--uo" ></prop>
+
+            <!-- number is-many -->
+            <prop bro:type="number" bro:is-many="true" ref="number--um" ></prop>
+
+            <!-- date !is-many -->
+            <prop bro:type="date" bro:is-many="false" ref="date--uo" ></prop>
+
+            <!-- date is-many -->
+            <prop bro:type="date" bro:is-many="true" ref="date--um" ></prop>
+
+            <!-- time !is-many -->
+            <prop bro:type="time" bro:is-many="false" ref="time--uo" ></prop>
+
+            <!-- time is-many -->
+            <prop bro:type="time" bro:is-many="true" ref="time--um" ></prop>
+
+            <!-- datetime !is-many -->
+            <prop bro:type="datetime" bro:is-many="false" ref="datetime--uo" ></prop>
+
+            <!-- datetime is-many -->
+            <prop bro:type="datetime" bro:is-many="true" ref="datetime--um" ></prop>
+
+            <!-- password !is-many -->
+            <prop bro:type="password" bro:is-many="false" ref="password--uo" ></prop>
+
+            <!-- password is-many -->
+            <prop bro:type="password" bro:is-many="true" ref="password--um" ></prop>
+
+            <!-- color !is-many -->
+            <prop  bro:type="color" bro:is-many="false" ref="color--uo" ></prop>
+
+            <!-- color is-many -->
+            <prop bro:type="color" bro:is-many="true" ref="color--um" ></prop>
+
+            <!-- boolean !is-many-->
+            <prop bro:type="boolean" bro:is-many="false" ref="boolean--uo" ></prop>
+
+            <!-- boolean is-many -->
+            <prop bro:type="boolean" bro:is-many="true" ref="boolean--um" ></prop>
+
+            <!-- url !is-many -->
+            <prop bro:type="url" bro:is-many="false" ref="url--uo" ></prop> 
+
+            <!-- url is-many -->
+            <prop bro:type="url" bro:is-many="true" ref="url--um" ></prop>
+
+            <!-- email !is-many -->
+            <prop bro:type="email" bro:is-many="false" ref="email--uo" ></prop>
+
+            <!-- email is-many -->
+            <prop bro:type="email" bro:is-many="true" ref="email--um" ></prop>
+
+            <!-- description !is-many -->
+            <prop bro:type="description" bro:is-many="false" ref="description--uo" ></prop> 
+
+            <!-- description is-many -->
+            <prop bro:type="description" bro:is-many="true" ref="description--um" ></prop>
+
+            <!-- file !is-many drag n drop-->
+            <prop bro:type="file" bro:is-many="false" ref="file--uo--dnd" ></prop>
+
+            <!-- file !is-many html -->
+            <prop bro:type="file" bro:is-many="false" ref="file--uo--html" ></prop>
+          
+            <!-- file is-many drag n drop-->
+            <prop bro:type="file" bro:is-many="true" ref="file--um--dnd" ></prop>    
+
+            <!-- file is-many html -->
+            <prop bro:type="file" bro:is-many="true" ref="file--um--html" ></prop>
+
+            <!-- image !is-many drag n drop-->
+            <prop bro:type="image" bro:is-many="false" ref="image--uo--dnd" ></prop>
+
+            <!-- image !is-many html -->
+            <prop bro:type="image" bro:is-many="false" ref="image--uo--html" ></prop>
+
+            <!-- image is-many drag n drop -->
+            <prop bro:type="image" bro:is-many="true" ref="image--um--dnd" ></prop>
+
+            <!-- image is-many html -->
+            <prop bro:type="image" bro:is-many="true" ref="image--um--html" ></prop>
+
+
+
+            <!-- any_one_of !is-many datalist-->
+            <prop bro:type="any_one_of" bro:is-many="false" ref="any_one_of--uo--datalist" ></prop>
+
+            <!-- any_one_of is-many datalist-->
+            <prop bro:type="any_one_of" bro:is-many="true" ref="any_one_of--um--datalist" ></prop>
+
+            <!-- type of many_of should be select-many,we are using this type to get value of checkbox in many of props -->
+            <!--many-of !is-many checklist-->
+            <prop bro:type="many_of" bro:is-many="false" ref="many_of--uo--checklist" ></prop>
+
+            <!-- type of many_of should be select-many,we are using this type to get value of checkbox in many of props -->
+            <!-- many-of is-many checklist-->
+             <prop bro:type="many_of" bro:is-many="true" ref="many_of--um--checklist" ></prop>
+
+            <!-- rich_text !is-many -->
+            <prop bro:type="rich_text" bro:is-many="false" ref="rich_text--uo" ></prop> 
+            
+            <!-- rich_text is-many -->
+            <prop bro:type="rich_text" bro:is-many="true" ref="rich_text--um" ></prop>  
+
+            <prop bro:prop-is-rel="true" bro:is-many="false" name="bro:prop-name">
+                <div>
+                    <div class="w-full text-primary rounded px-2">{M && (M.bro:prop-name?.id || M.id)}</div>	
+                </div> 
+
+                <!-- show-relation-selector => which one? there could be multiple relations -->
+                <div class="p-2 px-4 border bg-zinc-100 rounded" onclick="{(e) => {set_show_relation_selector(s => !s)}}">Select bro:prop-name</div>
+
+                <!-- @todo: create logic for showing popup/drawer/inline -->
+                <!-- @todo: we can also use extend and show variations here -->
+                <div condition="show_relation_selector">
+                    <div class="flex flex-col p-2">
+                        <p>SELECT ONE or CREATE</p>
+
+                        <!-- this will take the model related to the prop here -->
+                        <!-- This will now has to use get_many/gen.html file  -->
+                        <!-- This will automatically take care of recursion so that we don't have infinite loop -->
+                        <model comp-temp="get_many"></model>
+                        <model comp-temp="create_one"></model>
+
+                    </div>
+                </div>
+            </prop>
+
+        </select-prop>
+        
+        <select-cont>
+            <!-- !is-many -->
+            <cont bro:is-many="false" name="CONT-bro:prop-name" class="w-full">
+                <div class="block text-gray-700 text-sm font-medium mb-2 capitalize">bro:prop-name</div>
+                <extend with="select-prop" ></extend>
+            </cont>
+            <!-- is-many -->
+            <cont bro:is-many="true"  name="CONT-bro:prop-name" class="w-full flex flex-col gap-2">
+                <div class="block text-gray-700 text-sm font-medium mb-2 capitalize">bro:prop-name</div>
+                <extend with="select-prop"></extend>
+                <button type="bro:prop-type" action="add-prop-item" name="bro:prop-name" is-rel="bro:is-rel" class="w-10 h-10 flex justify-center items-center mx-auto border border-gray-100 bg-gray-200 hover:border-gray-200 text-gray-700 text-3xl rounded-lg ">
+                    <extend with="add-btn-svg" ></extend>
+                </button>
+            </cont>
+        </select-cont>
+
+        <main>
+            <model mid="bro:m-id" name="bro:m-name" op="update_one" class="w-full flex flex-col bg-white p-2 shadow rounded">
+                <div name="title" class="text-2xl font-medium text-gray-600 text-left ">
+                    UPDATE ONE OF bro:m-name
+                </div>
+                <div name="bro:m-name-data" class="flex flex-col gap-4">
+
+                    <!-- <each-prop prop-names="name, image" | include-names="" | exclude-names="" /> -->
+                    <!-- <each-prop prop-types="image, file" | include-types="" | exclude-types="" /> -->
+                    <each-prop exclude-names="id, created_at, created_by, updated_at, updated_by">
+                        <extend with="select-cont" ></extend>
+                    </each-prop>
+                </div>
+                <extend with="update-prop-btn" ></extend>
+            </model>    
+        </main>
+    </gen>
+</body>
+</html>

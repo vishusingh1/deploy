@@ -1,0 +1,99 @@
+<gen>
+    <!-- OP:CREATE_ONE -->
+
+    <!--many-of !is-many checklist-->
+    <prop ref-id="many_of--co--checklist" name="bro:prop-name" class="w-full">
+        <div name="bro:prop-name" type="select-many" action="oninput-update-m-select-many" class="flex gap-3 items-center justify-start" >
+            <div map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')">
+                <label class="inline-flex cursor-pointer items-center label gap-2">
+                    <input name="{'bro:prop-name' + idx}" type="checkbox"  value="{V.id}"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500" />
+                    <span class="text-sm font-medium text-gray-800">{V.name || V.id}</span>
+                </label>
+            </div>
+        </div>
+    </prop>
+
+    <!-- many-of !is-many chips -->
+     <prop ref-id="many_of--co--chips" name="bro:prop-name" class="w-full">
+        <div class="flex flex-wrap p-4 border border-gray-300 rounded-md ">
+            <!-- @TODO: not implemented properly-->
+            <div map="{M.bro:prop-name}">{V?.v}</div>
+            <input type="text " class="border-none outline-none focus:outline-none" >
+        </div>
+    </prop>
+
+    
+
+    <!-- many-of is-many checklist-->
+     <prop  ref-id="many_of--cm--checklist" name="bro:prop-name" class="w-full">
+        <div name="cont" class="flex items-center justify-between w-full pr-10">
+            <div name="bro:prop-name" b-idx="{idx}" type="select-many" action="oninput-update-m-select-many-idx" class="flex gap-3 items-center justify-start" >
+                <div map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')">
+                    <label class="inline-flex cursor-pointer items-center label gap-2">
+                        <input name="{'bro:prop-name' + idx}" type="checkbox"  value="{V.id}"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500" />
+                        <span class="text-sm font-medium text-gray-800">{V.name || V.id}</span>
+                    </label>
+                </div>
+            </div>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        </div>
+    </prop>
+
+    <!-- many-of is-many chips -->
+    <prop ref-id="many_of--cm--chips" name="bro:prop-name" class="w-full">
+        <div name="cont" class="flex items-center justify-between w-full pr-10">
+            <input type="text">
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        </div>
+    </prop>
+
+
+    <!-- OP:GET_ONE -->
+
+     <!-- many-of !is-many -->
+     <prop ref-id="many_of--go" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+        <div map="M.bro:prop-name" >{V || ''}</div>
+    </prop>
+
+    <!-- many-of is-many -->
+    <prop ref-id="many_of--gm" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <div map="V?.v" >{V || ''}</div>
+    </prop>
+
+    <!-- OP:UPDATE_ONE -->
+
+    <!-- type of many_of should be select-many,we are using this type to get value of checkbox in many of props -->
+    <!--many-of !is-many checklist-->
+    <prop ref-id="many_of--uo--checklist" name="bro:prop-name" class="w-full">
+        <div name="bro:prop-name" type="select-many" action="oninput-update-m-select-many" class="flex gap-3 items-center justify-start" >
+            <div map="GFN.MODELFN.options(INFO.mid, 'bro:prop-name')">
+                <label class="inline-flex cursor-pointer items-center label gap-2">
+                    <input name="bro:prop-name" type="checkbox"   value="{V.id}" checked="{M.bro:prop-name?.includes(V.id)}"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500"  />
+                    <span class="text-sm font-medium text-gray-800">{V.name || V.id}</span>
+                </label>
+            </div>
+        </div>
+    </prop>
+
+    <!-- type of many_of should be select-many,we are using this type to get value of checkbox in many of props -->
+    <!-- many-of is-many checklist-->
+    <prop ref-id="many_of--um--checklist" name="bro:prop-name" class="w-full">
+        <div name="cont" class="flex items-center justify-between w-full pr-10">
+            <div name="bro:prop-name" b-idx="{idx}" type="select-many" action="oninput-update-m-select-many-idx" class="flex gap-3 items-center justify-start" >
+                <div map="{data:'GFN.MODELFN.options(INFO.mid, \'bro:prop-name\')',V:'O'}">
+                    <label class="inline-flex cursor-pointer items-center label gap-2">
+                        <input name="{'bro:prop-name' + idx}" type="checkbox"   value="{O.id}" checked="{V?.v?.includes(O.id)}"  class="size-5 rounded border-gray-300 bg-gray-100 text-violet-600 accent-violet-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-violet-500"  />
+                        <span class="text-sm font-medium text-gray-800">{O.name || O.id}</span>
+                    </label>
+                </div>
+            </div>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        </div>
+    </prop>
+</gen>

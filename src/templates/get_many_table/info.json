@@ -1,0 +1,15 @@
+{
+    "name": "get_many_table",
+    "version": "1.0.0",
+    "icon": "<svg width=\"72\" height=\"72\" viewBox=\"0 0 72 72\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"72\" height=\"72\" rx=\"4\" fill=\"white\"/>\n<path d=\"M24 11H6V17H24V11Z\" fill=\"#7168EC\"/>\n<path d=\"M45 11H27V17H45V11Z\" fill=\"#7168EC\"/>\n<path d=\"M66 11H48V17H66V11Z\" fill=\"#7168EC\"/>\n<path d=\"M24 22H6V28H24V22Z\" fill=\"#A3A3A3\"/>\n<path d=\"M24 33H6V39H24V33Z\" fill=\"#A3A3A3\"/>\n<path d=\"M24 44H6V50H24V44Z\" fill=\"#A3A3A3\"/>\n<path d=\"M24 55H6V61H24V55Z\" fill=\"#A3A3A3\"/>\n<path d=\"M45 22H27V28H45V22Z\" fill=\"#A3A3A3\"/>\n<path d=\"M45 33H27V39H45V33Z\" fill=\"#A3A3A3\"/>\n<path d=\"M45 55H27V61H45V55Z\" fill=\"#A3A3A3\"/>\n<path d=\"M45 44H27V50H45V44Z\" fill=\"#A3A3A3\"/>\n<path d=\"M66 22H48V28H66V22Z\" fill=\"#A3A3A3\"/>\n<path d=\"M66 55H48V61H66V55Z\" fill=\"#A3A3A3\"/>\n<path d=\"M66 33H48V39H66V33Z\" fill=\"#A3A3A3\"/>\n<path d=\"M66 44H48V50H66V44Z\" fill=\"#A3A3A3\"/>\n</svg>\n",
+    "description": "View Data in Table",
+    "scope": [],
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.2.2",
+        "@types/react": "^18.0.0"
+    }
+}

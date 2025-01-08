@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GET SELECTED ONE GENERATOR</title>
+</head>
+<body>
+    <info>
+        <notice>
+                This is the generator template for GET_SELECTED_ONE. This is used once everytime a new component is created. After that the component is independent of this template. Because the user can edit and modify the component as they wish. This is just a starting point.
+                So, it will not be copied to each component like the TSX template is copied.
+                If this (gen.html) is not found for any component we will use the default one available. Which will be at src/templates/default/gen.html
+        </notice>
+    </info>
+    <gen>
+        <div id="error"     class="bg-red-400 p-4"></div>
+        <div id="warning"   class="bg-yellow-400 p-4"></div>
+        <!-- var works with name:value but sometime we would have no value but another attr e.g: class. This is only so that we can use tailwind css in vscode editor. Which will autosuggest and show colors-->
+        <var name="a" value="abc"></var>
+        <var name="input-class" class="border border-[--neutral-100] hover:border-[--neutral-50] bg-[--shades-800] px-4 py-1.5 rounded focus:border-[var(--primary-400)] focus:border-1 focus:bg-white focus:outline-none w-full text-sm placeholder:text-sm placeholder:capitalize placeholder:text-[#222222]/30"></var>
+        <var name="delete-btn-file" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 absolute top-1.5 md:my-auto md:top-auto right-1.5"></var>
+        <var name="delete-btn" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150" ></var>
+        <!-- make sure that variable value is set with the attr, If not the first attr other than name will be taken. e.g: class above -->
+        <delete-btn-svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </delete-btn-svg>
+        <add-btn-svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+        </add-btn-svg>
+        <link-svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M10.0002 13.7031C10.4297 14.2772 10.9776 14.7523 11.6067 15.096C12.2359 15.4398 12.9317 15.6442 13.6468 15.6954C14.362 15.7466 15.0798 15.6435 15.7515 15.3929C16.4233 15.1423 17.0333 14.7502 17.5402 14.2431L20.5402 11.2431C21.451 10.3001 21.955 9.03707 21.9436 7.72608C21.9322 6.4151 21.4063 5.16104 20.4793 4.234C19.5523 3.30696 18.2982 2.78111 16.9872 2.76972C15.6762 2.75833 14.4132 3.2623 13.4702 4.17309L11.7502 5.88309M14.0002 11.7031C13.5707 11.129 13.0228 10.6539 12.3936 10.3102C11.7645 9.96639 11.0687 9.76197 10.3535 9.71076C9.63841 9.65954 8.92061 9.76272 8.24885 10.0133C7.5771 10.2639 6.96709 10.656 6.4602 11.1631L3.4602 14.1631C2.54941 15.1061 2.04544 16.3691 2.05683 17.6801C2.06822 18.9911 2.59407 20.2451 3.52111 21.1722C4.44815 22.0992 5.70221 22.6251 7.01319 22.6365C8.32418 22.6479 9.58719 22.1439 10.5302 21.2331L12.2402 19.5231" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </link-svg>
+        <delete-prop>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class=" bro:var:delete-btn-file ">
+                <extend with="delete-btn-svg" ></extend>
+            </button>
+        </delete-prop>
+        <React bro:type="react" id="react" Name="COMPONENT"></React>
+
+        <select-prop>
+            <!-- when more than one children is present we will use a best case scenario to find which node to apply -->
+            <!-- we will take bro: attr in the node and match with the prop/model to see which one has more number of matches -->
+            <!-- E.g: bro:type="boolean" bro:is-many="true" => for boolean.is_many two attr is matching so we will use that instead of the one where is-many isn't present -->
+            <!-- boolean !is-many -->
+          
+            
+            
+            <prop  bro:type="boolean" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{`${M.bro:prop-name || 'false'}`}</span>
+            </prop>
+            <!-- boolean is-many -->
+            <prop bro:type="boolean" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{`${V?.v || 'false'}`}</span>
+            </prop>
+
+            <!-- serial !is-many -->
+            <prop bro:type="serial" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{M.bro:prop-name || ''}</span>
+            </prop>
+
+            <!-- serial is-many -->
+            <prop bro:type="serial" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{V?.v || ''}</span>
+            </prop>
+
+            <!-- text !is-many -->
+            <prop bro:type="text" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{M.bro:prop-name || ''}</span>
+            </prop>
+
+            <!-- text is-many -->
+            <prop bro:type="text" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{V?.v || ''}</span>
+            </prop>
+
+            <!-- number !is-many -->
+            <prop bro:type="number" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{M.bro:prop-name || ''}</span>
+            </prop>
+
+            <!-- number is-many -->
+            <prop bro:type="number" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{V?.v || ''}</span>
+            </prop>
+
+            <!-- date !is-many -->
+            <prop bro:type="date" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{GFN.time_utils.get_valid_date(M.bro:prop-name) || ''}</span>
+            </prop>
+           
+            <!-- date is-many -->
+            <prop bro:type="date" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{GFN.time_utils.get_valid_date(V?.v) || ''}</span>
+            </prop>
+
+            <!-- time !is-many -->
+            <prop bro:type="time" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{GFN.time_utils.get_valid_time(M.bro:prop-name) || ''}</span>
+            </prop>
+
+            <!-- time is-many -->
+            <prop bro:type="time" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{GFN.time_utils.get_valid_time(V?.v) || ''}</span>
+            </prop>
+
+            <!-- datetime !is-many -->
+            <prop bro:type="datetime" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{GFN.time_utils.get_valid_datetime(M.bro:prop-name) || ''}</span>
+            </prop>
+
+            <!-- datetime is-many -->
+            <prop bro:type="datetime" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{GFN.time_utils.get_valid_datetime(V?.v) || ''}</span>
+            </prop>
+
+            <!-- password !is-many -->
+            <prop bro:type="password" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{M.bro:prop-name ? Array(M.bro:prop-name.length).fill('*').join('') : ''}</span>
+            </prop>
+
+            <!-- password is-many -->
+            <prop bro:type="password" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{V? Array(V?.v.length).fill('*').join('') : ''}</span>
+            </prop>
+
+            <!-- color !is-many -->
+            <prop bro:type="color" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span class="h-6 w-6 bg-[\${M.bro:prop-name}]"></span>
+                <span>{M.bro:prop-name}</span>
+            </prop>
+
+            <!-- color is-many -->
+            <prop bro:type="color" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span class="h-6 w-6 bg-[\${V}]"></span>
+                <span>{V?.v}</span>
+            </prop>
+
+            <!-- url !is-many -->
+            <prop bro:type="url" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <a href="{M.bro:prop-name}" target="_blank">
+                    <span>{M.bro:prop-name}</span>
+                </a>
+            </prop>
+
+            <!-- url is-many -->
+            <prop bro:type="url" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <a href="{V?.v}" target="_blank">
+                    <span>{V?.v}</span>
+                </a>
+            </prop>
+
+            <!-- email !is-many -->
+            <prop bro:type="email" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{M.bro:prop-name}</span>
+            </prop>
+
+            <!-- email is-many -->
+            <prop bro:type="email" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{V?.v}</span>
+            </prop>
+
+            <!-- description !is-many -->
+            <prop bro:type="description" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{M.bro:prop-name}</span>
+            </prop>
+
+            <!-- description is-many -->
+            <prop bro:type="description" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{V?.v}</span>
+            </prop>
+
+            <!-- rich_text !is-many -->
+            <prop bro:type="rich_text" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <div html="${M.bro:prop-name}"></div>
+            </prop>
+
+            <!-- rich_text is-many -->
+            <prop bro:type="rich_text" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <div html="${V?.v}"></div>
+            </prop>
+
+            <!-- image !is-many -->
+            <prop bro:type="image" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <div name="image" style="background-image: url(${M.bro:prop-name?.url})" class="w-32 h-32  flex flex-shrink-0 bg-no-repeat bg-gray-200 bg-center bg-cover rounded-md"></div>
+            </prop>
+
+            <!-- image is-many -->
+            <prop bro:type="image" bro:is-many="true" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+               <div name="image" style="background-image: url(${V?.v?.url})" class="w-32 h-32  flex flex-shrink-0 bg-no-repeat bg-gray-200 bg-center bg-cover rounded-md"></div>
+            </prop>
+
+            <!-- file !is-many -->
+            <prop bro:type="file" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <div>{M.bro:prop-name?.name}</div>
+            </prop>
+
+            <!-- file is-many -->
+            <prop bro:type="file" bro:is-many="true" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <div>{V?.v?.name}</div>
+            </prop>
+
+            <!-- any-one-of !is-many -->
+            <prop bro:type="any_one_of" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <span>{M.bro:prop-name || ''}</span>
+            </prop>
+
+            <!-- any-one-of is-many -->
+            <prop bro:type="any_one_of" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <span>{V?.v || ''}</span>   
+            </prop>
+
+            <!-- many-of !is-many -->
+            <prop bro:type="many_of" bro:is-many="false" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+                <div map="M.bro:prop-name" >{V || ''}</div>
+            </prop>
+
+            <!-- many-of is-many -->
+            <prop bro:type="many_of" bro:is-many="true" name="bro:prop-name" class="flex flex-col w-full gap-6">
+                <div map="V?.v" >{V || ''}</div>
+            </prop>
+
+            <!-- relations !is many -->
+            <prop bro:prop-is-rel="true" bro:is-many="false" name="bro:prop-name">
+                <model comp-temp="get_one"></model>   
+            </prop>
+
+            <!-- relations is-many -->
+            <!-- <prop bro:prop-is-rel="true" bro:is-many="true" name="bro:prop-name">
+                <model mid="bro:m-id" name="bro:m-name" op="bro:op" class="w-full flex flex-col p-4 border rounded border-zinc-200 relative ">
+                    <div name="bro:m-name-data" class="flex flex-col gap-4">
+                        <each-prop exclude-names="id, created_at, created_by, updated_at, updated_by">
+                            <extend with="select-cont" ></extend>
+                        </each-prop>
+                    </div>
+    
+                    <div class="absolute right-2 top-2 " >
+                        <button op="delete_one" class="bg-[var(--error-400)] hover:bg-[var(--error-600)] rounded-md text-white hover:scale-110 w-5 h-5 flex justify-center items-center cursor-pointer transition-all ease-in-out  " >
+                            <extend with="delete-btn-svg" ></extend>
+                        </button>
+                    </div>
+                </model>
+                <extend with="delete-prop" ></extend>
+            </prop> -->
+
+        </select-prop>
+        
+        
+        <select-cont>
+
+            <!-- !is-many -->
+            <cont bro:is-many="false" name="CONT-bro:prop-name" class="w-full">
+                <div class="block text-gray-700 text-sm font-medium mb-2 capitalize">bro:prop-name</div>
+                <extend with="select-prop" ></extend>
+            </cont>
+
+
+            <!-- is-many -->
+            <cont bro:is-many="true"  name="CONT-bro:prop-name" class="w-full flex flex-col gap-2">
+                <div variant="with-label" class="block text-gray-700 text-sm font-medium mb-2 capitalize">bro:prop-name</div>
+                <extend with="select-prop"></extend>
+            </cont>
+            
+
+        </select-cont>
+
+        <main>
+            <model mid="bro:m-id" name="bro:m-name" op="get_selected_one" eid="{M.id}" class="w-full flex flex-col p-4 border rounded border-zinc-200 relative ">
+                <div name="title" class="text-2xl font-medium text-gray-600 text-left pb-6">
+                    GET SELECTED ONE OF bro:m-name
+                </div>
+                <!-- while generating we will POSTPROCESS this html. First bro:m-name get's prplace by model.name -->
+                <!-- Then fn:nametotitle will convert the m-name => model.name to a title format. E.g: user_profile_configuration => User Profile Configuration -->
+                <!-- we have a series of functions that can be put together E.g: fn:a.fn:b.fn:c => will apply fn a, b, c in that order -->
+                <!-- data -->
+                <div name="bro:m-name-data" class="flex flex-col gap-4" action="select-one">
+
+                    <!-- <each-prop prop-names="name, image" | include-names="" | exclude-names="" /> -->
+                    <!-- <each-prop prop-types="image, file" | include-types="" | exclude-types="" /> -->
+                    <each-prop exclude-names="id, created_at, created_by, updated_at, updated_by">
+                        <extend with="select-cont" ></extend>
+                    </each-prop>
+                </div>
+
+                <div class="absolute right-2 top-2 " >
+                    <button op="delete_one" class="bg-[var(--error-400)] hover:bg-[var(--error-600)] rounded-md text-white hover:scale-110 w-5 h-5 flex justify-center items-center cursor-pointer transition-all ease-in-out  " >
+                        <extend with="delete-btn-svg" ></extend>
+                    </button>
+                </div>
+            </model>    
+        </main>
+
+    </gen>
+</body>
+</html>

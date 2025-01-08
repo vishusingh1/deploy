@@ -1,0 +1,294 @@
+<gen>
+    <!-- OP:CREATE_ONE -->
+
+
+    <!-- file !is-many drag n drop-->
+    <prop ref-id="file--co--dnd" name="bro:prop-name" class="w-full flex flex-col md:flex-row items-center justify-center  gap-4 ">
+        <div class="flex flex-col gap-1.5">
+            <p class="label">Select a file</p>
+            <!-- File preview here -->
+            <!-- <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="M.bro:prop-name?.name" >{M.bro:prop-name?.name}</div> -->
+
+            <!-- <div class="text-xl font-bold" condition="M.__meta?.props?.bro:prop-name?.progress === 'uploading'">Uploading</div> -->
+
+            <label for="bro:m-id:bro:prop-name-dropzone-file-create" class="w-full min-h-32 flex cursor-pointer flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200" condition="!M.__meta?.props?.bro:prop-name?.progress">
+                <div class="flex flex-col items-center justify-center px-6 py-5">
+                    <svg class="mb-4 h-8 w-8 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                    </svg>
+                    <p class="pb-1"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                    <p class="helper-text">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                </div> 
+                <input id="bro:m-id:bro:prop-name-dropzone-file-create" name="bro:prop-name" type="file" action="oninput-update-m-file" class="hidden" />
+            </label>
+
+            <!-- Uploading -->
+            <div class="flex cursor-pointer flex-col items-center justify-center w-full min-h-32  rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200"  condition="M.__meta?.props?.bro:prop-name?.progress === 'uploading'">
+                <div class="flex flex-col items-center justify-center px-6 py-5 gap-[10px]" >
+                    <iconify-icon icon="line-md:loading-twotone-loop" width="24" height="24" ></iconify-icon>                    
+                    <p class="pb-1">Uploading</p>
+                </div>
+            </div>
+
+            <!-- Done -->
+            <div class="flex cursor-pointer w-full min-h-32  flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200"  condition="M.__meta?.props?.bro:prop-name?.progress === 'done'">
+                <div class="flex items-center justify-center px-6 py-5 gap-[10px]" >
+                    <div class="text-[#363636] truncate">
+                        {M.bro:prop-name?.name}
+                    </div>
+                    <label for="bro:m-id:bro:prop-name-dropzone-file-create ">
+                        <div class="rounded p-2 bg-[#FFCAC9]">Change File</div>
+                        <input id="bro:m-id:bro:prop-name-dropzone-file-create" name="bro:prop-name" type="file" action="oninput-update-m-file" class="hidden" />
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="font-bold text-lg">Or</div>
+        <div class="flex flex-col gap-1.5">
+            <p class="label">Paste file URL</p>
+            <!-- File preview here -->
+            <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="M.bro:prop-name?.name" >{M.bro:prop-name?.name || ''}</div>   
+            <input  name="bro:prop-name" type="text" action="oninput-update-m-file" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+        </div>
+    </prop>
+
+    <!-- file !is-many html -->
+    <prop ref-id="file--co--html" name="bro:prop-name" class="w-full">
+        <div class="flex flex-col gap-1.5">
+            <p class="label">Select a file</p>
+            <!-- File preview here -->
+            <!-- <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="M.bro:prop-name?.name" >{M.bro:prop-name?.name}</div> -->   
+            <input  name="bro:prop-name" type="file" action="oninput-update-m-file" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+            
+        </div>
+    </prop>
+
+
+    <!-- file is-many drag n drop-->
+    <prop ref-id="file--cm--dnd" name="bro:prop-name" class="flex w-full items-center justify-between pr-10 ">
+        <div name="cont" class="w-full flex flex-col md:flex-row items-center justify-center gap-4">
+            <div class="flex flex-col gap-1.5">
+                <p class="label">Select a file</p>
+                <!-- File preview here -->
+                <!-- <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="V?.v?.name" >{V?.v?.name}</div> -->
+
+                <!-- <div class="text-xl font-bold" condition="M.__meta?.props?.bro:prop-name && Array.isArray(M.__meta?.props?.bro:prop-name) && M.__meta?.props?.bro:prop-name[idx]?.progress === 'uploading'">Uploading</div> -->
+
+                <label for="{'bro:m-id:bro:prop-name-dropzone-file-create' + idx}" class="flex  w-full min-h-32  cursor-pointer flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200" condition="M.__meta?.props?.bro:prop-name && Array.isArray(M.__meta?.props?.bro:prop-name) && !M.__meta?.props?.bro:prop-name[idx]?.progress">
+                    <div class="flex flex-col items-center justify-center px-6 py-5">
+                        <svg class="mb-4 h-8 w-8 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                        </svg>
+                        <p class="pb-1"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                        <p class="helper-text">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                    </div>
+                    <input id="{'bro:m-id:bro:prop-name-dropzone-file-create' + idx}" b-idx="{idx}" name="bro:prop-name" type="file" action="oninput-update-m-file-idx" class="hidden" />
+                </label>
+
+                <!-- Uploading -->
+                <div class="flex cursor-pointer w-full min-h-32  flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200"  condition="M.__meta?.props?.bro:prop-name && Array.isArray(M.__meta?.props?.bro:prop-name) && M.__meta?.props?.bro:prop-name[idx]?.progress === 'uploading'" >
+                    <div class="flex flex-col items-center justify-center px-6 py-5 gap-[10px]" >
+                        <iconify-icon icon="line-md:loading-twotone-loop" width="24" height="24" ></iconify-icon>                    
+                        <p class="pb-1">Uploading</p>
+                    </div>
+                </div>
+
+                    <!-- Done -->
+                <div class="flex cursor-pointer w-full min-h-32  flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200"  condition="M.__meta?.props?.bro:prop-name && Array.isArray(M.__meta?.props?.bro:prop-name) && M.__meta?.props?.bro:prop-name[idx]?.progress === 'done'">
+                    <div class="flex items-center justify-center px-6 py-5 gap-[10px]" >
+                        <div class="text-[#363636] truncate">
+                            {V?.v?.name}
+                        </div>
+                        <label for="{'bro:m-id:bro:prop-name-dropzone-file-create' + idx}">
+                            <div class="rounded p-2 bg-[#FFCAC9]">Change File</div>
+                            <input id="{'bro:m-id:bro:prop-name-dropzone-file-create' + idx}" b-idx="{idx}" name="bro:prop-name" type="file" action="oninput-update-m-file-idx" class="hidden" />
+                        </label>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="font-bold text-lg">Or</div>
+            <div class="flex flex-col gap-1.5">
+                <p class="label">Paste file URL</p>
+                <!-- File preview here -->
+                <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="V?.v?.name" >{V?.v?.name || ''}</div>   
+                <input  b-idx="{idx}" name="bro:prop-name" type="text" action="oninput-update-m-file-idx" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+            </div>
+        </div>
+        <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-2 w-fit h-fit rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+    </prop>
+
+
+    <!-- file is-many html -->
+    <prop ref-id="file--cm--html" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <div name="cont" class="flex items-center justify-between w-full pr-10">
+            <div class="flex flex-col gap-1.5">
+                <p class="label">Select a file</p>
+                <!-- File preview here -->
+                <!-- <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="V?.v?.name" >{V?.v?.name}</div> -->   
+                <input  b-idx="{idx}" name="bro:prop-name" type="file" action="oninput-update-m-file-idx" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+            </div>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 absolute top-1.5 md:my-auto md:top-auto right-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+        </div>
+    </prop>
+
+
+    <!-- OP:GET_ONE -->
+
+
+    <!-- file !is-many -->
+    <prop ref-id="file--go" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+        <div>{M.bro:prop-name?.name}</div>
+    </prop>
+
+    <!-- file is-many -->
+    <prop ref-id="file--gm" name="bro:prop-name" class="flex flex-col  w-full gap-6 ">
+        <div>{V?.v?.name}</div>
+    </prop>
+
+
+    <!-- OP:UPDATE_ONE -->
+
+    <!-- file !is-many drag n drop-->
+    <prop ref-id="file--uo--dnd" name="bro:prop-name" class="w-full flex flex-col md:flex-row items-center justify-center  gap-4 ">
+        <div class="flex flex-col gap-1.5">
+            <p class="label">Select a file</p>
+            <!-- File preview here -->
+            <!-- <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="M.bro:prop-name?.name" >{M.bro:prop-name?.name}</div> -->
+
+            <!-- <div class="text-xl font-bold" condition="M.__meta?.props?.bro:prop-name?.progress === 'uploading'">Uploading</div> -->
+
+            <label for="bro:m-id:bro:prop-name-dropzone-file-update" class="w-full min-h-32 flex cursor-pointer flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200" condition="!M.__meta?.props?.bro:prop-name?.progress">
+                <div class="flex flex-col items-center justify-center px-6 py-5">
+                    <svg class="mb-4 h-8 w-8 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                    </svg>
+                    <p class="pb-1"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                    <p class="helper-text">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                </div> 
+                <input id="bro:m-id:bro:prop-name-dropzone-file-update" name="bro:prop-name" type="file" action="oninput-update-m-file" class="hidden" />
+            </label>
+
+            <!-- Uploading -->
+            <div class="flex cursor-pointer flex-col items-center justify-center w-full min-h-32  rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200"  condition="M.__meta?.props?.bro:prop-name?.progress === 'uploading'">
+                <div class="flex flex-col items-center justify-center px-6 py-5 gap-[10px]" >
+                    <iconify-icon icon="line-md:loading-twotone-loop" width="24" height="24" ></iconify-icon>                    
+                    <p class="pb-1">Uploading</p>
+                </div>
+            </div>
+
+            <!-- Done -->
+            <div class="flex cursor-pointer w-full min-h-32  flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200"  condition="M.__meta?.props?.bro:prop-name?.progress === 'done'">
+                <div class="flex items-center justify-center px-6 py-5 gap-[10px]" >
+                    <div class="text-[#363636] truncate">
+                        {M.bro:prop-name?.name}
+                    </div>
+                    <label for="bro:m-id:bro:prop-name-dropzone-file-update ">
+                        <div class="rounded p-2 bg-[#FFCAC9]">Change File</div>
+                        <input id="bro:m-id:bro:prop-name-dropzone-file-update" name="bro:prop-name" type="file" action="oninput-update-m-file" class="hidden" />
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <div class="font-bold text-lg">Or</div>
+        <div class="flex flex-col gap-1.5">
+            <p class="label">Paste file URL</p>
+            <!-- File preview here -->
+            <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="M.bro:prop-name?.name" >{M.bro:prop-name?.name || ''}</div>   
+            <input  name="bro:prop-name" type="text" value="{M.bro:prop-name?.url || ''}" action="oninput-update-m-file" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+        </div>
+    </prop>
+
+    <!-- file !is-many html -->
+    <prop ref-id="file--uo--html" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <div class="flex flex-col gap-1.5">
+            <p class="label">Select a file</p>
+            <!-- File preview here -->
+            <!-- <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="M.bro:prop-name?.name" >{M.bro:prop-name?.name}</div> -->   
+            <input  name="bro:prop-name" id="bro:prop-name" type="file" action="oninput-update-m-file" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+            
+        </div>
+    </prop>
+
+    <!-- file is-many drag n drop-->
+    <prop ref-id="file--um--dnd" name="bro:prop-name" class="flex w-full items-center justify-between pr-10">
+        <div name="cont" class="w-full flex flex-col md:flex-row items-center justify-center gap-4">
+            <div class="flex flex-col gap-1.5">
+                <p class="label">Select a file</p>
+                <!-- File preview here -->
+                <!-- <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="V?.v?.name" >{V?.v?.name}</div> -->
+
+                <!-- <div class="text-xl font-bold" condition="M.__meta?.props?.bro:prop-name && Array.isArray(M.__meta?.props?.bro:prop-name) && M.__meta?.props?.bro:prop-name[idx]?.progress === 'uploading'">Uploading</div> -->
+
+                <label for="{'bro:m-id:bro:prop-name-dropzone-file-update' + idx}" class="flex  w-full min-h-32  cursor-pointer flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200" condition="M.__meta?.props?.bro:prop-name && Array.isArray(M.__meta?.props?.bro:prop-name) && !M.__meta?.props?.bro:prop-name[idx]?.progress">
+                    <div class="flex flex-col items-center justify-center px-6 py-5">
+                        <svg class="mb-4 h-8 w-8 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                        </svg>
+                        <p class="pb-1"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                        <p class="helper-text">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                    </div>
+                    <input id="{'bro:m-id:bro:prop-name-dropzone-file-update' + idx}" b-idx="{idx}" name="bro:prop-name" type="file" action="oninput-update-m-file-idx" class="hidden" />
+                </label>
+
+                <!-- Uploading -->
+                <div class="flex cursor-pointer w-full min-h-32  flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200"  condition="M.__meta?.props?.bro:prop-name && Array.isArray(M.__meta?.props?.bro:prop-name) && M.__meta?.props?.bro:prop-name[idx]?.progress === 'uploading'" >
+                    <div class="flex flex-col items-center justify-center px-6 py-5 gap-[10px]" >
+                        <iconify-icon icon="line-md:loading-twotone-loop" width="24" height="24" ></iconify-icon>
+                        <p class="pb-1">Uploading</p>
+                    </div>
+                </div>
+
+                    <!-- Done -->
+                <div class="flex cursor-pointer w-full min-h-32  flex-col items-center justify-center rounded-md border border-dashed border-gray-400 bg-gray-100 hover:bg-gray-200"  condition="M.__meta?.props?.bro:prop-name && Array.isArray(M.__meta?.props?.bro:prop-name) && M.__meta?.props?.bro:prop-name[idx]?.progress === 'done'">
+                    <div class="flex items-center justify-center px-6 py-5 gap-[10px]" >
+                        <div class="text-[#363636] truncate">
+                            {V?.v?.name}
+                        </div>
+                        <label for="{'bro:m-id:bro:prop-name-dropzone-file-update' + idx}">
+                            <div class="rounded p-2 bg-[#FFCAC9]">Change File</div>
+                            <input id="{'bro:m-id:bro:prop-name-dropzone-file-update' + idx}" b-idx="{idx}" name="bro:prop-name" type="file" action="oninput-update-m-file-idx" class="hidden" />
+                        </label>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="font-bold text-lg">Or</div>
+            <div class="flex flex-col gap-1.5">
+                <p class="label">Paste file URL</p>
+                <!-- File preview here -->
+                <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="V?.v?.name" >{V?.v?.name || ''}</div>   
+                <input  b-idx="{idx}" name="bro:prop-name" value="{V?.v?.url || ''}" type="text" action="oninput-update-m-file-idx" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+            </div>
+        </div>
+        <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-2 w-fit h-fit rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+    </prop>
+
+    <!-- file is-many html -->
+    <prop ref-id="file--um--html" name="bro:prop-name" class="flex flex-col w-full gap-6">
+        <div name="cont" class="flex w-full items-center justify-between pr-10">
+            <div class="flex flex-col gap-1.5">
+                <p class="label">Select a file</p>
+                <!-- File preview here -->
+                <!-- <div class="mb-1 size-24 bg-gray-100 text-xl font-bold" condition="V?.v?.name" >{V?.v?.name}</div> -->   
+                <input  b-idx="{idx}" name="bro:prop-name" type="file" action="oninput-update-m-file-idx" class="w-full rounded-md border border-[#CBD5E1] bg-white px-3 py-2 leading-6 transition-all selection:bg-violet-400 selection:text-white placeholder:text-base placeholder:font-normal placeholder:text-gray-400 hover:border-gray-400 focus:border-gray-200 focus:outline-2 focus:outline-offset-2 focus:outline-violet-600" />
+            </div>
+            <button name="bro:prop-name" b-idx="{idx}" action="delete-prop-item" class="bg-none text-rose-300 p-1.5 rounded-md hover:bg-rose-400 hover:text-white transition-all ease-in-out duration-150 absolute top-1.5 md:my-auto md:top-auto right-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+        </div>
+    </prop>
+
+
+</gen>

@@ -1,0 +1,78 @@
+<gen>
+    <!-- OP:CREATE_ONE -->
+
+    <!-- relations !is-many -->
+    <prop ref-id="relation--co"  name="bro:prop-name">
+        <div>
+            <div class="w-full text-primary rounded px-2">{GFN.GET(M, ["bro:prop-name", "name"]) || GFN.GET(M, ["bro:prop-name", "id"])}</div>
+        </div> 
+
+        <!-- show-relation-selector => which one? there could be multiple relations -->
+        <div class="p-2 px-4 border bg-zinc-100 rounded" onclick="{(e) => {set_show_relation_selector(s => !s)}}">Select bro:prop-name</div>
+
+        <!-- @todo: create logic for showing popup/drawer/inline -->
+        <!-- @todo: we can also use extend and show variations here -->
+        <div condition="show_relation_selector">
+            <div class="flex flex-col p-2">
+                <p>PROP GEN REF: SELECT ONE or CREATE</p> 
+
+                <!-- this will take the model related to the prop here -->
+                <!-- This will now has to use get_many/gen.html file  -->
+                <!-- This will automatically take care of recursion so that we don't have infinite loop -->
+                <model comp-ref="get_many" op="get_many"></model>
+                <model comp-ref="create_one" op="create_one"></model>
+
+            </div>
+        </div>
+    </prop>
+
+     <!-- relations is-many -->
+     <prop ref-id="relation--cm" name="bro:prop-name">
+        <div name="cont" class="flex  items-center justify-between w-full  pr-10">
+            <div class="flex flex-col gap-1">
+                <selected>
+                    <div class="w-full text-primary rounded px-2">{M && (M.name || M.id)}</div>	
+                </selected> 
+
+
+                <!-- show-relation-selector => which one? there could be multiple relations -->
+                <div class="p-2 px-4 border bg-zinc-100 rounded" onclick="{(e) => {set_show_relation_selector(s => !s)}}" >Select bro:prop-name</div>
+
+                <!-- @todo: create logic for showing popup/drawer/inline -->
+                <!-- @todo: we can also use extend and show variations here -->
+                <selector condition="show_relation_selector">
+                    <div class="flex flex-col p-2">
+                        <p>SELECT ONE or CREATE</p>
+
+                        <!-- this will take the model related to the prop here -->
+                        <!-- This will now has to use get_many/gen.html file  -->
+                        <!-- This will automatically take care of recursion so that we don't have infinite loop -->
+                        <model comp-temp="get_many" op="get_many"></model>
+                        <model comp-temp="create_one" op="create_one"></model>
+
+                    </div>
+                </selector>
+            </div>
+            <extend with="delete-prop" ></extend>
+        </div>
+    </prop>
+    
+
+    <!-- OP:GET_ONE -->
+
+     <!-- relations !is-many -->
+    
+
+    <!-- relations is-many -->
+    
+    
+
+    <!-- OP:UPDATE_ONE -->
+
+     <!-- relations !is-many-->
+     
+
+    <!-- relations !is-many -->
+    
+
+</gen>
